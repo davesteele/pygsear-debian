@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>pygsear.Path.PathNG</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css"></link>
+</head>
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+
+<!-- =========== START OF NAVBAR =========== -->
+<table class="navbar" border="0" width="100%" cellpadding="0" bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="center">
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="pygsear-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="trees.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="indices.html">Index</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <font size="-1"><b class="breadcrumbs">
+        <a href="pygsear-module.html">Package&nbsp;pygsear</a> ::
+        <a href="pygsear.Path-module.html">Module&nbsp;Path</a> ::
+        Class&nbsp;PathNG
+      </b></font></br>
+    </td>
+    <td><table cellpadding="0" cellspacing="0">
+      <tr><td align="right"><font size="-2">[show&nbsp;private&nbsp;|&nbsp;<a href="../public/pygsear.Path.PathNG-class.html">hide&nbsp;private</a>]</font></td></tr>
+      <tr><td align="right"><font size="-2">[<a href="frames.html"target="_top">frames</a>&nbsp;|&nbsp;<a href="pygsear.Path.PathNG-class.html" target="_top">no&nbsp;frames</a>]</font></td></tr>
+    </table></td>
+</tr></table>
+
+<!-- =========== START OF CLASS DESCRIPTION =========== -->
+<h2 class="class">Class PathNG</h2>
+
+<pre class="base-tree">
+<a href="pygsear.Path.Path-class.html"><code>Path</code></a> --+
+       |
+      <b>PathNG</b>
+</pre><br />
+
+<hr/>
+
+<p>Next-generation Path</p>
+This one will integrate all of these disparate Path subclasses in to 
+one uberclass. I think this will make it more usable.
+<hr/>
+
+
+<!-- =========== START OF METHOD SUMMARY =========== -->
+<table class="summary" border="1" cellpadding="3" cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="summary">
+  <th colspan="2">Method Summary</th></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><a name="__init__"></a><span class="summary-sig"><span class="summary-sig-name">__init__</span>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>startLocation</span>,
+          <span class=summary-sig-arg>vx</span>,
+          <span class=summary-sig-arg>vy</span>,
+          <span class=summary-sig-arg>ax</span>,
+          <span class=summary-sig-arg>ay</span>,
+          <span class=summary-sig-arg>gx</span>,
+          <span class=summary-sig-arg>gy</span>,
+          <span class=summary-sig-arg>duration</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Path.PathNG-class.html#accelerate" class="summary-sig-name"><code>accelerate</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>acc</span>)</span></code>
+<br />
+Accelerate in the direction currently moving.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Path.PathNG-class.html#bounce_x" class="summary-sig-name"><code>bounce_x</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+reverse travel in x-direction</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Path.PathNG-class.html#bounce_y" class="summary-sig-name"><code>bounce_y</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+reverse travel in y-direction</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Path.PathNG-class.html#decelerate" class="summary-sig-name"><code>decelerate</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>dec</span>)</span></code>
+<br />
+Decelerate according to the direction currently moving.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Path.PathNG-class.html#direction" class="summary-sig-name"><code>direction</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>point</span>)</span></code>
+<br />
+return direction to a point</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Path.PathNG-class.html#distance" class="summary-sig-name"><code>distance</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>point</span>)</span></code>
+<br />
+return distance to a point</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Path.PathNG-class.html#get_acceleration" class="summary-sig-name"><code>get_acceleration</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+return acceleration</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Path.PathNG-class.html#get_direction" class="summary-sig-name"><code>get_direction</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+return direction of travel</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Path.PathNG-class.html#get_speed" class="summary-sig-name"><code>get_speed</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+return speed</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Path.PathNG-class.html#get_velocity" class="summary-sig-name"><code>get_velocity</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+return velocity</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Path.PathNG-class.html#next" class="summary-sig-name"><code>next</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>t</span>)</span></code>
+<br />
+return next position along path</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Path.PathNG-class.html#reset" class="summary-sig-name"><code>reset</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Go back to initial position, velocity and acceleration</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Path.PathNG-class.html#set_acceleration" class="summary-sig-name"><code>set_acceleration</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>ax</span>,
+          <span class=summary-sig-arg>ay</span>)</span></code>
+<br />
+Set acceleration.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Path.PathNG-class.html#set_deceleration" class="summary-sig-name"><code>set_deceleration</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>dex</span>,
+          <span class=summary-sig-arg>dey</span>)</span></code>
+<br />
+Set deceleration.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Path.PathNG-class.html#set_direction" class="summary-sig-name"><code>set_direction</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>direction</span>)</span></code>
+<br />
+set direction of travel</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Path.PathNG-class.html#set_gravity" class="summary-sig-name"><code>set_gravity</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>gx</span>,
+          <span class=summary-sig-arg>gy</span>)</span></code>
+<br />
+Set constant portion of acceleration (ie gravity)</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Path.PathNG-class.html#set_restriction" class="summary-sig-name"><code>set_restriction</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>onscreen</span>,
+          <span class="summary-sig-kwarg">**kw</span>)</span></code>
+<br />
+Set a constraint on the path.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Path.PathNG-class.html#set_speed" class="summary-sig-name"><code>set_speed</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>speed</span>,
+          <span class=summary-sig-arg>change</span>)</span></code>
+<br />
+Change speed while keeping the same direction of movement.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Path.PathNG-class.html#set_startAcceleration" class="summary-sig-name"><code>set_startAcceleration</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>accel</span>)</span></code>
+<br />
+Set acceleration to back go to on reset()</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Path.PathNG-class.html#set_startLocation" class="summary-sig-name"><code>set_startLocation</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>location</span>)</span></code>
+<br />
+Set location to go back to on reset()</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Path.PathNG-class.html#set_startVelocity" class="summary-sig-name"><code>set_startVelocity</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>vel</span>)</span></code>
+<br />
+Set velocity to go back to on reset()</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Path.PathNG-class.html#set_turnRate" class="summary-sig-name"><code>set_turnRate</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>turnRate</span>)</span></code>
+<br />
+set turn rate in rad/s</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Path.PathNG-class.html#set_velocity" class="summary-sig-name"><code>set_velocity</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>special</span>,
+          <span class=summary-sig-arg>vx</span>,
+          <span class=summary-sig-arg>vy</span>)</span></code>
+<br />
+Set velocity</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><a name="show_restrictions"></a><span class="summary-sig"><span class="summary-sig-name">show_restrictions</span>(<span class=summary-sig-arg>self</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Path.PathNG-class.html#turn" class="summary-sig-name"><code>turn</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>rad</span>)</span></code>
+<br />
+turn to the left by radians</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><a name="turn_left"></a><span class="summary-sig"><span class="summary-sig-name">turn_left</span>(<span class=summary-sig-arg>self</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><a name="turn_right"></a><span class="summary-sig"><span class="summary-sig-name">turn_right</span>(<span class=summary-sig-arg>self</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><a name="turn_straight"></a><span class="summary-sig"><span class="summary-sig-name">turn_straight</span>(<span class=summary-sig-arg>self</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Path.PathNG-class.html#turn_towards" class="summary-sig-name"><code>turn_towards</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>point</span>)</span></code>
+<br />
+turn as quickly as possible towards a point</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><a name="_set_velocity"></a><span class="summary-sig"><span class="summary-sig-name">_set_velocity</span>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>vx</span>,
+          <span class=summary-sig-arg>vy</span>)</span></code>
+</td></tr>
+<tr bgcolor="#e8f0f8" class="group">
+  <th colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;Inherited from Path</th></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Path.Path-class.html#__iter__" class="summary-sig-name"><code>__iter__</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Path.Path-class.html#get_position" class="summary-sig-name"><code>get_position</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Return position along Path</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Path.Path-class.html#get_x" class="summary-sig-name"><code>get_x</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+return x component of position</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Path.Path-class.html#get_y" class="summary-sig-name"><code>get_y</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+return y component of position</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Path.Path-class.html#onscreen" class="summary-sig-name"><code>onscreen</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>slack</span>)</span></code>
+<br />
+true if path position is on main window</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Path.Path-class.html#pause" class="summary-sig-name"><code>pause</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+stop moving along path</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Path.Path-class.html#set_endTime" class="summary-sig-name"><code>set_endTime</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>duration</span>)</span></code>
+<br />
+Path will raise StopIteration after self.duration seconds</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Path.Path-class.html#set_position" class="summary-sig-name"><code>set_position</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>position</span>)</span></code>
+<br />
+Set position and update positionOld</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Path.Path-class.html#unpause" class="summary-sig-name"><code>unpause</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+resume moving along path</td></tr>
+</table><br />
+
+
+<!-- =========== START OF METHOD DETAILS =========== -->
+<table class="details" border="1" cellpadding="3" cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="details">
+  <th colspan="2">Method Details</th></tr>
+</table>
+
+<a name="accelerate"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">accelerate</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>acc</span>)</span>
+  </h3>
+  <p>Accelerate in the direction currently moving.</p>
+  Accelerates toward 0 (right side of screen) if not moving.
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="bounce_x"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">bounce_x</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+  reverse travel in x-direction
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="bounce_y"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">bounce_y</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+  reverse travel in y-direction
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="decelerate"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">decelerate</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>dec</span>)</span>
+  </h3>
+  Decelerate according to the direction currently moving.
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="direction"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">direction</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>point</span>)</span>
+  </h3>
+  return direction to a point
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="distance"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">distance</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>point</span>)</span>
+  </h3>
+  return distance to a point
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="get_acceleration"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">get_acceleration</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+  <p>return acceleration</p>
+  Note that the acceleration may actually be a deceleration.
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="get_direction"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">get_direction</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+  <p>return direction of travel</p>
+  Direction is given in radians. 0 radians is towards the right edge 
+  of the screen.
+  <dl><dt></dt><dd>
+    <dl><dt><b>Overrides:</b></dt>
+      <dd><a href="pygsear.Path.Path-class.html#get_direction"><code>pygsear.Path.Path.get_direction</code></a></dd>
+    </dl>
+  </dd></dl>
+</td></tr></table>
+
+<a name="get_speed"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">get_speed</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+  return speed
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="get_velocity"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">get_velocity</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+  return velocity
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="next"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">next</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>t</span>=<span class=sig-default>None</span>)</span>
+  </h3>
+  return next position along path
+  <dl><dt></dt><dd>
+    <dl><dt><b>Overrides:</b></dt>
+      <dd><a href="pygsear.Path.Path-class.html#next"><code>pygsear.Path.Path.next</code></a></dd>
+    </dl>
+  </dd></dl>
+</td></tr></table>
+
+<a name="reset"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">reset</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+  <p>Go back to initial position, velocity and acceleration</p>
+  #Also updates self.ticks to current time
+  <dl><dt></dt><dd>
+    <dl><dt><b>Overrides:</b></dt>
+      <dd><a href="pygsear.Path.Path-class.html#reset"><code>pygsear.Path.Path.reset</code></a></dd>
+    </dl>
+  </dd></dl>
+</td></tr></table>
+
+<a name="set_acceleration"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">set_acceleration</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>ax</span>=<span class=sig-default>None</span>,
+          <span class=sig-arg>ay</span>=<span class=sig-default>None</span>)</span>
+  </h3>
+  Set acceleration. Change in speed depends on the acceleration and 
+  the time between frames.
+  <dl><dt></dt><dd>
+    <dl><dt><b>Parameters:</b></dt>
+      <dd><code><b>ax</b></code> -
+         horizontal acceleration component
+      <dd><code><b>ay</b></code> -
+         vertical acceleration component
+      </dd>
+    </dl>
+  </dd></dl>
+</td></tr></table>
+
+<a name="set_deceleration"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">set_deceleration</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>dex</span>=<span class=sig-default>None</span>,
+          <span class=sig-arg>dey</span>=<span class=sig-default>None</span>)</span>
+  </h3>
+  <p>Set deceleration. Like acceleration, but acts to oppose the current 
+  velocity and will not change a 0 velocity.</p>
+  <p>Can only accelerate or decelerate in a particular direction.</p>
+  Note that when using deceleration, the ax or ay value is always kept 
+  as an absolute value and a deceleration flag. There is no way to do 
+  &quot;negative acceleration&quot;.
+  <dl><dt></dt><dd>
+    <dl><dt><b>Parameters:</b></dt>
+      <dd><code><b>dex</b></code> -
+         horizontal acceleration component
+      <dd><code><b>dey</b></code> -
+         vertical acceleration component
+      </dd>
+    </dl>
+  </dd></dl>
+</td></tr></table>
+
+<a name="set_direction"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">set_direction</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>direction</span>)</span>
+  </h3>
+  <p>set direction of travel</p>
+  Maintains current speed.
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="set_gravity"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">set_gravity</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>gx</span>=<span class=sig-default>None</span>,
+          <span class=sig-arg>gy</span>=<span class=sig-default>None</span>)</span>
+  </h3>
+  Set constant portion of acceleration (ie gravity)
+  <dl><dt></dt><dd>
+    <dl><dt><b>Parameters:</b></dt>
+      <dd><code><b>gx</b></code> -
+         horizontal acceleration component
+      <dd><code><b>gy</b></code> -
+         vertical acceleration component
+      </dd>
+    </dl>
+  </dd></dl>
+</td></tr></table>
+
+<a name="set_restriction"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">set_restriction</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>onscreen</span>=<span class=sig-default>None</span>,
+          <span class="sig-kwarg">**kw</span>)</span>
+  </h3>
+  <p>Set a constraint on the path.</p>
+  Restrictions are set as keyword arguments. So far these are the 
+  contraints that work:
+  <ul>
+    <li>
+      speed: maximum speed
+    </li>
+    <li>
+      xMin: minimum x-value
+    </li>
+    <li>
+      yMin: minimum y-value
+    </li>
+    <li>
+      xMax: maximum x-value
+    </li>
+    <li>
+      yMax: maximum y-value
+    </li>
+    <li>
+      vxMin: minimum x-velocity (remember negative values)
+    </li>
+    <li>
+      vyMin: minimum y-velocity
+    </li>
+    <li>
+      vxMax: maximum x-velocity
+    </li>
+    <li>
+      vyMax: maximum y-velocity
+    </li>
+  </ul>
+  <dl><dt></dt><dd>
+    <dl><dt><b>Parameters:</b></dt>
+      <dd><code><b>onscreen</b></code> -
+         set to nonzero value if the object should be limited to 
+        staying on the screen.
+      </dd>
+    </dl>
+  </dd></dl>
+</td></tr></table>
+
+<a name="set_speed"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">set_speed</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>speed</span>=<span class=sig-default>None</span>,
+          <span class=sig-arg>change</span>=<span class=sig-default>None</span>)</span>
+  </h3>
+  Change speed while keeping the same direction of movement.
+  <dl><dt></dt><dd>
+    <dl><dt><b>Parameters:</b></dt>
+      <dd><code><b>speed</b></code> -
+         New speed (must set speed OR change)
+      <dd><code><b>change</b></code> -
+         Change in speed (must set speed OR change)
+      </dd>
+    </dl>
+  </dd></dl>
+</td></tr></table>
+
+<a name="set_startAcceleration"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">set_startAcceleration</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>accel</span>=<span class=sig-default>None</span>)</span>
+  </h3>
+  Set acceleration to back go to on reset()
+  <dl><dt></dt><dd>
+    <dl><dt><b>Parameters:</b></dt>
+      <dd><code><b>accel</b></code> -
+         (ax, ay) horizontal and vertical acceleration components
+      </dd>
+    </dl>
+  </dd></dl>
+</td></tr></table>
+
+<a name="set_startLocation"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">set_startLocation</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>location</span>=<span class=sig-default>None</span>)</span>
+  </h3>
+  Set location to go back to on reset()
+  <dl><dt></dt><dd>
+    <dl><dt><b>Parameters:</b></dt>
+      <dd><code><b>location</b></code> -
+         (x, y) position If location is not given (or None), sets 
+        startLocation to current location.
+      </dd>
+    </dl>
+  </dd></dl>
+</td></tr></table>
+
+<a name="set_startVelocity"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">set_startVelocity</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>vel</span>=<span class=sig-default>None</span>)</span>
+  </h3>
+  Set velocity to go back to on reset()
+  <dl><dt></dt><dd>
+    <dl><dt><b>Parameters:</b></dt>
+      <dd><code><b>vel</b></code> -
+         (vx, vy) horizontal and vertical velocity components
+      </dd>
+    </dl>
+  </dd></dl>
+</td></tr></table>
+
+<a name="set_turnRate"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">set_turnRate</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>turnRate</span>=<span class=sig-default>0</span>)</span>
+  </h3>
+  set turn rate in rad/s
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="set_velocity"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">set_velocity</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>special</span>=<span class=sig-default>None</span>,
+          <span class=sig-arg>vx</span>=<span class=sig-default>None</span>,
+          <span class=sig-arg>vy</span>=<span class=sig-default>None</span>)</span>
+  </h3>
+  Set velocity
+  <dl><dt></dt><dd>
+    <dl><dt><b>Parameters:</b></dt>
+      <dd><code><b>special</b></code> -
+         Set to 'random' for a random velocity
+      <dd><code><b>vx</b></code> -
+         horizontal velocity component
+      <dd><code><b>vy</b></code> -
+         vertical velocity component
+      </dd>
+    </dl>
+  </dd></dl>
+</td></tr></table>
+
+<a name="turn"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">turn</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>rad</span>=<span class=sig-default>None</span>)</span>
+  </h3>
+  turn to the left by radians
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="turn_towards"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">turn_towards</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>point</span>)</span>
+  </h3>
+  turn as quickly as possible towards a point
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+<br />
+
+
+<!-- =========== START OF NAVBAR =========== -->
+<table class="navbar" border="0" width="100%" cellpadding="0" bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="center">
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="pygsear-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="trees.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="indices.html">Index</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td align="left"><font size="-2">Generated by Epydoc 2.0 on Sat Dec  9 14:11:19 2006</font></td>
+    <td align="right"><a href="http://epydoc.sourceforge.net"
+                      ><font size="-2">http://epydoc.sf.net</font></a></td>
+  </tr>
+</table>
+</body>
+</html>

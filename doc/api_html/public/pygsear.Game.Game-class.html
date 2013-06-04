@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>pygsear.Game.Game</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css"></link>
+</head>
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+
+<!-- =========== START OF NAVBAR =========== -->
+<table class="navbar" border="0" width="100%" cellpadding="0" bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="center">
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="pygsear-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="trees.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="indices.html">Index</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <font size="-1"><b class="breadcrumbs">
+        <a href="pygsear-module.html">Package&nbsp;pygsear</a> ::
+        <a href="pygsear.Game-module.html">Module&nbsp;Game</a> ::
+        Class&nbsp;Game
+      </b></font></br>
+    </td>
+    <td><table cellpadding="0" cellspacing="0">
+      <tr><td align="right"><font size="-2">[<a href="../private/pygsear.Game.Game-class.html">show&nbsp;private</a>&nbsp;|&nbsp;hide&nbsp;private]</font></td></tr>
+      <tr><td align="right"><font size="-2">[<a href="frames.html"target="_top">frames</a>&nbsp;|&nbsp;<a href="pygsear.Game.Game-class.html" target="_top">no&nbsp;frames</a>]</font></td></tr>
+    </table></td>
+</tr></table>
+
+<!-- =========== START OF CLASS DESCRIPTION =========== -->
+<h2 class="class">Class Game</h2>
+
+<pre class="base-tree">
+<a href="pygsear.Game.GameLooper-class.html"><code>GameLooper</code></a> --+
+             |
+            <b>Game</b>
+</pre><br />
+
+<dl><dt><b>Known Subclasses:</b></dt>
+<dd>
+    <a href="pygsear.Game.TwistedGame-class.html"><code>TwistedGame</code></a></dd></dl>
+
+<hr/>
+
+<p>The central game object.</p>
+Classes which subclass this take part in the pygsear game framework 
+and automatically get a splash screen, and the configuration 
+interface.
+<hr/>
+
+
+<!-- =========== START OF METHOD SUMMARY =========== -->
+<table class="summary" border="1" cellpadding="3" cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="summary">
+  <th colspan="2">Method Summary</th></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><a name="__init__"></a><span class="summary-sig"><span class="summary-sig-name">__init__</span>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>window</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Game.Game-class.html#configure" class="summary-sig-name"><code>configure</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>pygame_event</span>,
+          <span class="summary-sig-kwarg">**kwargs</span>)</span></code>
+<br />
+Bring up the configuration screen</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Game.Game-class.html#freeMouse" class="summary-sig-name"><code>freeMouse</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>free</span>)</span></code>
+<br />
+Stop capturing all input</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Game.Game-class.html#gameOver" class="summary-sig-name"><code>gameOver</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Show a Game Over message.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Game.Game-class.html#grabMouse" class="summary-sig-name"><code>grabMouse</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>grab</span>)</span></code>
+<br />
+Capture all mouse and keyboard input</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Game.Game-class.html#hideMouse" class="summary-sig-name"><code>hideMouse</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>hide</span>)</span></code>
+<br />
+Hide the mouse cursor</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Game.Game-class.html#initialize" class="summary-sig-name"><code>initialize</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Further initialization</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Game.Game-class.html#mainloop" class="summary-sig-name"><code>mainloop</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>frames</span>)</span></code>
+<br />
+The main game loop.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Game.Game-class.html#playAgain" class="summary-sig-name"><code>playAgain</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Ask if player wants to play again.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Game.Game-class.html#resize_reset" class="summary-sig-name"><code>resize_reset</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Fix up the game after the screen has been resized</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><a name="restart"></a><span class="summary-sig"><span class="summary-sig-name">restart</span>(<span class=summary-sig-arg>self</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Game.Game-class.html#set_background" class="summary-sig-name"><code>set_background</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>filename</span>,
+          <span class=summary-sig-arg>img</span>,
+          <span class=summary-sig-arg>tilename</span>,
+          <span class=summary-sig-arg>tile</span>,
+          <span class=summary-sig-arg>color</span>)</span></code>
+<br />
+Set the background.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><a name="set_title"></a><span class="summary-sig"><span class="summary-sig-name">set_title</span>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>title</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Game.Game-class.html#showMouse" class="summary-sig-name"><code>showMouse</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>show</span>)</span></code>
+<br />
+Show the mouse cursor</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Game.Game-class.html#splash_screen" class="summary-sig-name"><code>splash_screen</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Show the splash screen</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Game.Game-class.html#splash_screen_poof" class="summary-sig-name"><code>splash_screen_poof</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Erase the splash screen</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Game.Game-class.html#step" class="summary-sig-name"><code>step</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Take one trip through the mainloop</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><a name="unpause"></a><span class="summary-sig"><span class="summary-sig-name">unpause</span>(<span class=summary-sig-arg>self</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Game.Game-class.html#update" class="summary-sig-name"><code>update</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>areas</span>)</span></code>
+<br />
+update the display</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Game.Game-class.html#waitFor" class="summary-sig-name"><code>waitFor</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>key</span>,
+          <span class=summary-sig-arg>timeout</span>)</span></code>
+<br />
+Pause the game, waiting for a keystroke.</td></tr>
+<tr bgcolor="#e8f0f8" class="group">
+  <th colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;Inherited from GameLooper</th></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Game.GameLooper-class.html#addEventGroup" class="summary-sig-name"><code>addEventGroup</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>event</span>)</span></code>
+<br />
+return a <a href="pygsear.Event.EventGroup-class.html" 
+class="link"><code>Event.EventGroup</code></a></td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Game.GameLooper-class.html#addGroup" class="summary-sig-name"><code>addGroup</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>sprites</span>,
+          <span class=summary-sig-arg>layer</span>)</span></code>
+<br />
+return a <a href="pygsear.Drawable.SpriteGroup-class.html" 
+class="link"><code>SpriteGroup</code></a></td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Game.GameLooper-class.html#addLayer" class="summary-sig-name"><code>addLayer</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>size</span>)</span></code>
+<br />
+return a <a href="pygsear.Drawable.Layer-class.html" 
+class="link"><code>Drawable.Layer</code></a> and keep track.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Game.GameLooper-class.html#beep" class="summary-sig-name"><code>beep</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Game.GameLooper-class.html#checkCollisions" class="summary-sig-name"><code>checkCollisions</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Defaults to no collision checks.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Game.GameLooper-class.html#checkEvents" class="summary-sig-name"><code>checkEvents</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Game.GameLooper-class.html#loop" class="summary-sig-name"><code>loop</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Game.GameLooper-class.html#pause" class="summary-sig-name"><code>pause</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+</td></tr>
+</table><br />
+
+
+<!-- =========== START OF CLASS VARIABLE SUMMARY =========== -->
+<table class="summary" border="1" cellpadding="3" cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="summary">
+  <th colspan="2">Class Variable Summary</th></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1"><code>str</code></font></td>
+<td><b><a href="pygsear.Game.Game-class.html#splash_filename"><code>splash_filename</code></a></b> = <span title="'pygsear_logo.png'"><code><span class="variable-quote">'</span>pygsear_logo.png<span class="variable-quote">'</span>                     </code>
+</span></td></tr>
+</table><br />
+
+
+<!-- =========== START OF METHOD DETAILS =========== -->
+<table class="details" border="1" cellpadding="3" cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="details">
+  <th colspan="2">Method Details</th></tr>
+</table>
+
+<a name="configure"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">configure</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>pygame_event</span>,
+          <span class="sig-kwarg">**kwargs</span>)</span>
+  </h3>
+  Bring up the configuration screen
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="freeMouse"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">freeMouse</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>free</span>=<span class=sig-default>1</span>)</span>
+  </h3>
+  Stop capturing all input
+  <dl><dt></dt><dd>
+    <dl><dt><b>Parameters:</b></dt>
+      <dd><code><b>free</b></code> -
+         1 yes release or 0 no grab
+      </dd>
+    </dl>
+  </dd></dl>
+</td></tr></table>
+
+<a name="gameOver"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">gameOver</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+  Show a Game Over message.
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="grabMouse"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">grabMouse</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>grab</span>=<span class=sig-default>1</span>)</span>
+  </h3>
+  <p>Capture all mouse and keyboard input</p>
+  Also keeps mouse locked inside of window.
+  <dl><dt></dt><dd>
+    <dl><dt><b>Parameters:</b></dt>
+      <dd><code><b>grab</b></code> -
+         1 yes grab or 0 no release
+      </dd>
+    </dl>
+  </dd></dl>
+</td></tr></table>
+
+<a name="hideMouse"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">hideMouse</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>hide</span>=<span class=sig-default>1</span>)</span>
+  </h3>
+  Hide the mouse cursor
+  <dl><dt></dt><dd>
+    <dl><dt><b>Parameters:</b></dt>
+      <dd><code><b>hide</b></code> -
+         1 yes hide or 0 no show
+      </dd>
+    </dl>
+  </dd></dl>
+</td></tr></table>
+
+<a name="initialize"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">initialize</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+  <p>Further initialization</p>
+  Most games will create their main objects here.
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="mainloop"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">mainloop</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>frames</span>=<span class=sig-default>0</span>)</span>
+  </h3>
+  The main game loop.
+  <dl><dt></dt><dd>
+    <dl><dt><b>Parameters:</b></dt>
+      <dd><code><b>frames</b></code> -
+         number of times to loop Defaults to <code>0</code>, which 
+        means loop until the game is over.
+      </dd>
+    </dl>
+  </dd></dl>
+</td></tr></table>
+
+<a name="playAgain"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">playAgain</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+  Ask if player wants to play again.
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="resize_reset"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">resize_reset</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+  Fix up the game after the screen has been resized
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="set_background"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">set_background</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>filename</span>=<span class=sig-default>None</span>,
+          <span class=sig-arg>img</span>=<span class=sig-default>None</span>,
+          <span class=sig-arg>tilename</span>=<span class=sig-default>None</span>,
+          <span class=sig-arg>tile</span>=<span class=sig-default>None</span>,
+          <span class=sig-arg>color</span>=<span class=sig-default>(0,&nbsp;0,&nbsp;0)</span>)</span>
+  </h3>
+  Set the background.
+  <dl><dt></dt><dd>
+<p><b>See Also:</b> <a href="pygsear.Screen.Layer-class.html" 
+class="link"><code>Screen.Layer</code></a>
+</p>
+
+  </dd></dl>
+</td></tr></table>
+
+<a name="showMouse"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">showMouse</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>show</span>=<span class=sig-default>1</span>)</span>
+  </h3>
+  Show the mouse cursor
+  <dl><dt></dt><dd>
+    <dl><dt><b>Parameters:</b></dt>
+      <dd><code><b>show</b></code> -
+         1 yes show or 0 no hide
+      </dd>
+    </dl>
+  </dd></dl>
+</td></tr></table>
+
+<a name="splash_screen"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">splash_screen</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+  <p>Show the splash screen</p>
+  <p>Called as soon as window is created</p>
+  Game subclasses which do not want a splash screen can override this 
+  with a function that just does pass
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="splash_screen_poof"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">splash_screen_poof</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+  <p>Erase the splash screen</p>
+  <p>Called at the end of __init__</p>
+  Game subclasses which do not want a splash screen should also 
+  override this with a function that just does pass
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="step"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">step</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+  Take one trip through the mainloop
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="update"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">update</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>areas</span>=<span class=sig-default>None</span>)</span>
+  </h3>
+  update the display
+  <dl><dt></dt><dd>
+    <dl><dt><b>Parameters:</b></dt>
+      <dd><code><b>areas</b></code> -
+         rect or list of rects to update
+      </dd>
+    </dl>
+  </dd></dl>
+</td></tr></table>
+
+<a name="waitFor"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">waitFor</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>key</span>=<span class=sig-default>13</span>,
+          <span class=sig-arg>timeout</span>=<span class=sig-default>None</span>)</span>
+  </h3>
+  <p>Pause the game, waiting for a keystroke.</p>
+  Still allows the game to be ended by clicking the window close 
+  button.
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+<br />
+
+
+<!-- =========== START OF CLASS VARIABLE DETAILS =========== -->
+<table class="details" border="1" cellpadding="3" cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="details">
+  <th colspan="2">Class Variable Details</th></tr>
+</table>
+<table width="100%" class="var-details" bgcolor="#e0e0e0"><tr><td>
+<a name="splash_filename"></a>
+<h3>splash_filename</h3>
+<dl>
+  <dt></dt>
+  <dd>
+    <dl>
+      <dt><b>Type:</b></dt>
+      <dd>
+          <code>str</code>
+
+      </dd>
+<span title="'pygsear_logo.png'">      <dt><b>Value:</b></dt>
+      <dd><table><tr><td>
+<pre class="variable">
+<span class="variable-quote">'</span>pygsear_logo.png<span class="variable-quote">'</span>                                                     </pre>
+        </td></tr></table></dd>
+</span>    </dl>
+  </dd>
+</dl></td></tr></table>
+<br />
+
+
+<!-- =========== START OF NAVBAR =========== -->
+<table class="navbar" border="0" width="100%" cellpadding="0" bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="center">
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="pygsear-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="trees.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="indices.html">Index</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td align="left"><font size="-2">Generated by Epydoc 2.0 on Sat Dec  9 14:11:20 2006</font></td>
+    <td align="right"><a href="http://epydoc.sourceforge.net"
+                      ><font size="-2">http://epydoc.sf.net</font></a></td>
+  </tr>
+</table>
+</body>
+</html>

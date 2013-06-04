@@ -1,0 +1,38 @@
+body{
+    background-color: black;
+    color: #c6c6ff;
+}
+
+a{color: #ababff;}
+a:hover{color: white;}
+a:visited{color: white;}
+a:active{color: white;}
+
+h1{
+    background-color: #ccc;
+    color: black;
+    text-align: center;
+    font-size: 140%;
+}
+
+h2{
+    background-color: #444;
+    font-size: 120%;
+}
+
+p{
+    padding-left: 30;
+    padding-right: 30;
+}
+
+div.code{
+    background-color: black;
+    color: lightgreen;
+    font-family: monospace;
+    border: thin solid white;
+    padding: 20;
+    margin-left: 50;
+    width: 70%;
+    white-space: nowrap;
+    overflow: auto;
+}

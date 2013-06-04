@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>pygsear.Screen.Window</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css"></link>
+</head>
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+
+<!-- =========== START OF NAVBAR =========== -->
+<table class="navbar" border="0" width="100%" cellpadding="0" bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="center">
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="pygsear-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="trees.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="indices.html">Index</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <font size="-1"><b class="breadcrumbs">
+        <a href="pygsear-module.html">Package&nbsp;pygsear</a> ::
+        <a href="pygsear.Screen-module.html">Module&nbsp;Screen</a> ::
+        Class&nbsp;Window
+      </b></font></br>
+    </td>
+    <td><table cellpadding="0" cellspacing="0">
+      <tr><td align="right"><font size="-2">[show&nbsp;private&nbsp;|&nbsp;<a href="../public/pygsear.Screen.Window-class.html">hide&nbsp;private</a>]</font></td></tr>
+      <tr><td align="right"><font size="-2">[<a href="frames.html"target="_top">frames</a>&nbsp;|&nbsp;<a href="pygsear.Screen.Window-class.html" target="_top">no&nbsp;frames</a>]</font></td></tr>
+    </table></td>
+</tr></table>
+
+<!-- =========== START OF CLASS DESCRIPTION =========== -->
+<h2 class="class">Class Window</h2>
+
+<pre class="base-tree">
+<a href="pygsear.Screen.Layer-class.html"><code>Layer</code></a> --+
+        |
+       <b>Window</b>
+</pre><br />
+
+<hr/>
+
+This class interfaces with the Pygame display. By initiating this 
+class, the pygame display in initiated.
+<hr/>
+
+
+<!-- =========== START OF METHOD SUMMARY =========== -->
+<table class="summary" border="1" cellpadding="3" cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="summary">
+  <th colspan="2">Method Summary</th></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Screen.Window-class.html#__init__" class="summary-sig-name"><code>__init__</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>size</span>,
+          <span class=summary-sig-arg>full</span>)</span></code>
+<br />
+Initialize the display window.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Screen.Window-class.html#border" class="summary-sig-name"><code>border</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>width</span>,
+          <span class=summary-sig-arg>color</span>,
+          <span class=summary-sig-arg>left</span>,
+          <span class=summary-sig-arg>right</span>,
+          <span class=summary-sig-arg>top</span>,
+          <span class=summary-sig-arg>bottom</span>)</span></code>
+<br />
+Draw a border around the screen</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Screen.Window-class.html#clear" class="summary-sig-name"><code>clear</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Clear the screen.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Screen.Window-class.html#resize" class="summary-sig-name"><code>resize</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>size</span>)</span></code>
+<br />
+Resize the window.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Screen.Window-class.html#set_background" class="summary-sig-name"><code>set_background</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>filename</span>,
+          <span class=summary-sig-arg>img</span>,
+          <span class=summary-sig-arg>tilename</span>,
+          <span class=summary-sig-arg>tile</span>,
+          <span class=summary-sig-arg>color</span>)</span></code>
+<br />
+Set the background image</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Screen.Window-class.html#set_title" class="summary-sig-name"><code>set_title</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>title</span>)</span></code>
+<br />
+Change the window title</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Screen.Window-class.html#update" class="summary-sig-name"><code>update</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>areas</span>)</span></code>
+<br />
+Update the pygame display</td></tr>
+</table><br />
+
+
+<!-- =========== START OF METHOD DETAILS =========== -->
+<table class="details" border="1" cellpadding="3" cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="details">
+  <th colspan="2">Method Details</th></tr>
+</table>
+
+<a name="__init__"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">__init__</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>size</span>=<span class=sig-default>None</span>,
+          <span class=sig-arg>full</span>=<span class=sig-default>None</span>)</span>
+    <br /><i>(Constructor)</i>
+  </h3>
+  Initialize the display window.
+  <dl><dt></dt><dd>
+    <dl><dt><b>Parameters:</b></dt>
+      <dd><code><b>size</b></code> -
+         2-tuple <code>(x, y)</code> specifies the dimensions of 
+        window.
+      <dd><code><b>full</b></code> -
+         if True, window is fullscreen (so it's not really a window 
+        ;).
+      </dd>
+    </dl>
+    <dl><dt><b>Overrides:</b></dt>
+      <dd><a href="pygsear.Screen.Layer-class.html#__init__"><code>pygsear.Screen.Layer.__init__</code></a></dd>
+    </dl>
+  </dd></dl>
+</td></tr></table>
+
+<a name="border"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">border</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>width</span>=<span class=sig-default>10</span>,
+          <span class=sig-arg>color</span>=<span class=sig-default>(255,&nbsp;255,&nbsp;255)</span>,
+          <span class=sig-arg>left</span>=<span class=sig-default>None</span>,
+          <span class=sig-arg>right</span>=<span class=sig-default>None</span>,
+          <span class=sig-arg>top</span>=<span class=sig-default>None</span>,
+          <span class=sig-arg>bottom</span>=<span class=sig-default>None</span>)</span>
+  </h3>
+  Draw a border around the screen
+  <dl><dt></dt><dd>
+    <dl><dt><b>Overrides:</b></dt>
+      <dd><a href="pygsear.Screen.Layer-class.html#border"><code>pygsear.Screen.Layer.border</code></a></dd>
+    </dl>
+  </dd></dl>
+</td></tr></table>
+
+<a name="clear"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">clear</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+  <p>Clear the screen.</p>
+  Makes the foreground surface match the background.
+  <dl><dt></dt><dd>
+    <dl><dt><b>Overrides:</b></dt>
+      <dd><a href="pygsear.Screen.Layer-class.html#clear"><code>pygsear.Screen.Layer.clear</code></a></dd>
+    </dl>
+  </dd></dl>
+</td></tr></table>
+
+<a name="resize"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">resize</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>size</span>)</span>
+  </h3>
+  <p>Resize the window.</p>
+  Changes the pygame display mode.
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="set_background"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">set_background</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>filename</span>=<span class=sig-default>None</span>,
+          <span class=sig-arg>img</span>=<span class=sig-default>None</span>,
+          <span class=sig-arg>tilename</span>=<span class=sig-default>None</span>,
+          <span class=sig-arg>tile</span>=<span class=sig-default>None</span>,
+          <span class=sig-arg>color</span>=<span class=sig-default>None</span>)</span>
+  </h3>
+  Set the background image
+  <dl><dt></dt><dd>
+    <dl><dt><b>Overrides:</b></dt>
+      <dd><a href="pygsear.Screen.Layer-class.html#set_background"><code>pygsear.Screen.Layer.set_background</code></a></dd>
+    </dl>
+  </dd></dl>
+</td></tr></table>
+
+<a name="set_title"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">set_title</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>title</span>=<span class=sig-default>'pygsear'</span>)</span>
+  </h3>
+  Change the window title
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="update"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">update</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>areas</span>=<span class=sig-default>None</span>)</span>
+  </h3>
+  <p>Update the pygame display</p>
+  This call will update a section (or sections) of the display screen. 
+  You must update an area of your display when you change its contents. 
+  If passed with no arguments, this will update the entire display 
+  surface. If you have many rects that need updating, it is best to 
+  combine them into a sequence and pass them all at once. This call will 
+  accept a sequence of rectstyle arguments. Any None's in the list will 
+  be ignored.
+  <dl><dt></dt><dd>
+    <dl><dt><b>Parameters:</b></dt>
+      <dd><code><b>areas</b></code> -
+         sequence of rects to update, or if <code>None</code> (or no 
+        argument is passed) will update the entire screen.
+      </dd>
+    </dl>
+  </dd></dl>
+</td></tr></table>
+<br />
+
+
+<!-- =========== START OF NAVBAR =========== -->
+<table class="navbar" border="0" width="100%" cellpadding="0" bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="center">
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="pygsear-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="trees.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="indices.html">Index</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td align="left"><font size="-2">Generated by Epydoc 2.0 on Sat Dec  9 14:11:19 2006</font></td>
+    <td align="right"><a href="http://epydoc.sourceforge.net"
+                      ><font size="-2">http://epydoc.sf.net</font></a></td>
+  </tr>
+</table>
+</body>
+</html>

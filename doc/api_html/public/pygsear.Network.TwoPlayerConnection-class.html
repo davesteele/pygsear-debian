@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>pygsear.Network.TwoPlayerConnection</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css"></link>
+</head>
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+
+<!-- =========== START OF NAVBAR =========== -->
+<table class="navbar" border="0" width="100%" cellpadding="0" bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="center">
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="pygsear-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="trees.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="indices.html">Index</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <font size="-1"><b class="breadcrumbs">
+        <a href="pygsear-module.html">Package&nbsp;pygsear</a> ::
+        <a href="pygsear.Network-module.html">Module&nbsp;Network</a> ::
+        Class&nbsp;TwoPlayerConnection
+      </b></font></br>
+    </td>
+    <td><table cellpadding="0" cellspacing="0">
+      <tr><td align="right"><font size="-2">[<a href="../private/pygsear.Network.TwoPlayerConnection-class.html">show&nbsp;private</a>&nbsp;|&nbsp;hide&nbsp;private]</font></td></tr>
+      <tr><td align="right"><font size="-2">[<a href="frames.html"target="_top">frames</a>&nbsp;|&nbsp;<a href="pygsear.Network.TwoPlayerConnection-class.html" target="_top">no&nbsp;frames</a>]</font></td></tr>
+    </table></td>
+</tr></table>
+
+<!-- =========== START OF CLASS DESCRIPTION =========== -->
+<h2 class="class">Class TwoPlayerConnection</h2>
+
+<pre class="base-tree">
+    <a href="twisted.spread.jelly.Jellyable-class.html"><code>Jellyable</code></a> --+        
+                |        
+     <a href="twisted.spread.flavors.Serializable-class.html"><code>Serializable</code></a> --+    
+                    |    
+        <a href="twisted.spread.flavors.Referenceable-class.html"><code>Referenceable</code></a> --+
+                        |
+<a href="twisted.spread.jelly.Jellyable-class.html"><code>Jellyable</code></a> --+           |
+            |           |
+ <a href="twisted.spread.flavors.Serializable-class.html"><code>Serializable</code></a> --+       |
+                |       |
+    <a href="twisted.spread.flavors.Referenceable-class.html"><code>Referenceable</code></a> --+   |
+                    |   |
+                 <a href="twisted.spread.flavors.Root-class.html"><code>Root</code></a> --+
+                        |
+                       <b>TwoPlayerConnection</b>
+</pre><br />
+
+<hr/>
+
+<p>Simple two player network connector</p>
+First tries to connect to an existing server, and if none is found, 
+will then wait for an incoming connection.
+<hr/>
+
+
+<!-- =========== START OF METHOD SUMMARY =========== -->
+<table class="summary" border="1" cellpadding="3" cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="summary">
+  <th colspan="2">Method Summary</th></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><a name="__init__"></a><span class="summary-sig"><span class="summary-sig-name">__init__</span>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>game</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Network.TwoPlayerConnection-class.html#got_connection" class="summary-sig-name"><code>got_connection</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>connection</span>)</span></code>
+<br />
+Client gets server's connection.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Network.TwoPlayerConnection-class.html#gotNoObject" class="summary-sig-name"><code>gotNoObject</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>reason</span>)</span></code>
+<br />
+If no server answers, then start one.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Network.TwoPlayerConnection-class.html#gotObject" class="summary-sig-name"><code>gotObject</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>connection</span>)</span></code>
+<br />
+If server exists, and contact is made.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Network.TwoPlayerConnection-class.html#makeConnection" class="summary-sig-name"><code>makeConnection</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Try to connect to an existing server.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Network.TwoPlayerConnection-class.html#remote_give_connection" class="summary-sig-name"><code>remote_give_connection</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>connection</span>)</span></code>
+<br />
+Server gets client's Connection, and returns it's own Connection to 
+client.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Network.TwoPlayerConnection-class.html#startListening" class="summary-sig-name"><code>startListening</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Start a server, and wait for a connection attempt.</td></tr>
+<tr bgcolor="#e8f0f8" class="group">
+  <th colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;Inherited from Root</th></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="twisted.spread.flavors.Root-class.html#rootObject" class="summary-sig-name"><code>rootObject</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>broker</span>)</span></code>
+<br />
+A <code>pb.BrokerFactory</code> is requesting to publish me as a root 
+object.</td></tr>
+<tr bgcolor="#e8f0f8" class="group">
+  <th colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;Inherited from Referenceable</th></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="twisted.spread.flavors.Referenceable-class.html#jellyFor" class="summary-sig-name"><code>jellyFor</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>jellier</span>)</span></code>
+<br />
+(internal)</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="twisted.spread.flavors.Referenceable-class.html#remoteMessageReceived" class="summary-sig-name"><code>remoteMessageReceived</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>broker</span>,
+          <span class=summary-sig-arg>message</span>,
+          <span class=summary-sig-arg>args</span>,
+          <span class=summary-sig-arg>kw</span>)</span></code>
+<br />
+A remote message has been received.</td></tr>
+<tr bgcolor="#e8f0f8" class="group">
+  <th colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;Inherited from Serializable</th></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="twisted.spread.flavors.Serializable-class.html#processUniqueID" class="summary-sig-name"><code>processUniqueID</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Return an ID which uniquely represents this object for this 
+process.</td></tr>
+<tr bgcolor="#e8f0f8" class="group">
+  <th colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;Inherited from Jellyable</th></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="twisted.spread.jelly.Jellyable-class.html#getStateFor" class="summary-sig-name"><code>getStateFor</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>jellier</span>)</span></code>
+</td></tr>
+</table><br />
+
+
+<!-- =========== START OF CLASS VARIABLE SUMMARY =========== -->
+<table class="summary" border="1" cellpadding="3" cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="summary">
+  <th colspan="2">Class Variable Summary</th></tr>
+<tr bgcolor="#e8f0f8" class="group">
+  <th colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;Inherited from Root</th></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1"><code>Implements</code></font></td>
+<td><b><a href="twisted.spread.flavors.Root-class.html#__implemented__"><code>__implemented__</code></a></b> = <span title="&lt;implementedBy twisted.spread.flavors.Root&gt;"><code>&lt;implementedBy&nbsp;twisted.spread.flavors.<span class="variable-ellipsis">...</span></code>
+</span></td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1"><code>ClassProvides</code></font></td>
+<td><b><a href="twisted.spread.flavors.Root-class.html#__provides__"><code>__provides__</code></a></b> = <span title="&lt;zope.interface.declarations.ClassProvides object at 0xb74463ac&gt;"><code>&lt;zope.interface.declarations.ClassProvide<span class="variable-ellipsis">...</span></code>
+</span></td></tr>
+<tr bgcolor="#e8f0f8" class="group">
+  <th colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;Inherited from Referenceable</th></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1"><code>NoneType</code></font></td>
+<td><b><a href="twisted.spread.flavors.Referenceable-class.html#perspective"><code>perspective</code></a></b> = <span title="None">None&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr>
+<tr bgcolor="#e8f0f8" class="group">
+  <th colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;Inherited from Jellyable</th></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1"><code>ClassProvides</code></font></td>
+<td><b><a href="twisted.spread.jelly.Jellyable-class.html#__providedBy__"><code>__providedBy__</code></a></b> = <span title="&lt;zope.interface.declarations.ClassProvides object at 0xb744612c&gt;"><code>&lt;zope.interface.declarations.ClassProvi<span class="variable-ellipsis">...</span></code>
+</span></td></tr>
+</table><br />
+
+
+<!-- =========== START OF METHOD DETAILS =========== -->
+<table class="details" border="1" cellpadding="3" cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="details">
+  <th colspan="2">Method Details</th></tr>
+</table>
+
+<a name="got_connection"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">got_connection</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>connection</span>)</span>
+  </h3>
+  Client gets server's connection.
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="gotNoObject"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">gotNoObject</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>reason</span>)</span>
+  </h3>
+  If no server answers, then start one.
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="gotObject"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">gotObject</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>connection</span>)</span>
+  </h3>
+  If server exists, and contact is made.
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="makeConnection"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">makeConnection</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+  Try to connect to an existing server.
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="remote_give_connection"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">remote_give_connection</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>connection</span>)</span>
+  </h3>
+  Server gets client's Connection, and returns it's own Connection to 
+  client.
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="startListening"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">startListening</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+  Start a server, and wait for a connection attempt.
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+<br />
+
+
+<!-- =========== START OF NAVBAR =========== -->
+<table class="navbar" border="0" width="100%" cellpadding="0" bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="center">
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="pygsear-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="trees.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="indices.html">Index</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td align="left"><font size="-2">Generated by Epydoc 2.0 on Sat Dec  9 14:11:18 2006</font></td>
+    <td align="right"><a href="http://epydoc.sourceforge.net"
+                      ><font size="-2">http://epydoc.sf.net</font></a></td>
+  </tr>
+</table>
+</body>
+</html>

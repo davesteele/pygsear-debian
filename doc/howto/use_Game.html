@@ -1,0 +1,75 @@
+<head>
+<title>pygsear howtos -- How to Use the Game Classes</title>
+<link type="text/css" rel="stylesheet" href="../style.css" />
+</head>
+
+<body>
+
+
+<h1>How to Use the Game Classes</h1>
+
+
+
+<h2>The Simplest Game</h2>
+
+<p>Here is the absolute minimum to invoke the pygsear game framework:
+</p>
+
+<p><div class="code">from pygsear.Game import Game<br />
+g = Game()<br />
+g.mainloop()
+</div>
+</p>
+
+<p>Not very exciting. You can press escape to bring up the configuration screen,
+change the size of the window, and save your configuration. That's about it.
+You will of course want to add some code to customize your game.
+</p>
+
+
+<h2>Initialization</h2>
+
+<p>As one of the final steps in the creation of the <code>Game</code> object,
+the <code>initialize</code> method will be called.
+</p>
+
+<p>The <code>initialize</code> method is where you should place your code to customize the
+set up of the game. Like this:
+</p>
+
+<p><div class="code">from pygsear.Game import Game<br />
+from pygsear.locals import GREEN<br />
+<br />
+class MyFirstGame(Game):<br />
+&nbsp;&nbsp;&nbsp;&nbsp;def initialize(self):<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.set_background(color=GREEN)<br />
+<br />
+mfg = MyFirstGame()<br />
+mfg.mainloop()
+</div>
+</p>
+
+
+<h2>The main loop</h2>
+
+<p>In most games (and in most programs with a graphical interface) there is one
+central piece of code which is repeated very quickly while waiting for the
+player (the user) to tell it what to do.
+</p>
+
+<p>This central piece of code is often called the <b>event loop</b> since it
+watches for external events like pressing keys on the keyboard, moving the mouse or
+clicking the mouse buttons, the passage of time, etc.
+</p>
+
+<p>In the pygsear <code>Game</code> classes, the main event loop is a method called
+<code>mainloop</code>.
+</p>
+
+<p>Once everything for the game is set up (initialized) you should call the
+<code>mainloop</code>, and that loop will run until the game is over or the player has
+chosen to quit.
+</p>
+
+
+

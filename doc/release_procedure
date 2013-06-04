@@ -1,0 +1,34 @@
+- bump version number
+   -- setup.py
+   -- pygsear/__init__.py
+- update html docs
+   -- use doc/update.py
+- update doc/CHANGES
+- update doc/announcement
+- commit all changes to cvs
+- test release candidate
+   -- install release canidate
+   -- test in a clean env
+- tag new release
+   -- cvs tag pygsear-0_29
+- remove unwanted files
+   -- *.core
+   -- *.pyc
+- build windows installer
+   -- python setup.py bdist_wininst
+- move windows installer to installers/ directory
+   -- remove old installers
+- build source distribution
+   -- python setup.py sdist
+- test release candidate again
+   -- one more time with actual distfile
+- move tarball and zipfile to sav_upload/
+   -- create md5 sums
+   -- remove stale versions (keep ~3 old ones)
+- rsync the new files
+   -- in sav_upload/
+   -- rsync --delete -av . turtledove@savannah.nongnu.org:/upload/pygsear
+   -- check files at http://savannah.nongnu.org/files/?group=pygsear
+- python setup.py register
+- announce release to mailing list
+

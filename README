@@ -1,0 +1,44 @@
+pygsear makes getting started with pygame simpler.
+
+Home page:
+    http://www.nongnu.org/pygsear/
+
+Copyright:
+    All of the code in this distribution is (C) Lee Harr.
+
+    pygsear is made available under version 2 of the
+    GNU General Public License. The included LICENSE
+    file describes this in detail.
+
+
+Getting started:
+    You can use this code without installing anything,
+    but it will be easier to use once it is installed.
+
+    To test before installing, try:
+    ./test.py
+
+    To use scripts in the examples/ directory without
+    installing, add the base directory to your PYTHONPATH.
+
+
+Installation:
+    *nix:
+    If you are satisfied, and want to install the package
+    files, do this command as root:
+
+    python setup.py install
+
+    Make sure you use the version of python which you use
+    to run pygame programs.
+
+    windows:
+    Go in to the installers/ directory and double click
+    on the file pygsear-*.win32.exe
+
+
+pygsear is tested with:
+    FreeBSD 4.8
+    Python2.3
+    Pygame1.5.5
+

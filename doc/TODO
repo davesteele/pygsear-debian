@@ -1,0 +1,48 @@
+TODO
+====
+ o  document, document, document
+ o  video mode independent screen
+    .   ie, you write to 800x600 but can be displayed as 640x480 or
+        1024x768 without having to think about it.
+ o  multi-multi image Drawable
+    .   ie, for rotatable image which can change/ animate
+    .   done for MultiRotated... need to refactor?
+ o  convert to new-style classes
+ o  use new-style attributes/properties
+ o  create and maintain unit tests
+    .   the examples do a good job of testing, and get run before
+        a release, but it might be good to have other tests
+ o  separate base, docs and full tarballs
+ o  rename Drawable to Sprite
+ o  create FreeBSD port
+    . other distributions too (deb, gentoo, rpm, etc)
+ o  auto sizing of dialogs
+ o  make TIMEOUT_Event use pygame.time.set_timer
+ o  change location parameters to position
+ o  make Drawable.collide and .collidelist work with Drawable.Multi sprites
+    . mostly there. Still need to make it work between Multi sprites
+ o  make group=SpriteGroup parameter work for Repeat_KEY_Event
+ o  interface for site-wide high scores
+ o  make GameConfiguration a Widget, and more easily extended
+ o  add countdown / timer widget
+ o  do something better with SpriteGroup and levels
+ o  fix pymm to remove ball/row events after win/loss
+ o  Drawable.pause() and Drawable.unpause() do nothing
+
+
+DONE
+====
+ o  fix IDLE/win32 data/images finding problem
+ o  allow held down keys to auto-repeat
+ o  break out larger examples in to an add-on package/ download
+ o  rename get* and set* methods to get_* and set_*
+    .   avoid uppercasing attributes in method names
+ o  move SpriteGroup in to Drawable.py file
+ o  simplify intra-package imports
+    .   change all the from pygsear import ... to import ...
+ o  make practice.py use an internal console like interact.p
+ o  fix the problem w/ turtle transactions
+ o  a more reasonable/ unified use of pygame.time.Clock()s
+    .   using Game.Game and Game.TwistedGame mainloop, each pass
+        through the loop stores the current tick in conf.ticks
+

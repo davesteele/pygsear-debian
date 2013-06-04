@@ -1,0 +1,1116 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>pygsear.Drawable.EuclidTurtle</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css"></link>
+</head>
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+
+<!-- =========== START OF NAVBAR =========== -->
+<table class="navbar" border="0" width="100%" cellpadding="0" bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="center">
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="pygsear-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="trees.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="indices.html">Index</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <font size="-1"><b class="breadcrumbs">
+        <a href="pygsear-module.html">Package&nbsp;pygsear</a> ::
+        <a href="pygsear.Drawable-module.html">Module&nbsp;Drawable</a> ::
+        Class&nbsp;EuclidTurtle
+      </b></font></br>
+    </td>
+    <td><table cellpadding="0" cellspacing="0">
+      <tr><td align="right"><font size="-2">[<a href="../private/pygsear.Drawable.EuclidTurtle-class.html">show&nbsp;private</a>&nbsp;|&nbsp;hide&nbsp;private]</font></td></tr>
+      <tr><td align="right"><font size="-2">[<a href="frames.html"target="_top">frames</a>&nbsp;|&nbsp;<a href="pygsear.Drawable.EuclidTurtle-class.html" target="_top">no&nbsp;frames</a>]</font></td></tr>
+    </table></td>
+</tr></table>
+
+<!-- =========== START OF CLASS DESCRIPTION =========== -->
+<h2 class="class">Class EuclidTurtle</h2>
+
+<pre class="base-tree">
+<a href="__builtin__.object-class.html"><code>object</code></a> --+                    
+         |                    
+    <a href="pygame.sprite.Sprite-class.html"><code>Sprite</code></a> --+                
+             |                
+      <a href="pygsear.Drawable.Drawable-class.html"><code>Drawable</code></a> --+            
+                 |            
+        <a href="pygsear.Drawable.MultiImage-class.html"><code>MultiImage</code></a> --+        
+                     |        
+          <a href="pygsear.Drawable.RotatedImage-class.html"><code>RotatedImage</code></a> --+    
+                         |    
+                    <a href="pygsear.Drawable.Turtle-class.html"><code>Turtle</code></a> --+
+                             |
+                            <b>EuclidTurtle</b>
+</pre><br />
+
+<hr/>
+
+<p>Turtle with altered co-ordinate system.</p>
+Instead of (0, 0) being the upper left corner of the screen, the 
+origin is the center of the screen. The EuclidTurtle also uses a 
+different scale: each unit is by default 30 pixels.
+<hr/>
+
+
+<!-- =========== START OF METHOD SUMMARY =========== -->
+<table class="summary" border="1" cellpadding="3" cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="summary">
+  <th colspan="2">Method Summary</th></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><a name="__init__"></a><span class="summary-sig"><span class="summary-sig-name">__init__</span>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>w</span>,
+          <span class=summary-sig-arg>position</span>,
+          <span class=summary-sig-arg>deg</span>,
+          <span class=summary-sig-arg>color</span>,
+          <span class=summary-sig-arg>filename</span>,
+          <span class=summary-sig-arg>colorkey</span>,
+          <span class=summary-sig-arg>convert</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.EuclidTurtle-class.html#cCircle" class="summary-sig-name"><code>cCircle</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>radius</span>,
+          <span class=summary-sig-arg>color</span>,
+          <span class=summary-sig-arg>width</span>)</span></code>
+<br />
+Quick drawing circle, centered on current position.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.EuclidTurtle-class.html#circle" class="summary-sig-name"><code>circle</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>radius</span>,
+          <span class=summary-sig-arg>clockwise</span>,
+          <span class=summary-sig-arg>color</span>,
+          <span class=summary-sig-arg>width</span>)</span></code>
+<br />
+Quick drawing circle.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.EuclidTurtle-class.html#cRectangle" class="summary-sig-name"><code>cRectangle</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>side_length</span>,
+          <span class=summary-sig-arg>side_width</span>,
+          <span class=summary-sig-arg>width</span>,
+          <span class=summary-sig-arg>color</span>,
+          <span class=summary-sig-arg>bgColor</span>)</span></code>
+<br />
+Quick drawing routine for rectangles.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.EuclidTurtle-class.html#cSquare" class="summary-sig-name"><code>cSquare</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>side_length</span>,
+          <span class=summary-sig-arg>width</span>,
+          <span class=summary-sig-arg>color</span>,
+          <span class=summary-sig-arg>bgColor</span>)</span></code>
+<br />
+Quick drawing routine for squares.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.EuclidTurtle-class.html#drawEuclidCoords" class="summary-sig-name"><code>drawEuclidCoords</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Draw the cartesian (x, y) coordinate system.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.EuclidTurtle-class.html#euclid_scale" class="summary-sig-name"><code>euclid_scale</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>dist</span>)</span></code>
+<br />
+Scale a distance to a real screen distance.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.EuclidTurtle-class.html#euclid_translate" class="summary-sig-name"><code>euclid_translate</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>position</span>)</span></code>
+<br />
+Convert to real screen coordinates.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.EuclidTurtle-class.html#euclid_unscale" class="summary-sig-name"><code>euclid_unscale</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>dist</span>)</span></code>
+<br />
+Scale a distance from a real screen distance.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.EuclidTurtle-class.html#euclid_untranslate" class="summary-sig-name"><code>euclid_untranslate</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>position</span>)</span></code>
+<br />
+Convert from real screen coordinates.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.EuclidTurtle-class.html#euclidean" class="summary-sig-name"><code>euclidean</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>drawCoords</span>)</span></code>
+<br />
+Set up the coordinate system.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.EuclidTurtle-class.html#forward" class="summary-sig-name"><code>forward</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>dist</span>)</span></code>
+<br />
+Move the turtle forward a distance</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.EuclidTurtle-class.html#line" class="summary-sig-name"><code>line</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>p1</span>,
+          <span class=summary-sig-arg>p2</span>)</span></code>
+<br />
+Draw a line which includes these 2 points.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.EuclidTurtle-class.html#line_point_slope" class="summary-sig-name"><code>line_point_slope</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>p</span>,
+          <span class=summary-sig-arg>m</span>)</span></code>
+<br />
+Draw a line through a point with a slope.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.EuclidTurtle-class.html#lineSegment" class="summary-sig-name"><code>lineSegment</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>p1</span>,
+          <span class=summary-sig-arg>p2</span>)</span></code>
+<br />
+Draw a line segment between 2 points.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.EuclidTurtle-class.html#lineTo" class="summary-sig-name"><code>lineTo</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>position</span>)</span></code>
+<br />
+Move turtle to position, drawing a line</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.EuclidTurtle-class.html#moveTo" class="summary-sig-name"><code>moveTo</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>position</span>)</span></code>
+<br />
+Move turtle to position, without drawing a line</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.EuclidTurtle-class.html#rectangle" class="summary-sig-name"><code>rectangle</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>side_length</span>,
+          <span class=summary-sig-arg>side_width</span>,
+          <span class=summary-sig-arg>clockwise</span>,
+          <span class=summary-sig-arg>width</span>,
+          <span class=summary-sig-arg>color</span>,
+          <span class=summary-sig-arg>bgColor</span>)</span></code>
+<br />
+Quick drawing routine for rectangles.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.EuclidTurtle-class.html#reset" class="summary-sig-name"><code>reset</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Clear the screen to LBLUE, and return Penguin to home</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.EuclidTurtle-class.html#square" class="summary-sig-name"><code>square</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>side_length</span>,
+          <span class=summary-sig-arg>clockwise</span>,
+          <span class=summary-sig-arg>width</span>,
+          <span class=summary-sig-arg>color</span>,
+          <span class=summary-sig-arg>bgColor</span>)</span></code>
+<br />
+Quick drawing square.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.EuclidTurtle-class.html#where" class="summary-sig-name"><code>where</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Briefly show the current position of the turtle.</td></tr>
+<tr bgcolor="#e8f0f8" class="group">
+  <th colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;Inherited from Turtle</th></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Turtle-class.html#backward" class="summary-sig-name"><code>backward</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>dist</span>)</span></code>
+<br />
+Move the turtle backward distance.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Turtle-class.html#begin" class="summary-sig-name"><code>begin</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>interactive</span>)</span></code>
+<br />
+Start a new layer for drawing.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Turtle-class.html#begin_fill" class="summary-sig-name"><code>begin_fill</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Start saving points for filling a polygon later</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Turtle-class.html#blink" class="summary-sig-name"><code>blink</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>times</span>,
+          <span class=summary-sig-arg>delay</span>)</span></code>
+<br />
+Flash the turtle on and off.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Turtle-class.html#clear" class="summary-sig-name"><code>clear</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>surface</span>)</span></code>
+<br />
+erase sprite image to background, returning affected rect</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Turtle-class.html#clearScreen" class="summary-sig-name"><code>clearScreen</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Clear the screen to background color.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Turtle-class.html#commit" class="summary-sig-name"><code>commit</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Copy drawing layer to base window.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Turtle-class.html#commit_fill" class="summary-sig-name"><code>commit_fill</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>color</span>)</span></code>
+<br />
+Fill the polygon of saved points</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Turtle-class.html#draw" class="summary-sig-name"><code>draw</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>surface</span>)</span></code>
+<br />
+draw image, returning affected rect</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Turtle-class.html#get_deg" class="summary-sig-name"><code>get_deg</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+return current turtle direction.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Turtle-class.html#grow" class="summary-sig-name"><code>grow</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>dx</span>,
+          <span class=summary-sig-arg>dy</span>)</span></code>
+<br />
+Resize the window (larger)</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Turtle-class.html#hide" class="summary-sig-name"><code>hide</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Set the penguin icon invisible</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Turtle-class.html#home" class="summary-sig-name"><code>home</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Move back to the home position</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Turtle-class.html#left" class="summary-sig-name"><code>left</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>d</span>)</span></code>
+<br />
+Turn left (counter-clockwise) a number of degrees</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Turtle-class.html#nudge_color" class="summary-sig-name"><code>nudge_color</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>red</span>,
+          <span class=summary-sig-arg>blue</span>,
+          <span class=summary-sig-arg>green</span>)</span></code>
+<br />
+Change the pen color by given amounts.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Turtle-class.html#penDown" class="summary-sig-name"><code>penDown</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Put pen down, ready to draw</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Turtle-class.html#penUp" class="summary-sig-name"><code>penUp</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Pull pen up.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Turtle-class.html#refresh" class="summary-sig-name"><code>refresh</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Update the display.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Turtle-class.html#right" class="summary-sig-name"><code>right</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>d</span>)</span></code>
+<br />
+Turn right (clockwise) a number of degrees</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Turtle-class.html#rollback" class="summary-sig-name"><code>rollback</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Throw out drawing layer.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Turtle-class.html#rollback_fill" class="summary-sig-name"><code>rollback_fill</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Throw out list of saved points</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Turtle-class.html#save" class="summary-sig-name"><code>save</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>filename</span>)</span></code>
+<br />
+Save background (the picture) as filename</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Turtle-class.html#set_background" class="summary-sig-name"><code>set_background</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>color</span>)</span></code>
+<br />
+Set the background color</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Turtle-class.html#set_color" class="summary-sig-name"><code>set_color</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>color</span>,
+          <span class=summary-sig-arg>r</span>,
+          <span class=summary-sig-arg>g</span>,
+          <span class=summary-sig-arg>b</span>)</span></code>
+<br />
+Set the color for drawing.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Turtle-class.html#set_fontSize" class="summary-sig-name"><code>set_fontSize</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>fontSize</span>)</span></code>
+<br />
+Set default font size for <a 
+href="pygsear.Drawable.Turtle-class.html#write" 
+class="link"><code>write</code></a> and <a 
+href="pygsear.Drawable.Turtle-class.html#where" 
+class="link"><code>where</code></a></td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Turtle-class.html#set_home" class="summary-sig-name"><code>set_home</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>pos</span>)</span></code>
+<br />
+Set the Penguin's home position</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Turtle-class.html#set_visible" class="summary-sig-name"><code>set_visible</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>vis</span>)</span></code>
+<br />
+Set the penguin icon visible</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Turtle-class.html#set_width" class="summary-sig-name"><code>set_width</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>width</span>)</span></code>
+<br />
+Set line width for drawing.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Turtle-class.html#show" class="summary-sig-name"><code>show</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Set the penguin icon visible</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Turtle-class.html#shrink" class="summary-sig-name"><code>shrink</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>dx</span>,
+          <span class=summary-sig-arg>dy</span>)</span></code>
+<br />
+Resize the window (smaller)</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Turtle-class.html#turnTo" class="summary-sig-name"><code>turnTo</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>deg</span>)</span></code>
+<br />
+Set turtle's direction to deg (degrees).</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Turtle-class.html#update" class="summary-sig-name"><code>update</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>dirty</span>)</span></code>
+<br />
+Update the display</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Turtle-class.html#wait" class="summary-sig-name"><code>wait</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Read pygame events until mouse click or any key press.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Turtle-class.html#write" class="summary-sig-name"><code>write</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>text</span>,
+          <span class=summary-sig-arg>fontSize</span>,
+          <span class=summary-sig-arg>color</span>,
+          <span class=summary-sig-arg>bgColor</span>)</span></code>
+<br />
+Draw text from current position, and at current angle.</td></tr>
+<tr bgcolor="#e8f0f8" class="group">
+  <th colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;Inherited from RotatedImage</th></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.RotatedImage-class.html#flip" class="summary-sig-name"><code>flip</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>key</span>)</span></code>
+<br />
+Switch images for the sprite</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.RotatedImage-class.html#get_rotation" class="summary-sig-name"><code>get_rotation</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+return angle of rotation</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.RotatedImage-class.html#move" class="summary-sig-name"><code>move</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+set position to next position on path</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.RotatedImage-class.html#rotate" class="summary-sig-name"><code>rotate</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>rad</span>)</span></code>
+<br />
+rotate to the left by radians</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.RotatedImage-class.html#rotate_left" class="summary-sig-name"><code>rotate_left</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+set rotation rate to +2</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.RotatedImage-class.html#rotate_right" class="summary-sig-name"><code>rotate_right</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+set rotation rate to -2</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.RotatedImage-class.html#rotate_stop" class="summary-sig-name"><code>rotate_stop</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+set rotation rate to 0</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.RotatedImage-class.html#rotate_towards" class="summary-sig-name"><code>rotate_towards</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>point</span>)</span></code>
+<br />
+turn as quickly as possible towards a point</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.RotatedImage-class.html#set_closest" class="summary-sig-name"><code>set_closest</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+flip to the image for the current direction</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.RotatedImage-class.html#set_image" class="summary-sig-name"><code>set_image</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>key</span>)</span></code>
+<br />
+Change which image is being shown.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.RotatedImage-class.html#set_rotation" class="summary-sig-name"><code>set_rotation</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>direction</span>)</span></code>
+<br />
+set angle of rotation</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.RotatedImage-class.html#set_rotationRate" class="summary-sig-name"><code>set_rotationRate</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>rate</span>)</span></code>
+<br />
+set rate of rotation in radians / second</td></tr>
+<tr bgcolor="#e8f0f8" class="group">
+  <th colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;Inherited from MultiImage</th></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.MultiImage-class.html#addImage" class="summary-sig-name"><code>addImage</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>filename</span>,
+          <span class=summary-sig-arg>image</span>,
+          <span class=summary-sig-arg>colorkey</span>,
+          <span class=summary-sig-arg>convert</span>)</span></code>
+<br />
+add image to list of available images</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.MultiImage-class.html#removeImage" class="summary-sig-name"><code>removeImage</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>key</span>)</span></code>
+<br />
+remove image by name</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.MultiImage-class.html#stretch" class="summary-sig-name"><code>stretch</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>dx</span>,
+          <span class=summary-sig-arg>dy</span>,
+          <span class=summary-sig-arg>size</span>,
+          <span class=summary-sig-arg>keepAspectRatio</span>)</span></code>
+<br />
+Change the size of sprite's image, and rect.</td></tr>
+<tr bgcolor="#e8f0f8" class="group">
+  <th colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;Inherited from Drawable</th></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">        bool
+</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Drawable-class.html#can_see" class="summary-sig-name"><code>can_see</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>target</span>,
+          <span class=summary-sig-arg>blocking_rects_list</span>)</span></code>
+<br />
+Performs a los (line of sight) check from the center of the source to 
+the center of the target.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Drawable-class.html#center" class="summary-sig-name"><code>center</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>x</span>,
+          <span class=summary-sig-arg>y</span>,
+          <span class=summary-sig-arg>dx</span>,
+          <span class=summary-sig-arg>dy</span>)</span></code>
+<br />
+Align the Drawable in its layer</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">        <code>bool</code>
+</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Drawable-class.html#collide" class="summary-sig-name"><code>collide</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>other</span>)</span></code>
+<br />
+return True if this sprite and other sprite overlap.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">        <code>Drawable</code> or <code>False</code>
+</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Drawable-class.html#collidelist" class="summary-sig-name"><code>collidelist</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>lothers</span>)</span></code>
+<br />
+return True if this sprite and any in list of others collide.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">        <code>List</code>
+</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Drawable-class.html#collidelistall" class="summary-sig-name"><code>collidelistall</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>lothers</span>)</span></code>
+<br />
+return True if this sprite and any in list of others collide.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Drawable-class.html#direction" class="summary-sig-name"><code>direction</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>point</span>)</span></code>
+<br />
+return the direction from the sprite to a point</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Drawable-class.html#distance" class="summary-sig-name"><code>distance</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>point</span>)</span></code>
+<br />
+return the distance from the sprite to a point</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Drawable-class.html#get_position" class="summary-sig-name"><code>get_position</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+return a copy of the sprite's position</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Drawable-class.html#get_size" class="summary-sig-name"><code>get_size</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+return size of sprite's rect.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Drawable-class.html#nudge" class="summary-sig-name"><code>nudge</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>dx</span>,
+          <span class=summary-sig-arg>dy</span>)</span></code>
+<br />
+Move sprite.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Drawable-class.html#onscreen" class="summary-sig-name"><code>onscreen</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>slack</span>,
+          <span class="summary-sig-kwarg">**kw</span>)</span></code>
+<br />
+return True if image is on the screen or layer.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Drawable-class.html#pause" class="summary-sig-name"><code>pause</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+stop moving along Path</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Drawable-class.html#runPath" class="summary-sig-name"><code>runPath</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>frames</span>)</span></code>
+<br />
+call move() continuously</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Drawable-class.html#set_crect" class="summary-sig-name"><code>set_crect</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>crect</span>)</span></code>
+<br />
+set the collision <code>pygame.Rect</code> used for collision 
+checking.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Drawable-class.html#set_path" class="summary-sig-name"><code>set_path</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>path</span>)</span></code>
+<br />
+set which path to follow</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Drawable-class.html#set_position" class="summary-sig-name"><code>set_position</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>location</span>,
+          <span class="summary-sig-vararg">*args</span>)</span></code>
+<br />
+Move sprite to location.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Drawable-class.html#set_positionRandom" class="summary-sig-name"><code>set_positionRandom</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>slack</span>)</span></code>
+<br />
+Move sprite to a random location on screen</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Drawable-class.html#set_size" class="summary-sig-name"><code>set_size</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>size</span>)</span></code>
+<br />
+Set size of sprite's rect.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Drawable-class.html#solid" class="summary-sig-name"><code>solid</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>other</span>,
+          <span class=summary-sig-arg>move_both</span>)</span></code>
+<br />
+move sprite so that it does not overlap with other sprite</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Drawable-class.html#uclear" class="summary-sig-name"><code>uclear</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>surface</span>)</span></code>
+<br />
+clear sprite and update display</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Drawable-class.html#udraw" class="summary-sig-name"><code>udraw</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>surface</span>)</span></code>
+<br />
+Draw image and update display.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Drawable-class.html#unpause" class="summary-sig-name"><code>unpause</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+start moving along Path</td></tr>
+<tr bgcolor="#e8f0f8" class="group">
+  <th colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;Inherited from Sprite</th></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygame.sprite.Sprite-class.html#__repr__" class="summary-sig-name"><code>__repr__</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygame.sprite.Sprite-class.html#add" class="summary-sig-name"><code>add</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class="summary-sig-vararg">*groups</span>)</span></code>
+<br />
+add(group or list of of groups, ...) add a sprite to container</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygame.sprite.Sprite-class.html#add_internal" class="summary-sig-name"><code>add_internal</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>group</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygame.sprite.Sprite-class.html#alive" class="summary-sig-name"><code>alive</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+alive() -&gt; bool check to see if the sprite is in any groups</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygame.sprite.Sprite-class.html#groups" class="summary-sig-name"><code>groups</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+groups() -&gt; list of groups list used sprite containers</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygame.sprite.Sprite-class.html#kill" class="summary-sig-name"><code>kill</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+kill() remove this sprite from all groups</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygame.sprite.Sprite-class.html#remove" class="summary-sig-name"><code>remove</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class="summary-sig-vararg">*groups</span>)</span></code>
+<br />
+remove(group or list of groups, ...) remove a sprite from 
+container</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygame.sprite.Sprite-class.html#remove_internal" class="summary-sig-name"><code>remove_internal</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>group</span>)</span></code>
+</td></tr>
+<tr bgcolor="#e8f0f8" class="group">
+  <th colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;Inherited from object</th></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="__builtin__.object-class.html#__delattr__" class="summary-sig-name"><code>__delattr__</code></a>(<span class="summary-sig-vararg">...</span>)</span></code>
+<br />
+x.__delattr__('name') &lt;==&gt; del x.name</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="__builtin__.object-class.html#__getattribute__" class="summary-sig-name"><code>__getattribute__</code></a>(<span class="summary-sig-vararg">...</span>)</span></code>
+<br />
+x.__getattribute__('name') &lt;==&gt; x.name</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="__builtin__.object-class.html#__hash__" class="summary-sig-name"><code>__hash__</code></a>(<span class=summary-sig-arg>x</span>)</span></code>
+<br />
+x.__hash__() &lt;==&gt; hash(x)</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="__builtin__.object-class.html#__reduce__" class="summary-sig-name"><code>__reduce__</code></a>(<span class="summary-sig-vararg">...</span>)</span></code>
+<br />
+helper for pickle</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="__builtin__.object-class.html#__reduce_ex__" class="summary-sig-name"><code>__reduce_ex__</code></a>(<span class="summary-sig-vararg">...</span>)</span></code>
+<br />
+helper for pickle</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="__builtin__.object-class.html#__setattr__" class="summary-sig-name"><code>__setattr__</code></a>(<span class="summary-sig-vararg">...</span>)</span></code>
+<br />
+x.__setattr__('name', value) &lt;==&gt; x.name = value</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="__builtin__.object-class.html#__str__" class="summary-sig-name"><code>__str__</code></a>(<span class=summary-sig-arg>x</span>)</span></code>
+<br />
+x.__str__() &lt;==&gt; str(x)</td></tr>
+<tr bgcolor="#e8f0f8" class="group">
+  <th colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;Inherited from type</th></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="__builtin__.type-class.html#__new__" class="summary-sig-name"><code>__new__</code></a>(<span class=summary-sig-arg>T</span>,
+          <span class=summary-sig-arg>S</span>,
+          <span class="summary-sig-vararg">...</span>)</span></code>
+<br />
+T.__new__(S, ...) -&gt; a new object with type S, a subtype of T</td></tr>
+</table><br />
+
+
+<!-- =========== START OF CLASS VARIABLE SUMMARY =========== -->
+<table class="summary" border="1" cellpadding="3" cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="summary">
+  <th colspan="2">Class Variable Summary</th></tr>
+<tr bgcolor="#e8f0f8" class="group">
+  <th colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;Inherited from Turtle</th></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1"><code>tuple</code></font></td>
+<td><b><a href="pygsear.Drawable.Turtle-class.html#BGCOLOR"><code>BGCOLOR</code></a></b> = <span title="(0, 0, 0)"><code>(0,&nbsp;0,&nbsp;0)                                      </code>
+</span></td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1"><code>tuple</code></font></td>
+<td><b><a href="pygsear.Drawable.Turtle-class.html#COLOR"><code>COLOR</code></a></b> = <span title="(255, 255, 255)"><code>(255,&nbsp;255,&nbsp;255)                                  </code>
+</span></td></tr>
+<tr bgcolor="#e8f0f8" class="group">
+  <th colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;Inherited from MultiImage</th></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1"><code>NoneType</code></font></td>
+<td><b><a href="pygsear.Drawable.MultiImage-class.html#filenames"><code>filenames</code></a></b> = <span title="None">None&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr>
+</table><br />
+
+
+<!-- =========== START OF METHOD DETAILS =========== -->
+<table class="details" border="1" cellpadding="3" cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="details">
+  <th colspan="2">Method Details</th></tr>
+</table>
+
+<a name="cCircle"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">cCircle</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>radius</span>,
+          <span class=sig-arg>color</span>=<span class=sig-default>None</span>,
+          <span class=sig-arg>width</span>=<span class=sig-default>None</span>)</span>
+  </h3>
+  <p>Quick drawing circle, centered on current position.</p>
+  <p>Does not move the turtle (ie, the turtle will be returned to its 
+  present location before returning)</p>
+  &quot;Quick drawing&quot; means that this function draws the circle 
+  by calling <code>pygame.draw.circle</code> and not by simulating the 
+  drawing of a circle with a number of line segments and turns, which 
+  would be much slower.
+  <dl><dt></dt><dd>
+    <dl><dt><b>Parameters:</b></dt>
+      <dd><code><b>radius</b></code> -
+         Radius of circle to draw. The center will be the current 
+        location.
+      <dd><code><b>color</b></code> -
+         Color to use for drawing circle, or the string 'random' to 
+        choose a random color. Does not affect the turtle's pen color 
+        (ie, the pen color will be restored before returning)
+      <dd><code><b>width</b></code> -
+         Thickness of line to use when drawing, or Zero (0) to fill 
+        with color.
+      </dd>
+    </dl>
+    <dl><dt><b>Overrides:</b></dt>
+      <dd><a href="pygsear.Drawable.Turtle-class.html#cCircle"><code>pygsear.Drawable.Turtle.cCircle</code></a> <i>(inherited documentation)</i>
+</dd>
+    </dl>
+  </dd></dl>
+</td></tr></table>
+
+<a name="circle"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">circle</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>radius</span>,
+          <span class=sig-arg>clockwise</span>=<span class=sig-default>1</span>,
+          <span class=sig-arg>color</span>=<span class=sig-default>None</span>,
+          <span class=sig-arg>width</span>=<span class=sig-default>None</span>)</span>
+  </h3>
+  <p>Quick drawing circle. Starting from current position and 
+  rotation.</p>
+  &quot;Quick drawing&quot; means that this function draws the circle 
+  by calling <code>pygame.draw.circle</code> and not by simulating the 
+  drawing of a circle with a number of line segments and turns, which 
+  would be much slower.
+  <dl><dt></dt><dd>
+    <dl><dt><b>Parameters:</b></dt>
+      <dd><code><b>radius</b></code> -
+         Radius of circle to draw. The center will be 90 degrees from 
+        the current direction.
+      <dd><code><b>clockwise</b></code> -
+         Draw the circle turning clockwise from the current position, 
+        or if False, turn counter-clockwise.
+      <dd><code><b>color</b></code> -
+         Color to use for drawing circle, or the string 'random' to 
+        choose a random color. Does not affect the turtle's pen color 
+        (ie, the pen color will be restored before returning)
+      <dd><code><b>width</b></code> -
+         Thickness of line to use when drawing, or Zero (0) to fill 
+        with color.
+      </dd>
+    </dl>
+    <dl><dt><b>Overrides:</b></dt>
+      <dd><a href="pygsear.Drawable.Turtle-class.html#circle"><code>pygsear.Drawable.Turtle.circle</code></a> <i>(inherited documentation)</i>
+</dd>
+    </dl>
+  </dd></dl>
+</td></tr></table>
+
+<a name="cRectangle"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">cRectangle</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>side_length</span>=<span class=sig-default>20</span>,
+          <span class=sig-arg>side_width</span>=<span class=sig-default>10</span>,
+          <span class=sig-arg>width</span>=<span class=sig-default>None</span>,
+          <span class=sig-arg>color</span>=<span class=sig-default>None</span>,
+          <span class=sig-arg>bgColor</span>=<span class=sig-default>(0,&nbsp;51,&nbsp;0,&nbsp;0)</span>)</span>
+  </h3>
+  <p>Quick drawing routine for rectangles.</p>
+  Rectangle is centered on current position.
+  <dl><dt></dt><dd>
+    <dl><dt><b>Parameters:</b></dt>
+      <dd><code><b>side_length</b></code> -
+         length of 1st and 3rd sides drawn
+      <dd><code><b>side_width</b></code> -
+         length of 2nd and last sides drawn
+      <dd><code><b>width</b></code> -
+         thickness of outline of rectangle width 0 means rectangle 
+        should be filled with color
+      <dd><code><b>color</b></code> -
+         RGB tuple, color of rectangle
+      <dd><code><b>bgColor</b></code> -
+         background color. Note that rectangle is not constrained to 
+        align horizontally or verically.
+      </dd>
+    </dl>
+    <dl><dt><b>Overrides:</b></dt>
+      <dd><a href="pygsear.Drawable.Turtle-class.html#cRectangle"><code>pygsear.Drawable.Turtle.cRectangle</code></a> <i>(inherited documentation)</i>
+</dd>
+    </dl>
+  </dd></dl>
+</td></tr></table>
+
+<a name="cSquare"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">cSquare</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>side_length</span>=<span class=sig-default>2</span>,
+          <span class=sig-arg>width</span>=<span class=sig-default>None</span>,
+          <span class=sig-arg>color</span>=<span class=sig-default>None</span>,
+          <span class=sig-arg>bgColor</span>=<span class=sig-default>(0,&nbsp;51,&nbsp;0,&nbsp;0)</span>)</span>
+  </h3>
+  <p>Quick drawing routine for squares.</p>
+  Square is centered on current position.
+  <dl><dt></dt><dd>
+    <dl><dt><b>Parameters:</b></dt>
+      <dd><code><b>side_length</b></code> -
+         length of all sides drawn
+      <dd><code><b>width</b></code> -
+         thickness of outline of square width 0 means square should be 
+        filled with color
+      <dd><code><b>color</b></code> -
+         RGB tuple, color of square
+      <dd><code><b>bgColor</b></code> -
+         background color. Note that square is not constrained to align 
+        horizontally or verically.
+      </dd>
+    </dl>
+    <dl><dt><b>Overrides:</b></dt>
+      <dd><a href="pygsear.Drawable.Turtle-class.html#cSquare"><code>pygsear.Drawable.Turtle.cSquare</code></a> <i>(inherited documentation)</i>
+</dd>
+    </dl>
+  </dd></dl>
+</td></tr></table>
+
+<a name="drawEuclidCoords"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">drawEuclidCoords</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+  Draw the cartesian (x, y) coordinate system.
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="euclid_scale"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">euclid_scale</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>dist</span>)</span>
+  </h3>
+  Scale a distance to a real screen distance.
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="euclid_translate"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">euclid_translate</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>position</span>)</span>
+  </h3>
+  Convert to real screen coordinates.
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="euclid_unscale"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">euclid_unscale</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>dist</span>)</span>
+  </h3>
+  Scale a distance from a real screen distance.
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="euclid_untranslate"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">euclid_untranslate</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>position</span>)</span>
+  </h3>
+  Convert from real screen coordinates.
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="euclidean"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">euclidean</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>drawCoords</span>=<span class=sig-default>1</span>)</span>
+  </h3>
+  Set up the coordinate system.
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="forward"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">forward</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>dist</span>)</span>
+  </h3>
+  Move the turtle forward a distance
+  <dl><dt></dt><dd>
+    <dl><dt><b>Parameters:</b></dt>
+      <dd><code><b>dist</b></code> -
+         Number of pixels to move.
+      </dd>
+    </dl>
+    <dl><dt><b>Overrides:</b></dt>
+      <dd><a href="pygsear.Drawable.Turtle-class.html#forward"><code>pygsear.Drawable.Turtle.forward</code></a> <i>(inherited documentation)</i>
+</dd>
+    </dl>
+  </dd></dl>
+</td></tr></table>
+
+<a name="line"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">line</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>p1</span>,
+          <span class=sig-arg>p2</span>)</span>
+  </h3>
+  <p>Draw a line which includes these 2 points.</p>
+  <p>Unlike <code>Turtle.line</code> this will draw as much of the line 
+  as will fit on the screen, not just a line segment connecting the two 
+  points.</p>
+  This function ignores the state of the pen.
+  <dl><dt></dt><dd>
+    <dl><dt><b>Parameters:</b></dt>
+      <dd><code><b>p1</b></code> -
+         One point on the line.
+      <dd><code><b>p2</b></code> -
+         Second point on the line.
+      </dd>
+    </dl>
+    <dl><dt><b>Overrides:</b></dt>
+      <dd><a href="pygsear.Drawable.Turtle-class.html#line"><code>pygsear.Drawable.Turtle.line</code></a></dd>
+    </dl>
+  </dd></dl>
+</td></tr></table>
+
+<a name="line_point_slope"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">line_point_slope</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>p</span>,
+          <span class=sig-arg>m</span>)</span>
+  </h3>
+  <p>Draw a line through a point with a slope.</p>
+  This function ignores the state of the pen.
+  <dl><dt></dt><dd>
+    <dl><dt><b>Parameters:</b></dt>
+      <dd><code><b>p</b></code> -
+         One point on the line.
+      <dd><code><b>m</b></code> -
+         Slope of the line.
+      </dd>
+    </dl>
+  </dd></dl>
+</td></tr></table>
+
+<a name="lineSegment"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">lineSegment</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>p1</span>,
+          <span class=sig-arg>p2</span>)</span>
+  </h3>
+  <p>Draw a line segment between 2 points.</p>
+  This function ignores the state of the pen.
+  <dl><dt></dt><dd>
+    <dl><dt><b>Parameters:</b></dt>
+      <dd><code><b>p1</b></code> -
+         One endpoint of line segment.
+      <dd><code><b>p2</b></code> -
+         Second endpoint of line segment.
+      </dd>
+    </dl>
+  </dd></dl>
+</td></tr></table>
+
+<a name="lineTo"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">lineTo</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>position</span>)</span>
+  </h3>
+  <p>Move turtle to position, drawing a line</p>
+  Note that this ignores the state of the pen (up or down) and always 
+  draws a line in the current pen color.
+  <dl><dt></dt><dd>
+    <dl><dt><b>Parameters:</b></dt>
+      <dd><code><b>position</b></code> -
+         Point <code>(x, y)</code> to draw the line to.
+      </dd>
+    </dl>
+    <dl><dt><b>Overrides:</b></dt>
+      <dd><a href="pygsear.Drawable.Turtle-class.html#lineTo"><code>pygsear.Drawable.Turtle.lineTo</code></a> <i>(inherited documentation)</i>
+</dd>
+    </dl>
+  </dd></dl>
+</td></tr></table>
+
+<a name="moveTo"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">moveTo</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>position</span>)</span>
+  </h3>
+  Move turtle to position, without drawing a line
+  <dl><dt></dt><dd>
+    <dl><dt><b>Parameters:</b></dt>
+      <dd><code><b>position</b></code> -
+         Point <code>(x, y)</code> to move to
+      </dd>
+    </dl>
+    <dl><dt><b>Overrides:</b></dt>
+      <dd><a href="pygsear.Drawable.Turtle-class.html#moveTo"><code>pygsear.Drawable.Turtle.moveTo</code></a> <i>(inherited documentation)</i>
+</dd>
+    </dl>
+  </dd></dl>
+</td></tr></table>
+
+<a name="rectangle"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">rectangle</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>side_length</span>=<span class=sig-default>20</span>,
+          <span class=sig-arg>side_width</span>=<span class=sig-default>10</span>,
+          <span class=sig-arg>clockwise</span>=<span class=sig-default>1</span>,
+          <span class=sig-arg>width</span>=<span class=sig-default>None</span>,
+          <span class=sig-arg>color</span>=<span class=sig-default>None</span>,
+          <span class=sig-arg>bgColor</span>=<span class=sig-default>(0,&nbsp;51,&nbsp;0,&nbsp;0)</span>)</span>
+  </h3>
+  Quick drawing routine for rectangles.
+  <dl><dt></dt><dd>
+    <dl><dt><b>Parameters:</b></dt>
+      <dd><code><b>side_length</b></code> -
+         length of 1st and 3rd sides drawn
+      <dd><code><b>side_width</b></code> -
+         length of 2nd and last sides drawn
+      <dd><code><b>clockwise</b></code> -
+         all turns will be 90 degrees right clockwise 0 means all turns 
+        will be 90 degrees left
+      <dd><code><b>width</b></code> -
+         thickness of outline of rectangle width 0 means rectangle 
+        should be filled with color
+      <dd><code><b>color</b></code> -
+         RGB tuple, color of rectangle
+      <dd><code><b>bgColor</b></code> -
+         background color. Note that rectangle is not constrained to 
+        align horizontally or verically.
+      </dd>
+    </dl>
+    <dl><dt><b>Overrides:</b></dt>
+      <dd><a href="pygsear.Drawable.Turtle-class.html#rectangle"><code>pygsear.Drawable.Turtle.rectangle</code></a> <i>(inherited documentation)</i>
+</dd>
+    </dl>
+  </dd></dl>
+</td></tr></table>
+
+<a name="reset"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">reset</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+  <p>Clear the screen to LBLUE, and return Penguin to home</p>
+  also reset pen color to WHITE, and turn back to 90 deg (standing 
+  straight up)
+  <dl><dt></dt><dd>
+    <dl><dt><b>Overrides:</b></dt>
+      <dd><a href="pygsear.Drawable.Turtle-class.html#reset"><code>pygsear.Drawable.Turtle.reset</code></a> <i>(inherited documentation)</i>
+</dd>
+    </dl>
+  </dd></dl>
+</td></tr></table>
+
+<a name="square"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">square</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>side_length</span>=<span class=sig-default>20</span>,
+          <span class=sig-arg>clockwise</span>=<span class=sig-default>1</span>,
+          <span class=sig-arg>width</span>=<span class=sig-default>None</span>,
+          <span class=sig-arg>color</span>=<span class=sig-default>None</span>,
+          <span class=sig-arg>bgColor</span>=<span class=sig-default>(0,&nbsp;51,&nbsp;0,&nbsp;0)</span>)</span>
+  </h3>
+  Quick drawing square.
+  <dl><dt></dt><dd>
+    <dl><dt><b>Parameters:</b></dt>
+      <dd><code><b>side_length</b></code> -
+         length of all sides drawn
+      <dd><code><b>clockwise</b></code> -
+         all turns will be 90 degrees right clockwise 0 means all turns 
+        will be 90 degrees left
+      <dd><code><b>width</b></code> -
+         thickness of outline of square width 0 means square should be 
+        filled with color
+      <dd><code><b>color</b></code> -
+         RGB tuple, color of square
+      <dd><code><b>bgColor</b></code> -
+         background color. Note that square is not constrained to align 
+        horizontally or verically.
+      </dd>
+    </dl>
+    <dl><dt><b>Overrides:</b></dt>
+      <dd><a href="pygsear.Drawable.Turtle-class.html#square"><code>pygsear.Drawable.Turtle.square</code></a> <i>(inherited documentation)</i>
+</dd>
+    </dl>
+  </dd></dl>
+</td></tr></table>
+
+<a name="where"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">where</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+  Briefly show the current position of the turtle.
+  <dl><dt></dt><dd>
+    <dl><dt><b>Overrides:</b></dt>
+      <dd><a href="pygsear.Drawable.Turtle-class.html#where"><code>pygsear.Drawable.Turtle.where</code></a> <i>(inherited documentation)</i>
+</dd>
+    </dl>
+  </dd></dl>
+</td></tr></table>
+<br />
+
+
+<!-- =========== START OF NAVBAR =========== -->
+<table class="navbar" border="0" width="100%" cellpadding="0" bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="center">
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="pygsear-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="trees.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="indices.html">Index</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td align="left"><font size="-2">Generated by Epydoc 2.0 on Sat Dec  9 14:11:20 2006</font></td>
+    <td align="right"><a href="http://epydoc.sourceforge.net"
+                      ><font size="-2">http://epydoc.sf.net</font></a></td>
+  </tr>
+</table>
+</body>
+</html>

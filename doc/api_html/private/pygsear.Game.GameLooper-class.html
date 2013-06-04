@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>pygsear.Game.GameLooper</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css"></link>
+</head>
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+
+<!-- =========== START OF NAVBAR =========== -->
+<table class="navbar" border="0" width="100%" cellpadding="0" bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="center">
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="pygsear-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="trees.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="indices.html">Index</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <font size="-1"><b class="breadcrumbs">
+        <a href="pygsear-module.html">Package&nbsp;pygsear</a> ::
+        <a href="pygsear.Game-module.html">Module&nbsp;Game</a> ::
+        Class&nbsp;GameLooper
+      </b></font></br>
+    </td>
+    <td><table cellpadding="0" cellspacing="0">
+      <tr><td align="right"><font size="-2">[show&nbsp;private&nbsp;|&nbsp;<a href="../public/pygsear.Game.GameLooper-class.html">hide&nbsp;private</a>]</font></td></tr>
+      <tr><td align="right"><font size="-2">[<a href="frames.html"target="_top">frames</a>&nbsp;|&nbsp;<a href="pygsear.Game.GameLooper-class.html" target="_top">no&nbsp;frames</a>]</font></td></tr>
+    </table></td>
+</tr></table>
+
+<!-- =========== START OF CLASS DESCRIPTION =========== -->
+<h2 class="class">Class GameLooper</h2>
+
+<dl><dt><b>Known Subclasses:</b></dt>
+<dd>
+    <a href="pygsear.Game.Game-class.html"><code>Game</code></a>,
+    <a href="pygsear.Game.GameConfiguration-class.html"><code>GameConfiguration</code></a></dd></dl>
+
+<hr/>
+
+Abstract game control class
+<hr/>
+
+
+<!-- =========== START OF METHOD SUMMARY =========== -->
+<table class="summary" border="1" cellpadding="3" cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="summary">
+  <th colspan="2">Method Summary</th></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><a name="__init__"></a><span class="summary-sig"><span class="summary-sig-name">__init__</span>(<span class=summary-sig-arg>self</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Game.GameLooper-class.html#addEventGroup" class="summary-sig-name"><code>addEventGroup</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>event</span>)</span></code>
+<br />
+return a <a href="pygsear.Event.EventGroup-class.html" 
+class="link"><code>Event.EventGroup</code></a></td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Game.GameLooper-class.html#addGroup" class="summary-sig-name"><code>addGroup</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>sprites</span>,
+          <span class=summary-sig-arg>layer</span>)</span></code>
+<br />
+return a <a href="pygsear.Drawable.SpriteGroup-class.html" 
+class="link"><code>SpriteGroup</code></a></td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Game.GameLooper-class.html#addLayer" class="summary-sig-name"><code>addLayer</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>size</span>)</span></code>
+<br />
+return a <a href="pygsear.Drawable.Layer-class.html" 
+class="link"><code>Drawable.Layer</code></a> and keep track.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><a name="beep"></a><span class="summary-sig"><span class="summary-sig-name">beep</span>(<span class=summary-sig-arg>self</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Game.GameLooper-class.html#checkCollisions" class="summary-sig-name"><code>checkCollisions</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Defaults to no collision checks.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><a name="checkEvents"></a><span class="summary-sig"><span class="summary-sig-name">checkEvents</span>(<span class=summary-sig-arg>self</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><a name="loop"></a><span class="summary-sig"><span class="summary-sig-name">loop</span>(<span class=summary-sig-arg>self</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><a name="pause"></a><span class="summary-sig"><span class="summary-sig-name">pause</span>(<span class=summary-sig-arg>self</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><a name="unpause"></a><span class="summary-sig"><span class="summary-sig-name">unpause</span>(<span class=summary-sig-arg>self</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="../private/pygsear.Game.GameLooper-class.html#_quit" class="summary-sig-name"><code>_quit</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>arg</span>)</span></code>
+<br />
+set the <code>.quit</code> attribute.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="../private/pygsear.Game.GameLooper-class.html#_stop" class="summary-sig-name"><code>_stop</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>arg</span>)</span></code>
+<br />
+set the <code>.stop</code> attribute.</td></tr>
+</table><br />
+
+
+<!-- =========== START OF METHOD DETAILS =========== -->
+<table class="details" border="1" cellpadding="3" cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="details">
+  <th colspan="2">Method Details</th></tr>
+</table>
+
+<a name="addEventGroup"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">addEventGroup</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>event</span>=<span class=sig-default>()</span>)</span>
+  </h3>
+  <p>return a <a href="pygsear.Event.EventGroup-class.html" 
+  class="link"><code>Event.EventGroup</code></a></p>
+  At this point, this is just a convenience to get a new Group, but it 
+  could at some point in the future keep track of all groups in the 
+  Game.
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="addGroup"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">addGroup</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>sprites</span>=<span class=sig-default>[]</span>,
+          <span class=sig-arg>layer</span>=<span class=sig-default>None</span>)</span>
+  </h3>
+  <p>return a <a href="pygsear.Drawable.SpriteGroup-class.html" 
+  class="link"><code>SpriteGroup</code></a></p>
+  At this point, this is just a convenience to get a new Group, but it 
+  could at some point in the future keep track of all groups in the 
+  Game.
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="addLayer"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">addLayer</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>size</span>=<span class=sig-default>None</span>)</span>
+  </h3>
+  <p>return a <a href="pygsear.Drawable.Layer-class.html" 
+  class="link"><code>Drawable.Layer</code></a> and keep track.</p>
+  Each <code>Game</code> has a list (<code>.layers</code>) of all the 
+  layers in the game.
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="checkCollisions"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">checkCollisions</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+  <p>Defaults to no collision checks.</p>
+  Game.mainloop() will call this function once each time through the 
+  loop. Subclasses should override to check collisions and perform the 
+  needed actions.
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="_quit"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">_quit</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>arg</span>=<span class=sig-default>None</span>)</span>
+  </h3>
+  <p>set the <code>.quit</code> attribute.</p>
+  This should cause a break on the next loop, and should also cause 
+  the Game to end and the program to exit.
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="_stop"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">_stop</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>arg</span>=<span class=sig-default>None</span>)</span>
+  </h3>
+  <p>set the <code>.stop</code> attribute.</p>
+  This should cause a break on the next loop.
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+<br />
+
+
+<!-- =========== START OF NAVBAR =========== -->
+<table class="navbar" border="0" width="100%" cellpadding="0" bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="center">
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="pygsear-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="trees.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="indices.html">Index</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td align="left"><font size="-2">Generated by Epydoc 2.0 on Sat Dec  9 14:11:20 2006</font></td>
+    <td align="right"><a href="http://epydoc.sourceforge.net"
+                      ><font size="-2">http://epydoc.sf.net</font></a></td>
+  </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>pygsear.Path.Path</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css"></link>
+</head>
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+
+<!-- =========== START OF NAVBAR =========== -->
+<table class="navbar" border="0" width="100%" cellpadding="0" bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="center">
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="pygsear-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="trees.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="indices.html">Index</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <font size="-1"><b class="breadcrumbs">
+        <a href="pygsear-module.html">Package&nbsp;pygsear</a> ::
+        <a href="pygsear.Path-module.html">Module&nbsp;Path</a> ::
+        Class&nbsp;Path
+      </b></font></br>
+    </td>
+    <td><table cellpadding="0" cellspacing="0">
+      <tr><td align="right"><font size="-2">[show&nbsp;private&nbsp;|&nbsp;<a href="../public/pygsear.Path.Path-class.html">hide&nbsp;private</a>]</font></td></tr>
+      <tr><td align="right"><font size="-2">[<a href="frames.html"target="_top">frames</a>&nbsp;|&nbsp;<a href="pygsear.Path.Path-class.html" target="_top">no&nbsp;frames</a>]</font></td></tr>
+    </table></td>
+</tr></table>
+
+<!-- =========== START OF CLASS DESCRIPTION =========== -->
+<h2 class="class">Class Path</h2>
+
+<dl><dt><b>Known Subclasses:</b></dt>
+<dd>
+    <a href="pygsear.Path.BrownianPath-class.html"><code>BrownianPath</code></a>,
+    <a href="pygsear.Path.ListPath-class.html"><code>ListPath</code></a>,
+    <a href="pygsear.Path.Offset_path-class.html"><code>Offset_path</code></a>,
+    <a href="pygsear.Path.PathNG-class.html"><code>PathNG</code></a>,
+    <a href="pygsear.Path.RandomOnscreen-class.html"><code>RandomOnscreen</code></a>,
+    <a href="pygsear.Path.StationaryPath-class.html"><code>StationaryPath</code></a>,
+    <a href="pygsear.Path.SuperPath-class.html"><code>SuperPath</code></a>,
+    <a href="pygsear.Path.TurtlePath-class.html"><code>TurtlePath</code></a>,
+    <a href="pygsear.Path.VelocityPath-class.html"><code>VelocityPath</code></a></dd></dl>
+
+<hr/>
+
+A set of points.
+<hr/>
+
+
+<!-- =========== START OF METHOD SUMMARY =========== -->
+<table class="summary" border="1" cellpadding="3" cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="summary">
+  <th colspan="2">Method Summary</th></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Path.Path-class.html#__init__" class="summary-sig-name"><code>__init__</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>position</span>,
+          <span class=summary-sig-arg>duration</span>)</span></code>
+<br />
+Initialize the Path</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><a name="__iter__"></a><span class="summary-sig"><span class="summary-sig-name">__iter__</span>(<span class=summary-sig-arg>self</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Path.Path-class.html#get_direction" class="summary-sig-name"><code>get_direction</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Return the direction from the previous location to the current 
+location.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Path.Path-class.html#get_position" class="summary-sig-name"><code>get_position</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Return position along Path</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Path.Path-class.html#get_x" class="summary-sig-name"><code>get_x</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+return x component of position</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Path.Path-class.html#get_y" class="summary-sig-name"><code>get_y</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+return y component of position</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Path.Path-class.html#next" class="summary-sig-name"><code>next</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+return position</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Path.Path-class.html#onscreen" class="summary-sig-name"><code>onscreen</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>slack</span>)</span></code>
+<br />
+true if path position is on main window</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Path.Path-class.html#pause" class="summary-sig-name"><code>pause</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+stop moving along path</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Path.Path-class.html#reset" class="summary-sig-name"><code>reset</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+put path back to original state</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Path.Path-class.html#set_endTime" class="summary-sig-name"><code>set_endTime</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>duration</span>)</span></code>
+<br />
+Path will raise StopIteration after self.duration seconds</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Path.Path-class.html#set_position" class="summary-sig-name"><code>set_position</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>position</span>)</span></code>
+<br />
+Set position and update positionOld</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Path.Path-class.html#unpause" class="summary-sig-name"><code>unpause</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+resume moving along path</td></tr>
+</table><br />
+
+
+<!-- =========== START OF METHOD DETAILS =========== -->
+<table class="details" border="1" cellpadding="3" cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="details">
+  <th colspan="2">Method Details</th></tr>
+</table>
+
+<a name="__init__"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">__init__</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>position</span>=<span class=sig-default>(0,&nbsp;0)</span>,
+          <span class=sig-arg>duration</span>=<span class=sig-default>None</span>)</span>
+    <br /><i>(Constructor)</i>
+  </h3>
+  Initialize the Path
+  <dl><dt></dt><dd>
+    <dl><dt><b>Parameters:</b></dt>
+      <dd><code><b>position</b></code> -
+         initial coordinates
+      <dd><code><b>duration</b></code> -
+         Seconds until Path should raise <code>StopIteration</code>
+      </dd>
+    </dl>
+  </dd></dl>
+</td></tr></table>
+
+<a name="get_direction"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">get_direction</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+  Return the direction from the previous location to the current 
+  location.
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="get_position"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">get_position</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+  Return position along Path
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="get_x"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">get_x</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+  return x component of position
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="get_y"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">get_y</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+  return y component of position
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="next"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">next</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+  return position
+  <dl><dt></dt><dd>
+    <dl><dt><b>Raises:</b></dt>
+      <dd><code><b>StopIteration</b></code> -
+        If duration has expired, or if position has been set to (None, 
+        None)
+    </dl>
+  </dd></dl>
+</td></tr></table>
+
+<a name="onscreen"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">onscreen</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>slack</span>=<span class=sig-default>0</span>)</span>
+  </h3>
+  <p>true if path position is on main window</p>
+  Drawable objects should be using the 
+  <code>pygsear.Drawable.onscreen</code> instead.
+  <dl><dt></dt><dd>
+    <dl><dt><b>Parameters:</b></dt>
+      <dd><code><b>slack</b></code> -
+         position can be this far off window and still return True.
+      </dd>
+    </dl>
+  </dd></dl>
+</td></tr></table>
+
+<a name="pause"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">pause</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+  stop moving along path
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="reset"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">reset</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+  put path back to original state
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="set_endTime"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">set_endTime</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>duration</span>=<span class=sig-default>None</span>)</span>
+  </h3>
+  Path will raise StopIteration after self.duration seconds
+  <dl><dt></dt><dd>
+    <dl><dt><b>Parameters:</b></dt>
+      <dd><code><b>duration</b></code> -
+         Seconds until Path should raise <code>StopIteration</code>. If 
+        duration is not specified (or is None) uses 
+        <code>self.duration</code> so that <code>set_endTime()</code> can 
+        be used to reset the <code>Path</code> duration counter.
+      </dd>
+    </dl>
+  </dd></dl>
+</td></tr></table>
+
+<a name="set_position"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">set_position</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>position</span>)</span>
+  </h3>
+  <p>Set position and update positionOld</p>
+  <p>For many paths, this position will be overridden by the next call to 
+  next() and so it will never be seen.</p>
+  Also, many Drawable objects maintain their own position and so a 
+  call to that object's set_position may be more appropriate.
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="unpause"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">unpause</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+  resume moving along path
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+<br />
+
+
+<!-- =========== START OF NAVBAR =========== -->
+<table class="navbar" border="0" width="100%" cellpadding="0" bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="center">
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="pygsear-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="trees.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="indices.html">Index</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td align="left"><font size="-2">Generated by Epydoc 2.0 on Sat Dec  9 14:11:20 2006</font></td>
+    <td align="right"><a href="http://epydoc.sourceforge.net"
+                      ><font size="-2">http://epydoc.sf.net</font></a></td>
+  </tr>
+</table>
+</body>
+</html>

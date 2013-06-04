@@ -1,0 +1,703 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>pygsear.Drawable.PSprite</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css"></link>
+</head>
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+
+<!-- =========== START OF NAVBAR =========== -->
+<table class="navbar" border="0" width="100%" cellpadding="0" bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="center">
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="pygsear-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="trees.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="indices.html">Index</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <font size="-1"><b class="breadcrumbs">
+        <a href="pygsear-module.html">Package&nbsp;pygsear</a> ::
+        <a href="pygsear.Drawable-module.html">Module&nbsp;Drawable</a> ::
+        Class&nbsp;PSprite
+      </b></font></br>
+    </td>
+    <td><table cellpadding="0" cellspacing="0">
+      <tr><td align="right"><font size="-2">[show&nbsp;private&nbsp;|&nbsp;<a href="../public/pygsear.Drawable.PSprite-class.html">hide&nbsp;private</a>]</font></td></tr>
+      <tr><td align="right"><font size="-2">[<a href="frames.html"target="_top">frames</a>&nbsp;|&nbsp;<a href="pygsear.Drawable.PSprite-class.html" target="_top">no&nbsp;frames</a>]</font></td></tr>
+    </table></td>
+</tr></table>
+
+<!-- =========== START OF CLASS DESCRIPTION =========== -->
+<h2 class="class">Class PSprite</h2>
+
+<pre class="base-tree">
+<a href="__builtin__.object-class.html"><code>object</code></a> --+    
+         |    
+    <a href="pygame.sprite.Sprite-class.html"><code>Sprite</code></a> --+
+             |
+            <b>PSprite</b>
+</pre><br />
+
+<hr/>
+
+New pygsear sprite class. Not used by any other code yet.
+<hr/>
+
+
+<!-- =========== START OF METHOD SUMMARY =========== -->
+<table class="summary" border="1" cellpadding="3" cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="summary">
+  <th colspan="2">Method Summary</th></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><a name="__init__"></a><span class="summary-sig"><span class="summary-sig-name">__init__</span>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>window</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.PSprite-class.html#clear" class="summary-sig-name"><code>clear</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Erase sprite to background</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.PSprite-class.html#direction" class="summary-sig-name"><code>direction</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>rect</span>)</span></code>
+<br />
+return the direction from the sprite to a point</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.PSprite-class.html#distance" class="summary-sig-name"><code>distance</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>rect</span>)</span></code>
+<br />
+return the distance from the sprite to a point</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.PSprite-class.html#draw" class="summary-sig-name"><code>draw</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Blit image to layer</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><a name="move"></a><span class="summary-sig"><span class="summary-sig-name">move</span>(<span class=summary-sig-arg>self</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.PSprite-class.html#onscreen" class="summary-sig-name"><code>onscreen</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>slack</span>,
+          <span class="summary-sig-kwarg">**kw</span>)</span></code>
+<br />
+return True if image is on the screen or layer.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><a name="pause"></a><span class="summary-sig"><span class="summary-sig-name">pause</span>(<span class=summary-sig-arg>self</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.PSprite-class.html#udraw" class="summary-sig-name"><code>udraw</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Draw image and update display.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><a name="unpause"></a><span class="summary-sig"><span class="summary-sig-name">unpause</span>(<span class=summary-sig-arg>self</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><a name="_get_ax"></a><span class="summary-sig"><span class="summary-sig-name">_get_ax</span>(<span class=summary-sig-arg>self</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><a name="_get_ay"></a><span class="summary-sig"><span class="summary-sig-name">_get_ay</span>(<span class=summary-sig-arg>self</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><a name="_get_bottom"></a><span class="summary-sig"><span class="summary-sig-name">_get_bottom</span>(<span class=summary-sig-arg>self</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><a name="_get_center"></a><span class="summary-sig"><span class="summary-sig-name">_get_center</span>(<span class=summary-sig-arg>self</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><a name="_get_centerx"></a><span class="summary-sig"><span class="summary-sig-name">_get_centerx</span>(<span class=summary-sig-arg>self</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><a name="_get_centery"></a><span class="summary-sig"><span class="summary-sig-name">_get_centery</span>(<span class=summary-sig-arg>self</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><a name="_get_image"></a><span class="summary-sig"><span class="summary-sig-name">_get_image</span>(<span class=summary-sig-arg>self</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><a name="_get_left"></a><span class="summary-sig"><span class="summary-sig-name">_get_left</span>(<span class=summary-sig-arg>self</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><a name="_get_position"></a><span class="summary-sig"><span class="summary-sig-name">_get_position</span>(<span class=summary-sig-arg>self</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><a name="_get_right"></a><span class="summary-sig"><span class="summary-sig-name">_get_right</span>(<span class=summary-sig-arg>self</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><a name="_get_size"></a><span class="summary-sig"><span class="summary-sig-name">_get_size</span>(<span class=summary-sig-arg>self</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><a name="_get_top"></a><span class="summary-sig"><span class="summary-sig-name">_get_top</span>(<span class=summary-sig-arg>self</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><a name="_get_topleft"></a><span class="summary-sig"><span class="summary-sig-name">_get_topleft</span>(<span class=summary-sig-arg>self</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><a name="_get_vx"></a><span class="summary-sig"><span class="summary-sig-name">_get_vx</span>(<span class=summary-sig-arg>self</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><a name="_get_vy"></a><span class="summary-sig"><span class="summary-sig-name">_get_vy</span>(<span class=summary-sig-arg>self</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><a name="_set_ax"></a><span class="summary-sig"><span class="summary-sig-name">_set_ax</span>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>ax</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><a name="_set_ay"></a><span class="summary-sig"><span class="summary-sig-name">_set_ay</span>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>ay</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><a name="_set_bottom"></a><span class="summary-sig"><span class="summary-sig-name">_set_bottom</span>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>bottom</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><a name="_set_center"></a><span class="summary-sig"><span class="summary-sig-name">_set_center</span>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>center</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><a name="_set_centerx"></a><span class="summary-sig"><span class="summary-sig-name">_set_centerx</span>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>centerx</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><a name="_set_centery"></a><span class="summary-sig"><span class="summary-sig-name">_set_centery</span>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>centery</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><a name="_set_image"></a><span class="summary-sig"><span class="summary-sig-name">_set_image</span>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>image</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><a name="_set_left"></a><span class="summary-sig"><span class="summary-sig-name">_set_left</span>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>left</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><a name="_set_position"></a><span class="summary-sig"><span class="summary-sig-name">_set_position</span>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>position</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><a name="_set_right"></a><span class="summary-sig"><span class="summary-sig-name">_set_right</span>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>right</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><a name="_set_size"></a><span class="summary-sig"><span class="summary-sig-name">_set_size</span>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>size</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><a name="_set_top"></a><span class="summary-sig"><span class="summary-sig-name">_set_top</span>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>top</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><a name="_set_topleft"></a><span class="summary-sig"><span class="summary-sig-name">_set_topleft</span>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>topleft</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><a name="_set_vx"></a><span class="summary-sig"><span class="summary-sig-name">_set_vx</span>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>vx</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><a name="_set_vy"></a><span class="summary-sig"><span class="summary-sig-name">_set_vy</span>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>vy</span>)</span></code>
+</td></tr>
+<tr bgcolor="#e8f0f8" class="group">
+  <th colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;Inherited from Sprite</th></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygame.sprite.Sprite-class.html#__repr__" class="summary-sig-name"><code>__repr__</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygame.sprite.Sprite-class.html#add" class="summary-sig-name"><code>add</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class="summary-sig-vararg">*groups</span>)</span></code>
+<br />
+add(group or list of of groups, ...) add a sprite to container</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygame.sprite.Sprite-class.html#add_internal" class="summary-sig-name"><code>add_internal</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>group</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygame.sprite.Sprite-class.html#alive" class="summary-sig-name"><code>alive</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+alive() -&gt; bool check to see if the sprite is in any groups</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygame.sprite.Sprite-class.html#groups" class="summary-sig-name"><code>groups</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+groups() -&gt; list of groups list used sprite containers</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygame.sprite.Sprite-class.html#kill" class="summary-sig-name"><code>kill</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+kill() remove this sprite from all groups</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygame.sprite.Sprite-class.html#remove" class="summary-sig-name"><code>remove</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class="summary-sig-vararg">*groups</span>)</span></code>
+<br />
+remove(group or list of groups, ...) remove a sprite from 
+container</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygame.sprite.Sprite-class.html#remove_internal" class="summary-sig-name"><code>remove_internal</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>group</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygame.sprite.Sprite-class.html#update" class="summary-sig-name"><code>update</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class="summary-sig-vararg">*args</span>)</span></code>
+</td></tr>
+<tr bgcolor="#e8f0f8" class="group">
+  <th colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;Inherited from object</th></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="__builtin__.object-class.html#__delattr__" class="summary-sig-name"><code>__delattr__</code></a>(<span class="summary-sig-vararg">...</span>)</span></code>
+<br />
+x.__delattr__('name') &lt;==&gt; del x.name</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="__builtin__.object-class.html#__getattribute__" class="summary-sig-name"><code>__getattribute__</code></a>(<span class="summary-sig-vararg">...</span>)</span></code>
+<br />
+x.__getattribute__('name') &lt;==&gt; x.name</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="__builtin__.object-class.html#__hash__" class="summary-sig-name"><code>__hash__</code></a>(<span class=summary-sig-arg>x</span>)</span></code>
+<br />
+x.__hash__() &lt;==&gt; hash(x)</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="__builtin__.object-class.html#__reduce__" class="summary-sig-name"><code>__reduce__</code></a>(<span class="summary-sig-vararg">...</span>)</span></code>
+<br />
+helper for pickle</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="__builtin__.object-class.html#__reduce_ex__" class="summary-sig-name"><code>__reduce_ex__</code></a>(<span class="summary-sig-vararg">...</span>)</span></code>
+<br />
+helper for pickle</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="__builtin__.object-class.html#__setattr__" class="summary-sig-name"><code>__setattr__</code></a>(<span class="summary-sig-vararg">...</span>)</span></code>
+<br />
+x.__setattr__('name', value) &lt;==&gt; x.name = value</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="__builtin__.object-class.html#__str__" class="summary-sig-name"><code>__str__</code></a>(<span class=summary-sig-arg>x</span>)</span></code>
+<br />
+x.__str__() &lt;==&gt; str(x)</td></tr>
+<tr bgcolor="#e8f0f8" class="group">
+  <th colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;Inherited from type</th></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="__builtin__.type-class.html#__new__" class="summary-sig-name"><code>__new__</code></a>(<span class=summary-sig-arg>T</span>,
+          <span class=summary-sig-arg>S</span>,
+          <span class="summary-sig-vararg">...</span>)</span></code>
+<br />
+T.__new__(S, ...) -&gt; a new object with type S, a subtype of T</td></tr>
+</table><br />
+
+
+<!-- =========== START OF PROPERTY SUMMARY =========== -->
+<table class="summary" border="1" cellpadding="3" cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="summary">
+  <th colspan="2">Property Summary</th></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><b><a href="pygsear.Drawable.PSprite-class.html#ax"><code>ax</code></a></b></td></tr><tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><b><a href="pygsear.Drawable.PSprite-class.html#ay"><code>ay</code></a></b></td></tr><tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><b><a href="pygsear.Drawable.PSprite-class.html#bottom"><code>bottom</code></a></b></td></tr><tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><b><a href="pygsear.Drawable.PSprite-class.html#center"><code>center</code></a></b></td></tr><tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><b><a href="pygsear.Drawable.PSprite-class.html#centerx"><code>centerx</code></a></b></td></tr><tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><b><a href="pygsear.Drawable.PSprite-class.html#centery"><code>centery</code></a></b></td></tr><tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><b><a href="pygsear.Drawable.PSprite-class.html#image"><code>image</code></a></b></td></tr><tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><b><a href="pygsear.Drawable.PSprite-class.html#left"><code>left</code></a></b></td></tr><tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><b><a href="pygsear.Drawable.PSprite-class.html#position"><code>position</code></a></b></td></tr><tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><b><a href="pygsear.Drawable.PSprite-class.html#right"><code>right</code></a></b></td></tr><tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><b><a href="pygsear.Drawable.PSprite-class.html#size"><code>size</code></a></b></td></tr><tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><b><a href="pygsear.Drawable.PSprite-class.html#top"><code>top</code></a></b></td></tr><tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><b><a href="pygsear.Drawable.PSprite-class.html#topleft"><code>topleft</code></a></b></td></tr><tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><b><a href="pygsear.Drawable.PSprite-class.html#vx"><code>vx</code></a></b></td></tr><tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><b><a href="pygsear.Drawable.PSprite-class.html#vy"><code>vy</code></a></b></td></tr></table><br />
+
+
+<!-- =========== START OF METHOD DETAILS =========== -->
+<table class="details" border="1" cellpadding="3" cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="details">
+  <th colspan="2">Method Details</th></tr>
+</table>
+
+<a name="clear"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">clear</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+  Erase sprite to background
+  <dl><dt></dt><dd>
+    <dl><dt><b>Returns:</b></dt>
+      <dd>
+        Affected <code>pygame.Rect</code> which can be passed to 
+        <code>pygame.display.update</code>.
+      </dd>
+    </dl>
+  </dd></dl>
+</td></tr></table>
+
+<a name="direction"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">direction</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>rect</span>)</span>
+  </h3>
+  return the direction from the sprite to a point
+  <dl><dt></dt><dd>
+    <dl><dt><b>Parameters:</b></dt>
+      <dd><code><b>rect</b></code> -
+         Rect to find the direction to.
+      </dd>
+    </dl>
+  </dd></dl>
+</td></tr></table>
+
+<a name="distance"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">distance</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>rect</span>)</span>
+  </h3>
+  return the distance from the sprite to a point
+  <dl><dt></dt><dd>
+    <dl><dt><b>Parameters:</b></dt>
+      <dd><code><b>rect</b></code> -
+         Rect to find the distance to.
+      </dd>
+    </dl>
+  </dd></dl>
+</td></tr></table>
+
+<a name="draw"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">draw</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+  Blit image to layer
+  <dl><dt></dt><dd>
+    <dl><dt><b>Returns:</b></dt>
+      <dd>
+        Affected <code>pygame.Rect</code> which can be passed to 
+        <code>pygame.display.update</code>.
+      </dd>
+    </dl>
+  </dd></dl>
+</td></tr></table>
+
+<a name="onscreen"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">onscreen</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>slack</span>=<span class=sig-default>None</span>,
+          <span class="sig-kwarg">**kw</span>)</span>
+  </h3>
+  <p>return True if image is on the screen or layer.</p>
+  If <code>slack</code> is None, and keyword args are included for 
+  particular edges (ie <code>top</code> or <code>right</code>) checks 
+  <i>only</i> the edges passed by keyword.
+  <dl><dt></dt><dd>
+    <dl><dt><b>Parameters:</b></dt>
+      <dd><code><b>slack</b></code> -
+         Distance sprite can be off screen and still return True. Use a 
+        negative number to restrict the sprite to a smaller area.
+      </dd>
+    </dl>
+    <dl><dt><b>Keyword Parameters:</b></dt>
+      <dd><code><b>left</b></code> -
+         Sprite can be this far from left edge.
+      <dd><code><b>right</b></code> -
+         Sprite can be this far from right edge.
+      <dd><code><b>top</b></code> -
+         Sprite can be this far from top edge.
+      <dd><code><b>bottom</b></code> -
+         Sprite can be this far from bottom edge.
+      <dd><code><b>clamp</b></code> -
+         Sprite will be moved completely onscreen.
+      </dd>
+    </dl>
+  </dd></dl>
+</td></tr></table>
+
+<a name="udraw"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">udraw</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+  <p>Draw image and update display.</p>
+  This function is almost exclusively for use in an interactive 
+  session, since it updates the screen immediately after drawing the 
+  sprite instead of waiting and updating after all sprites have been 
+  drawn.
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+<br />
+
+
+<!-- =========== START OF PROPERTY DETAILS =========== -->
+<table class="details" border="1" cellpadding="3" cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="details">
+  <th colspan="2">Property Details</th></tr>
+</table>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+
+<a name="ax"></a>
+<h3>ax</h3>
+<dl>
+  <dt></dt>
+  <dd>
+    <dl>
+      <dt><b>Get Method:</b></dt>
+      <dd><span class="summary-sig"><a href="../private/pygsear.Drawable-module.html#_get_ax" class="summary-sig-name"><code>_get_ax</code></a>(<span class=summary-sig-arg>self</span>)</span>
+      </dd>
+      <dt><b>Set Method:</b></dt>
+      <dd><span class="summary-sig"><a href="../private/pygsear.Drawable-module.html#_set_ax" class="summary-sig-name"><code>_set_ax</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>ax</span>)</span>
+      </dd>
+    </dl>
+  </dd>
+</dl></td></tr></table><table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+
+<a name="ay"></a>
+<h3>ay</h3>
+<dl>
+  <dt></dt>
+  <dd>
+    <dl>
+      <dt><b>Get Method:</b></dt>
+      <dd><span class="summary-sig"><a href="../private/pygsear.Drawable-module.html#_get_ay" class="summary-sig-name"><code>_get_ay</code></a>(<span class=summary-sig-arg>self</span>)</span>
+      </dd>
+      <dt><b>Set Method:</b></dt>
+      <dd><span class="summary-sig"><a href="../private/pygsear.Drawable-module.html#_set_ay" class="summary-sig-name"><code>_set_ay</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>ay</span>)</span>
+      </dd>
+    </dl>
+  </dd>
+</dl></td></tr></table><table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+
+<a name="bottom"></a>
+<h3>bottom</h3>
+<dl>
+  <dt></dt>
+  <dd>
+    <dl>
+      <dt><b>Get Method:</b></dt>
+      <dd><span class="summary-sig"><a href="../private/pygsear.Drawable-module.html#_get_bottom" class="summary-sig-name"><code>_get_bottom</code></a>(<span class=summary-sig-arg>self</span>)</span>
+      </dd>
+      <dt><b>Set Method:</b></dt>
+      <dd><span class="summary-sig"><a href="../private/pygsear.Drawable-module.html#_set_bottom" class="summary-sig-name"><code>_set_bottom</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>bottom</span>)</span>
+      </dd>
+    </dl>
+  </dd>
+</dl></td></tr></table><table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+
+<a name="center"></a>
+<h3>center</h3>
+<dl>
+  <dt></dt>
+  <dd>
+    <dl>
+      <dt><b>Get Method:</b></dt>
+      <dd><span class="summary-sig"><a href="../private/pygsear.Drawable-module.html#_get_center" class="summary-sig-name"><code>_get_center</code></a>(<span class=summary-sig-arg>self</span>)</span>
+      </dd>
+      <dt><b>Set Method:</b></dt>
+      <dd><span class="summary-sig"><a href="../private/pygsear.Drawable-module.html#_set_center" class="summary-sig-name"><code>_set_center</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>center</span>)</span>
+      </dd>
+    </dl>
+  </dd>
+</dl></td></tr></table><table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+
+<a name="centerx"></a>
+<h3>centerx</h3>
+<dl>
+  <dt></dt>
+  <dd>
+    <dl>
+      <dt><b>Get Method:</b></dt>
+      <dd><span class="summary-sig"><a href="../private/pygsear.Drawable-module.html#_get_centerx" class="summary-sig-name"><code>_get_centerx</code></a>(<span class=summary-sig-arg>self</span>)</span>
+      </dd>
+      <dt><b>Set Method:</b></dt>
+      <dd><span class="summary-sig"><a href="../private/pygsear.Drawable-module.html#_set_centerx" class="summary-sig-name"><code>_set_centerx</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>centerx</span>)</span>
+      </dd>
+    </dl>
+  </dd>
+</dl></td></tr></table><table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+
+<a name="centery"></a>
+<h3>centery</h3>
+<dl>
+  <dt></dt>
+  <dd>
+    <dl>
+      <dt><b>Get Method:</b></dt>
+      <dd><span class="summary-sig"><a href="../private/pygsear.Drawable-module.html#_get_centery" class="summary-sig-name"><code>_get_centery</code></a>(<span class=summary-sig-arg>self</span>)</span>
+      </dd>
+      <dt><b>Set Method:</b></dt>
+      <dd><span class="summary-sig"><a href="../private/pygsear.Drawable-module.html#_set_centery" class="summary-sig-name"><code>_set_centery</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>centery</span>)</span>
+      </dd>
+    </dl>
+  </dd>
+</dl></td></tr></table><table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+
+<a name="image"></a>
+<h3>image</h3>
+<dl>
+  <dt></dt>
+  <dd>
+    <dl>
+      <dt><b>Get Method:</b></dt>
+      <dd><span class="summary-sig"><a href="../private/pygsear.Drawable-module.html#_get_image" class="summary-sig-name"><code>_get_image</code></a>(<span class=summary-sig-arg>self</span>)</span>
+      </dd>
+      <dt><b>Set Method:</b></dt>
+      <dd><span class="summary-sig"><a href="../private/pygsear.Drawable-module.html#_set_image" class="summary-sig-name"><code>_set_image</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>image</span>)</span>
+      </dd>
+    </dl>
+  </dd>
+</dl></td></tr></table><table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+
+<a name="left"></a>
+<h3>left</h3>
+<dl>
+  <dt></dt>
+  <dd>
+    <dl>
+      <dt><b>Get Method:</b></dt>
+      <dd><span class="summary-sig"><a href="../private/pygsear.Drawable-module.html#_get_left" class="summary-sig-name"><code>_get_left</code></a>(<span class=summary-sig-arg>self</span>)</span>
+      </dd>
+      <dt><b>Set Method:</b></dt>
+      <dd><span class="summary-sig"><a href="../private/pygsear.Drawable-module.html#_set_left" class="summary-sig-name"><code>_set_left</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>left</span>)</span>
+      </dd>
+    </dl>
+  </dd>
+</dl></td></tr></table><table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+
+<a name="position"></a>
+<h3>position</h3>
+<dl>
+  <dt></dt>
+  <dd>
+    <dl>
+      <dt><b>Get Method:</b></dt>
+      <dd><span class="summary-sig"><a href="../private/pygsear.Drawable-module.html#_get_position" class="summary-sig-name"><code>_get_position</code></a>(<span class=summary-sig-arg>self</span>)</span>
+      </dd>
+      <dt><b>Set Method:</b></dt>
+      <dd><span class="summary-sig"><a href="../private/pygsear.Drawable-module.html#_set_position" class="summary-sig-name"><code>_set_position</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>position</span>)</span>
+      </dd>
+    </dl>
+  </dd>
+</dl></td></tr></table><table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+
+<a name="right"></a>
+<h3>right</h3>
+<dl>
+  <dt></dt>
+  <dd>
+    <dl>
+      <dt><b>Get Method:</b></dt>
+      <dd><span class="summary-sig"><a href="../private/pygsear.Drawable-module.html#_get_right" class="summary-sig-name"><code>_get_right</code></a>(<span class=summary-sig-arg>self</span>)</span>
+      </dd>
+      <dt><b>Set Method:</b></dt>
+      <dd><span class="summary-sig"><a href="../private/pygsear.Drawable-module.html#_set_right" class="summary-sig-name"><code>_set_right</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>right</span>)</span>
+      </dd>
+    </dl>
+  </dd>
+</dl></td></tr></table><table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+
+<a name="size"></a>
+<h3>size</h3>
+<dl>
+  <dt></dt>
+  <dd>
+    <dl>
+      <dt><b>Get Method:</b></dt>
+      <dd><span class="summary-sig"><a href="../private/pygsear.Drawable-module.html#_get_size" class="summary-sig-name"><code>_get_size</code></a>(<span class=summary-sig-arg>self</span>)</span>
+      </dd>
+      <dt><b>Set Method:</b></dt>
+      <dd><span class="summary-sig"><a href="../private/pygsear.Drawable-module.html#_set_size" class="summary-sig-name"><code>_set_size</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>size</span>)</span>
+      </dd>
+    </dl>
+  </dd>
+</dl></td></tr></table><table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+
+<a name="top"></a>
+<h3>top</h3>
+<dl>
+  <dt></dt>
+  <dd>
+    <dl>
+      <dt><b>Get Method:</b></dt>
+      <dd><span class="summary-sig"><a href="../private/pygsear.Drawable-module.html#_get_top" class="summary-sig-name"><code>_get_top</code></a>(<span class=summary-sig-arg>self</span>)</span>
+      </dd>
+      <dt><b>Set Method:</b></dt>
+      <dd><span class="summary-sig"><a href="../private/pygsear.Drawable-module.html#_set_top" class="summary-sig-name"><code>_set_top</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>top</span>)</span>
+      </dd>
+    </dl>
+  </dd>
+</dl></td></tr></table><table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+
+<a name="topleft"></a>
+<h3>topleft</h3>
+<dl>
+  <dt></dt>
+  <dd>
+    <dl>
+      <dt><b>Get Method:</b></dt>
+      <dd><span class="summary-sig"><a href="../private/pygsear.Drawable-module.html#_get_topleft" class="summary-sig-name"><code>_get_topleft</code></a>(<span class=summary-sig-arg>self</span>)</span>
+      </dd>
+      <dt><b>Set Method:</b></dt>
+      <dd><span class="summary-sig"><a href="../private/pygsear.Drawable-module.html#_set_topleft" class="summary-sig-name"><code>_set_topleft</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>topleft</span>)</span>
+      </dd>
+    </dl>
+  </dd>
+</dl></td></tr></table><table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+
+<a name="vx"></a>
+<h3>vx</h3>
+<dl>
+  <dt></dt>
+  <dd>
+    <dl>
+      <dt><b>Get Method:</b></dt>
+      <dd><span class="summary-sig"><a href="../private/pygsear.Drawable-module.html#_get_vx" class="summary-sig-name"><code>_get_vx</code></a>(<span class=summary-sig-arg>self</span>)</span>
+      </dd>
+      <dt><b>Set Method:</b></dt>
+      <dd><span class="summary-sig"><a href="../private/pygsear.Drawable-module.html#_set_vx" class="summary-sig-name"><code>_set_vx</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>vx</span>)</span>
+      </dd>
+    </dl>
+  </dd>
+</dl></td></tr></table><table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+
+<a name="vy"></a>
+<h3>vy</h3>
+<dl>
+  <dt></dt>
+  <dd>
+    <dl>
+      <dt><b>Get Method:</b></dt>
+      <dd><span class="summary-sig"><a href="../private/pygsear.Drawable-module.html#_get_vy" class="summary-sig-name"><code>_get_vy</code></a>(<span class=summary-sig-arg>self</span>)</span>
+      </dd>
+      <dt><b>Set Method:</b></dt>
+      <dd><span class="summary-sig"><a href="../private/pygsear.Drawable-module.html#_set_vy" class="summary-sig-name"><code>_set_vy</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>vy</span>)</span>
+      </dd>
+    </dl>
+  </dd>
+</dl></td></tr></table><br />
+
+
+<!-- =========== START OF NAVBAR =========== -->
+<table class="navbar" border="0" width="100%" cellpadding="0" bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="center">
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="pygsear-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="trees.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="indices.html">Index</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td align="left"><font size="-2">Generated by Epydoc 2.0 on Sat Dec  9 14:11:20 2006</font></td>
+    <td align="right"><a href="http://epydoc.sourceforge.net"
+                      ><font size="-2">http://epydoc.sf.net</font></a></td>
+  </tr>
+</table>
+</body>
+</html>

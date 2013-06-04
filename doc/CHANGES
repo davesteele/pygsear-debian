@@ -1,0 +1,462 @@
+version 0.53.2
+ - Fix for font rendering on Linux
+ - Fix for using dialogs from interactive interpreter
+
+
+version 0.53.1
+ - Fixes for Python 2.4 and Pygame 1.7
+
+
+version 0.53
+ - Changed algorithm for finding the directory the running program is in
+   - uses sys.argv[0] instead of sys.path[0]
+   - could possibly cause problems finding your data (but of course it
+        could also fix the problem you were having finding your data :o)
+ - Added code to make some subclassing easier by finding filenames
+    in class variables if they are not passed in during creation.
+ - Added Drawable.stretch() to change the size/shape of sprite image
+ - Fixed some transparency problems with Util.scale_image()
+   - pygsear.locals.TRANSPARENT now has an alpha channel set to 0
+ - Made PathNG.next use conf.ticks instead of pygame.time.get_ticks()
+   - fixed Drawable.runPath to deal with the change
+   - fixed lunar.py to use conf.ticks
+ - Added PathNG deceleration (set_deceleration)
+   - like acceleration, but always opposes velocity
+ - New widget ImageButton
+ - Fixed centering of Multi Drawable sprite
+ - Fixed bug with keepalive of TIMEOUT_Event
+ - Fixed crash with Util.load_images trying to load directories
+ - Changed penguin sprite image
+ - Changed penguin(turtle) picture background color
+ - Made EventGroup.TIMEOUT_Events a sprite Group
+ - New examples multi.py, grow.py and bulb.py
+ - Updates for frog game (in games dist)
+ - New games pymm, wix and zap (in games dist)
+
+
+version 0.52
+ - Fixed general Game gameOver -> restart sequence
+ - Fixed Util.load_images_dict
+ - Fixed killing SpriteGroup with levels
+ - Fixed crash bug in bezier.py
+ - Added SpriteGroup.change_level
+ - New frog game (in games dist)
+
+
+version 0.51
+ - Added new auto-repeating Repeat_KEY_Event
+ - Added conf.game handle on the Game instance
+ - Added kill method to SpriteGroup
+ - Drawable.MultiRotated fixes and improvements
+   - added framerate independent image flip code
+   - fixed bug w/ file v. filename
+ - Added restart method to Game
+ - Various Drawable.Mutli fixes and additions
+   - collide*, kill, empty
+ - Allow PathNG to have negative speed
+ - Window resize fixes (Gerrit Holl)
+ - penguin_demos.py now uses any extra command line args as a
+    list of demos to run, instead of running all of them
+ - TIMEOUT_Events by default are now killed after being called
+   - pass in keepalive=True to prevent this behavior
+ - Added Util.color to create colors from descriptive strings
+   - color('random', 'dark')  color('blue', 'light')
+ - More work on mathemorphosis (in games dist)
+ - New ntris game (like tetris with n blocks :o)
+   - kidtris too (with oversized blocks...)
+
+
+version 0.50
+ - Added speed constraint to PathNG
+ - Stop convert()ing loaded image if it has an alpha mask
+ - Added TIMEOUT_Event
+   - new example timeout.py
+ - Added more functionality to KEY_Event
+   - can now take on_press, on_hold, and on_release callbacks
+ - Made use or disabling of splash screen easier
+ - Fixed crash in interact.py loading/saving session
+ - Removed use of file as a variable name
+ - Added more euclid examples
+ - Started porting mathemorphosis (in games dist)
+
+
+version 0.49
+ - Split some games in to separate download:
+   - balloons, tanks, lunar
+   - added 2 new games, guess and dots
+ - Added new example bezier.py
+
+
+version 0.48
+ - Major change:
+   - all setFoo and getFoo methods have been changed to set_foo and get_foo
+ - Moved SpriteGroup from Game to Drawable
+   - allows some namespace cleanup, and allows intra-package
+      imports to be much simpler
+ - Fixed crash when using backspace/left-arrow in empty Console Widget
+ - Fixed a few Widgets to take None for the default window
+ - Added ColorSelector Widget
+ - Turtle classes now use ColorSelector if set_color is passed no params
+ - Removed Drawable.Prompt replaced by various Widgets
+
+
+version 0.47.3
+ - Added Sound.pause() and Sound.unpause()
+   - calls same in pygame.mixer if sound is working
+   - fixed lunar.py to use the new calls
+ - Fixed sounds being held multiple times in lunar
+   - need to be careful... sounds do not seem to be going away
+       when objects are dereferenced...
+ - Disabled Util.sound_cache for now... needs rethinking
+ - Changed folder unused to not_used to match MANIFEST.in
+   - had accidentally included unused sounds in tarball
+
+
+version 0.47.2
+ - More interact.py console tweaks
+ - Updated practice.py to use embedded console
+ - Fixed a few places passing floats instead of ints
+
+
+version 0.47.1
+ - test.py should now be more easily runnable without installing
+ - Allow load and save of penguin graphics sessions
+ - Bump up some of the default font sizes
+ - Removed inadvertent mixer.init() at start of lunar.py
+ - Use event.wait() in modal Console widget
+ - Arrow keys now work in TextInput widget
+ - Changed Turtle.setColor and nudge_color slightly
+
+
+version 0.47
+ - Added Widget.Console for embedded python interactive interpreter
+   - used in examples/interact.py for working with penguin graphics
+ - Major changes to pygsear/Event.py
+   - Event is now a subclass of pygame.sprite.Sprite
+   - added a new EventGroup which subclasses sprite.Group
+   - this allows Events to be grouped like Sprites.
+   - added new examples/events.py to test Event changes.
+ - Major cleanup to Util.load_* functions.
+   - get_dirs() now tells where to look for files to load
+ - All demos updated and are now working
+ - Drawable.Image can now take a Surface for the image
+ - Fixed bug in Drawable.String
+   - can now take an empty string
+ - Initial work at using sound
+   - use Util.load_sound to find and load .wav files
+   - load_sound will return DummySound objects if sound is broken
+   - examples/lunar.py is the first to get sounds
+ - Added line wrapped text code from Pygame PCR
+   - used in Widget.Dialog_OK and Widget.Console
+   - added trim parameter. Trims surface to just hold the text.
+
+
+version 0.46
+ - Major namespace cleanup
+   - no more "from ... import *" anywhere
+   - pygsear/__init__.py no longer imports anything
+   - pygsear.locals no longer imports all of pygame.locals
+       so you may need to import some things (like key constants)
+       explicitly from pygame.locals
+ - Major change to Screen.setBackground()
+   - must supply exactly one keyword arg:
+     - filename if you want to load the image automatically
+     - img if you have a pygame surface to use for the background
+     - tilename if you have a tile you want to load automatically
+     - tile if you have a pygame surface to use for a tile
+     - color if you want a solid RGB color
+ - docs now generated by epydoc (epydoc is great! woot!)
+ - fixed problem with background update thread in penguin.py
+   - only start thread once, not when penguin module gets reload()ed
+ - added better support for penguin lindenmayer method
+ - starting some more work on Events... and this needs work
+
+
+version 0.45
+ - now can use negative level numbers when adding sprites to
+    SpriteGroups, to put things under the default level
+ - started using a thread in penguin.py to update the display
+    once every second when in interactive mode
+   - does not play well with reload()
+ - moved Drawable.ProgressBar to Widget
+   - added VProgressBar
+ - moved Drawable.Score to Widget
+ - fixed tanks not being in sync at game start
+ - added cellular and lindenmayer penguin graphics examples
+   - adapted from code by Gregor Lingl on edu-sig@python.org
+ - started using math.hypot everywhere it makes sense
+   - idea thanks again to Gregor
+
+
+version 0.44.1
+ - added Drawable.collidelistall()
+   - returns list of all colliding sprites
+ - Drawable.solid() makes sure sprites are not colliding now
+ - continuing work on tanks.py
+   - multi-screen World now works
+   - started using twisted.python.Options
+
+
+version 0.44
+ - improvements to Drawable.Layer
+   - added Game.addLayer() to simplify using layers
+   - see examples/layer.py for sample usage
+ - add RotatedImage.rotate_towards()
+ - improvements to Game.SpriteGroup
+   - add() now takes a level parameter
+   - sprites with higher level are drawn above others
+ - more work on PathNG
+   - restrictions (xMax, vxMax, etc)
+   - updated many examples to use new PathNG features
+ - fixed (masked?) problem w/ penguin transactions
+   - use reset() between demos... there may still be a problem
+ - continuing work on tanks.py
+   - Drone is now better at not getting stuck
+   - working on making World multiple screens
+
+
+version 0.43.1
+ - tanks.py improvements
+   - synchronize world (blocks at this point) when connecting
+   - synchronize tanks
+   - add tank acceleration to remote update
+ - Fixed Drawable.StationaryStack
+   - use issubclass() to see if added sprite needs to be Stationary
+
+
+version 0.43
+ - tanks.py networking
+ - new images for lunar.py
+
+
+version 0.42.1
+ - Fixed clockwise/counter-clockwise confusion in PathNG
+ - Started work on new example: tanks
+   - plan is for a simple networked game
+
+
+version 0.42
+ - Fixed ordering of MultiRotated images
+   - now in .sort() order by filename
+ - New background for balloons.py
+ - Copied penguin demo mode to euclid.py
+   - added some euclid examples
+ - Cleaned up examples/twisted-pygame/gtkPygame.py
+   - added connections between the gtk and pygame sides
+ - Added Drawable.Turtle.nudge_color()
+   - allows changing color by integer amount or by percentage
+      ie. color_nudge(red=5) or color_nudge(blue='10%')
+ - Added Drawable.crect (rect for checking collisions)
+   - updated Drawable.collide() to use new crect
+   - updated lunar.py to use new crect
+ - Added Drawable.can_see()
+   - adapted from Python Code Repository (PCR)
+   - added new example seechase.py using can_see()
+
+
+version 0.41
+ - Added Drawable.MultiRotated
+   - useful for animations that need to be rotated
+ - Updated lunar.py to use MultiRotated
+
+
+version 0.40
+ - RotatedImage now has a rotation property
+   - separates rotation from direction of movement
+ - PathNG now has a turnRate
+   - added example catch.py using turnRate
+   - updated pathNGtest.py
+ - Added conf.MAX_TICK, used by PathNG and RotatedImage
+   - will never use a time delta more than MAX_TICK
+   - should help "skipping" problem, like when moving a window
+      or when starting another app
+ - Added welcome message when importing * from penguin.py
+   - also modified help message
+ - Fixed twist_tac_toe/GameBoard.py test()
+   - now runs error-free w/ no cmd line args
+
+
+version 0.39
+ - Trying new sectioning of Game Event creation
+   - each Game will have a setEvents() method which
+      will be called during __init__
+   - this may be more trouble than it is worth...
+   - solves some problems caused by running through
+      Game.initialize() again after a screen resize.
+      (ie, some events were being caught twice)
+
+
+version 0.38.2
+ - Added Turtle fill support
+   - start saving points to fill with begin_fill()
+   - fill or not with commit_fill() or rollback_fill()
+ - Converted Penguin.star() to use new fill method
+ - Enable show/hide penguin in demo
+ - Changed colors of bars in roti.py
+ - pong.py gets more challenging/ interesting
+ - Fixed Drawable.Stationary not clearing properly
+   - fixed balloons.py which was using Stationary
+ - Added Watcher.clear()
+   - this needs some more attention...
+
+
+version 0.38.1
+ - Turtle transactions
+   - begin() opens a new layer for drawing
+   - commit() to copy the layer down to the base layer
+   - rollback() to throw out layer
+   - added new penguin example using transactions
+ - Drawable.RotatedImage now takes an axis for rotation
+   - cx: x-value of axis   cy: y-value of axis
+ - Drawable.RotatedImage can now accept an image instead
+    of a file name
+   - use image=Surface when creating
+ - Added new example roti.py which tests RotatedImage
+ - Added Turtle.setWidth() for line width
+   - other drawing functions should respect default
+      line width also (rectangle, circle, etc)
+
+
+version 0.38
+ - Cleaned up the Drawable.Layer implementation
+   - now much easier to associate a Drawable with a
+       particular Layer
+
+
+version 0.37.1
+ - Added the missing pygsear_logo.png to the install
+
+
+version 0.37
+ - Added default splash screen for games
+
+
+version 0.36.4
+ - Added Turtle.setBackground()
+ - Brought penguin demo in to Game framework
+   - s=skip, q=quit, esc=configure
+ - Bunch of new penguin examples
+
+
+version 0.36.1
+ - More work on GameConfiguration
+   - buttons for video mode changes
+   - call to Game.resize_reset() after screen resize
+
+
+version 0.36
+ - Progress on GameConfiguration
+   - Quit button now works (Also, [ENTER] quits)
+   - Added close button X
+   - f toggles fullscreen
+   - page down to shrink window
+   - page up to grow window
+   - s to save configuration (unix only, probably)
+
+
+version 0.35.1
+ - changed Drawable.onscreen() and added Drawable.keep_onscreen()
+
+
+version 0.35
+ - Added Drawable.center() and Drawable.nudge()
+ - Refined the Layer concept
+ - give lunar lander initial upward velocity
+   - also pause() the lander until everything ready
+
+
+version 0.34
+ - Added configuration screen
+   - does not actually allow configuration yet :o)
+ - Converted all examples to use Event framework
+
+
+version 0.33
+ - Path.setEndTime() can now change Path.duration
+ - Allow penguin.py to be interrupted during test()
+   - checks for QUIT event and [ESC] during each next() call
+ - Unified Drawable.position and Path.position
+   - both now use the same .position list
+   - all access should be through the .setPosition()
+       and .getPosition() methods
+ - Added message on successful lunar.py landing
+ - Made bubble popper more framerate independent
+
+
+version 0.32
+
+ - Fixed lunar.py fuelPod
+ - Added .convert() to more surfaces (hopefully all)
+   - adding options to NOT convert if necessary
+   - some transparent images are causing problems
+      when combined with convert()
+ - Added better reset() for AccelerationPath
+
+
+version 0.31
+
+ - Added doculator.py
+   - creates docs from module doc strings
+ - SpriteGroup draw() and clear() now do not need to receive
+    references to the screen or the background
+   - all Game objects get a sprites SpriteGroup
+   - all example programs should be using the new group
+
+
+version 0.30
+
+ - Fix lunar.py fuelPod not being removed when game over
+ - Make initializing Screen.Window automatic
+   - store reference to Window in conf
+   - change Drawable classes to use automated Window
+ - More doc strings in Drawable
+ - More penguin graphics examples
+
+
+version 0.29
+
+ - Added save() method for Turtle objects. Saves the drawing in
+    the current directory. (.tga or .bmp format)
+ - Added grow() and shrink() to penguin.py to make it easier to
+    change the size of the screen
+
+
+version 0.28
+
+ - Added onscreen() method for Drawable objects
+ - Added more visible crash for lunar lander
+ - Added UFO to lunar lander game
+ - UFO drops fuel pods. Catch the pod to refuel
+
+
+version 0.27
+
+ - lunar.py (finally?) framerate independent
+   - fixed problem with acceleration rate depending on framerate
+ - Started including windows installer in installers directory
+
+
+version 0.26
+
+ - Bug fixes in lunar.py
+ - Fixed balloons.py splash screen.
+ - Added pop() for Game.SpriteGroup
+   - need to think more about how to use these groups effectively.
+ - Added doc/intro.html
+
+
+version 0.25
+
+- Path objects can now take a duration parameter. If that is present
+   on a Path with set points (ListPath, CirclePath, etc) the traversal
+   of the path will skip points or wait at points so that the path
+   takes (approximately) duration seconds to complete. On paths with
+   no set points (VelocityPath, BrownianPath) the Path will raise
+   EndOfPath after duration seconds, on the next call to next()
+- Examples now specify a duration for their paths and/or use the
+   Paths that accept a duration parameter.
+- Game.SpriteGroup takes more care to track all sprites
+- Combined penguin.py and Penguin.py in examples/ to prevent collision
+   on case insensitive filesystems.
+- Added doc/ subdirectory with changelog and start of documentation.
+

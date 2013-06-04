@@ -1,0 +1,17 @@
+pygsear is a programming framework using Python and Pygame.
+
+pygsear has classes for sprites, paths, widgets, events,
+sounds, networking (using Twisted) and more, and it comes
+with many examples.
+
+More information is available here:
+http://savannah.nongnu.org/projects/pygsear
+
+Download the latest version here:
+http://savannah.nongnu.org/files/?group=pygsear
+
+
+CHANGES:
+version 0.53.2
+ - Fix for font rendering on Linux
+ - Fix for using dialogs from interactive interpreter

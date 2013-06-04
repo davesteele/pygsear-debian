@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Module and Class Hierarchies</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css"></link>
+</head>
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+
+<!-- =========== START OF NAVBAR =========== -->
+<table class="navbar" border="0" width="100%" cellpadding="0" bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="center">
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="pygsear-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+    <th bgcolor="#70b0f0" class="navselect">&nbsp;&nbsp;&nbsp;Trees&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="indices.html">Index</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+    </td>
+    <td><table cellpadding="0" cellspacing="0">
+      <tr><td align="right"><font size="-2">[<a href="../private/trees.html">show&nbsp;private</a>&nbsp;|&nbsp;hide&nbsp;private]</font></td></tr>
+      <tr><td align="right"><font size="-2">[<a href="frames.html"target="_top">frames</a>&nbsp;|&nbsp;<a href="trees.html" target="_top">no&nbsp;frames</a>]</font></td></tr>
+    </table></td>
+</tr></table>
+
+<!-- =========== START OF MODULE HIERARCHY =========== -->
+<h2>Module Hierarchy</h2>
+<ul>
+<li> <b><a href="pygsear-module.html"><code>pygsear</code></a></b>: <i>Intended to provide a simpler, higher-level API for writing games 
+using python and pygame.</i>
+  <ul>
+    <li> <b><a href="pygsear.conf-module.html"><code>conf</code></a></b>: <i>conf.py can be used as a shared &quot;global&quot; namespace</i>
+    <li> <b><a href="pygsear.Cursor-module.html"><code>Cursor</code></a></b>: <i>Drawable objects which track the mouse.</i>
+    <li> <b><a href="pygsear.Drawable-module.html"><code>Drawable</code></a></b>: <i>Things to show on the Pygame display.</i>
+    <li> <b><a href="pygsear.Event-module.html"><code>Event</code></a></b>: <i>Keyboard and mouse event handling.</i>
+    <li> <b><a href="pygsear.Game-module.html"><code>Game</code></a></b>: <i>Game is the central object.</i>
+    <li> <b><a href="pygsear.locals-module.html"><code>locals</code></a></b>
+    <li> <b><a href="pygsear.Network-module.html"><code>Network</code></a></b>: <i>Objects used for network communication using Twisted</i>
+    <li> <b><a href="pygsear.Path-module.html"><code>Path</code></a></b>: <i>Ways for things to move around on screen</i>
+    <li> <b><a href="pygsear.Screen-module.html"><code>Screen</code></a></b>: <i>Interfaces with the Pygame display</i>
+    <li> <b><a href="pygsear.Sound-module.html"><code>Sound</code></a></b>: <i>Sounds</i>
+    <li> <b><a href="pygsear.Util-module.html"><code>Util</code></a></b>: <i>Utilities for finding and loading different resources</i>
+    <li> <b><a href="pygsear.Widget-module.html"><code>Widget</code></a></b>: <i>Graphical input devices</i>
+  </ul>
+</ul>
+
+<!-- =========== START OF CLASS HIERARCHY =========== -->
+<h2>Class Hierarchy</h2>
+<ul>
+  <li> <b><a href="__builtin__.object-class.html"><code>__builtin__.object</code></a></b>: <i>
+The most base type</i>
+    <ul>
+  <li> <b><a href="pygame.sprite.AbstractGroup-class.html"><code>pygame.sprite.AbstractGroup</code></a></b>: <i>
+A base for containers for sprites.</i>
+    <ul>
+  <li> <b><a href="pygame.sprite.Group-class.html"><code>pygame.sprite.Group</code></a></b>: <i>
+The basic Group class you will want to use.</i>
+    <ul>
+  <li> <b><a href="pygsear.Event.EventGroup-class.html"><code>pygsear.Event.EventGroup</code></a></b>: <i>
+Used to group related events.</i>
+  <li> <b><a href="pygame.sprite.RenderUpdates-class.html"><code>pygame.sprite.RenderUpdates</code></a></b>: <i>
+A sprite group that's more efficient at updating.</i>
+    <ul>
+  <li> <b><a href="pygsear.Drawable.Multi-class.html"><code>pygsear.Drawable.Multi</code></a></b>: <i>
+Made up of a group of sprites.</i>
+  <li> <b><a href="pygsear.Drawable.SpriteGroup-class.html"><code>pygsear.Drawable.SpriteGroup</code></a></b>: <i>
+Specialized <a href="pygame.sprite.Group-class.html" 
+class="link"><code>pygame.sprite.Group</code></a> with more 
+functionality.</i>
+    </ul>
+    </ul>
+    </ul>
+  <li> <b><a href="pygame.sprite.Sprite-class.html"><code>pygame.sprite.Sprite</code></a></b>: <i>
+The base class for your visible game objects.</i>
+    <ul>
+  <li> <b><a href="pygsear.Drawable.Drawable-class.html"><code>pygsear.Drawable.Drawable</code></a></b>: <i>
+Things to draw on screen.</i>
+    <ul>
+  <li> <b><a href="pygsear.Drawable.AnimatedImage-class.html"><code>pygsear.Drawable.AnimatedImage</code></a></b>: <i>
+Animated sprite using multiple images</i>
+    <ul>
+  <li> <b><a href="pygsear.Cursor.AnimatedCursor-class.html"><code>pygsear.Cursor.AnimatedCursor</code></a></b>: <i>
+Sequence of images loaded from list of files</i>
+    </ul>
+  <li> <b><a href="pygsear.Drawable.Image-class.html"><code>pygsear.Drawable.Image</code></a></b>: <i>
+Static sprite from image in a file</i>
+    <ul>
+  <li> <b><a href="pygsear.Cursor.ImageCursor-class.html"><code>pygsear.Cursor.ImageCursor</code></a></b>: <i>
+Image loaded from file</i>
+    </ul>
+  <li> <b><a href="pygsear.Drawable.Layer-class.html"><code>pygsear.Drawable.Layer</code></a></b>: <i>
+Screen that can be used as a sprite</i>
+    <ul>
+  <li> <b><a href="pygsear.Widget.Dialog-class.html"><code>pygsear.Widget.Dialog</code></a></b>
+    <ul>
+  <li> <b><a href="pygsear.Widget.Dialog_OK-class.html"><code>pygsear.Widget.Dialog_OK</code></a></b>: <i>
+Pop up a window to get some input.</i>
+    <ul>
+  <li> <b><a href="pygsear.Widget.Dialog_ColorSelector-class.html"><code>pygsear.Widget.Dialog_ColorSelector</code></a></b>: <i>
+Used to choose a color interactively</i>
+  <li> <b><a href="pygsear.Widget.Dialog_LineInput-class.html"><code>pygsear.Widget.Dialog_LineInput</code></a></b>: <i>
+Used to get a single line of input</i>
+    </ul>
+    </ul>
+  <li> <b><a href="pygsear.Game.GameConfiguration-class.html"><code>pygsear.Game.GameConfiguration</code></a></b>: <i>
+Used to configure the game</i>
+    </ul>
+  <li> <b><a href="pygsear.Drawable.Multi-class.html"><code>pygsear.Drawable.Multi</code></a></b>: <i>
+Made up of a group of sprites.</i>
+  <li> <b><a href="pygsear.Drawable.MultiImage-class.html"><code>pygsear.Drawable.MultiImage</code></a></b>: <i>
+Multiple images from multiple files.</i>
+    <ul>
+  <li> <b><a href="pygsear.Cursor.MultiImageCursor-class.html"><code>pygsear.Cursor.MultiImageCursor</code></a></b>: <i>
+Image loaded from file</i>
+  <li> <b><a href="pygsear.Drawable.RotatedImage-class.html"><code>pygsear.Drawable.RotatedImage</code></a></b>: <i>
+Sprite with auto-generated rotated images</i>
+    <ul>
+  <li> <b><a href="pygsear.Drawable.MultiRotated-class.html"><code>pygsear.Drawable.MultiRotated</code></a></b>: <i>
+Sprite with multiple auto-generated rotated images</i>
+  <li> <b><a href="pygsear.Drawable.Turtle-class.html"><code>pygsear.Drawable.Turtle</code></a></b>: <i>
+Turtle-graphics-like object</i>
+    <ul>
+  <li> <b><a href="pygsear.Drawable.EuclidTurtle-class.html"><code>pygsear.Drawable.EuclidTurtle</code></a></b>: <i>
+Turtle with altered co-ordinate system.</i>
+    </ul>
+    </ul>
+    </ul>
+  <li> <b><a href="pygsear.Widget.Score-class.html"><code>pygsear.Widget.Score</code></a></b>: <i>
+Keep and display a score or value.</i>
+  <li> <b><a href="pygsear.Drawable.Shape-class.html"><code>pygsear.Drawable.Shape</code></a></b>: <i>
+Simple geometric shapes.</i>
+    <ul>
+  <li> <b><a href="pygsear.Drawable.Circle-class.html"><code>pygsear.Drawable.Circle</code></a></b>: <i>
+Circle.</i>
+    <ul>
+  <li> <b><a href="pygsear.Cursor.CircleCursor-class.html"><code>pygsear.Cursor.CircleCursor</code></a></b>: <i>
+Circle shape</i>
+    </ul>
+  <li> <b><a href="pygsear.Drawable.Rectangle-class.html"><code>pygsear.Drawable.Rectangle</code></a></b>: <i>
+Rectangle, aligned with no rotation</i>
+    <ul>
+  <li> <b><a href="pygsear.Widget.ProgressBar-class.html"><code>pygsear.Widget.ProgressBar</code></a></b>: <i>
+Percentage bar graph.</i>
+    <ul>
+  <li> <b><a href="pygsear.Widget.VProgressBar-class.html"><code>pygsear.Widget.VProgressBar</code></a></b>
+    </ul>
+  <li> <b><a href="pygsear.Drawable.Square-class.html"><code>pygsear.Drawable.Square</code></a></b>: <i>
+Square, aligned with no rotation.</i>
+    <ul>
+  <li> <b><a href="pygsear.Cursor.CrosshairCursor-class.html"><code>pygsear.Cursor.CrosshairCursor</code></a></b>: <i>
+Like gun crosshairs</i>
+  <li> <b><a href="pygsear.Cursor.XCursor-class.html"><code>pygsear.Cursor.XCursor</code></a></b>: <i>
+X shape</i>
+    </ul>
+    </ul>
+    </ul>
+  <li> <b><a href="pygsear.Widget.SpriteButton-class.html"><code>pygsear.Widget.SpriteButton</code></a></b>: <i>
+Clickable button which is also a sprite.</i>
+    <ul>
+  <li> <b><a href="pygsear.Widget.ImageButton-class.html"><code>pygsear.Widget.ImageButton</code></a></b>
+  <li> <b><a href="pygsear.Widget.SpriteTextButton-class.html"><code>pygsear.Widget.SpriteTextButton</code></a></b>: <i>
+Clickable button which is also a sprite with text printed on it.</i>
+    <ul>
+  <li> <b><a href="pygsear.Widget.TextInput-class.html"><code>pygsear.Widget.TextInput</code></a></b>: <i>
+Used to gather text input from the user.</i>
+    </ul>
+  <li> <b><a href="pygsear.Widget.StationaryButton-class.html"><code>pygsear.Widget.StationaryButton</code></a></b>: <i>
+Clickable button which is a sprite but does not need to move.</i>
+    <ul>
+  <li> <b><a href="pygsear.Widget.CloseButton-class.html"><code>pygsear.Widget.CloseButton</code></a></b>: <i>
+White square button with a black X.</i>
+  <li> <b><a href="pygsear.Widget.StationaryTextButton-class.html"><code>pygsear.Widget.StationaryTextButton</code></a></b>: <i>
+Clickable button which is also a sprite with text printed on it and 
+does not need to move.</i>
+    </ul>
+    </ul>
+  <li> <b><a href="pygsear.Drawable.Stationary-class.html"><code>pygsear.Drawable.Stationary</code></a></b>: <i>
+Drawable things which never move.</i>
+    <ul>
+  <li> <b><a href="pygsear.Widget.StationaryButton-class.html"><code>pygsear.Widget.StationaryButton</code></a></b>: <i>
+Clickable button which is a sprite but does not need to move.</i>
+    <ul>
+  <li> <b><a href="pygsear.Widget.CloseButton-class.html"><code>pygsear.Widget.CloseButton</code></a></b>: <i>
+White square button with a black X.</i>
+  <li> <b><a href="pygsear.Widget.StationaryTextButton-class.html"><code>pygsear.Widget.StationaryTextButton</code></a></b>: <i>
+Clickable button which is also a sprite with text printed on it and 
+does not need to move.</i>
+    </ul>
+    </ul>
+  <li> <b><a href="pygsear.Drawable.String-class.html"><code>pygsear.Drawable.String</code></a></b>: <i>
+A string of numbers, letters, or other characters.</i>
+    </ul>
+  <li> <b><a href="pygsear.Event.Event-class.html"><code>pygsear.Event.Event</code></a></b>: <i>
+Relates Pygame Events with related actions.</i>
+    <ul>
+  <li> <b><a href="pygsear.Event.KEY_Event-class.html"><code>pygsear.Event.KEY_Event</code></a></b>: <i>
+Keyboard events.</i>
+    <ul>
+  <li> <b><a href="pygsear.Event.KEYDOWN_Event-class.html"><code>pygsear.Event.KEYDOWN_Event</code></a></b>
+  <li> <b><a href="pygsear.Event.KEYUP_Event-class.html"><code>pygsear.Event.KEYUP_Event</code></a></b>
+  <li> <b><a href="pygsear.Event.Repeat_KEY_Event-class.html"><code>pygsear.Event.Repeat_KEY_Event</code></a></b>: <i>
+KEY_Event which will auto-repeat after a delay.</i>
+    </ul>
+  <li> <b><a href="pygsear.Event.MOUSEBUTTON_Event-class.html"><code>pygsear.Event.MOUSEBUTTON_Event</code></a></b>: <i>
+Mouse button events.</i>
+    <ul>
+  <li> <b><a href="pygsear.Event.MOUSEBUTTONDOWN_Event-class.html"><code>pygsear.Event.MOUSEBUTTONDOWN_Event</code></a></b>
+  <li> <b><a href="pygsear.Event.MOUSEBUTTONUP_Event-class.html"><code>pygsear.Event.MOUSEBUTTONUP_Event</code></a></b>
+    </ul>
+  <li> <b><a href="pygsear.Event.QUIT_Event-class.html"><code>pygsear.Event.QUIT_Event</code></a></b>
+  <li> <b><a href="pygsear.Event.TIMEOUT_Event-class.html"><code>pygsear.Event.TIMEOUT_Event</code></a></b>
+    </ul>
+  <li> <b><a href="pygsear.Drawable.PSprite-class.html"><code>pygsear.Drawable.PSprite</code></a></b>: <i>
+New pygsear sprite class.</i>
+    </ul>
+  <li> <b><a href="__builtin__.type-class.html"><code>__builtin__.type</code></a></b>: <i>
+type(object) -&gt; the object's type type(name, bases, dict) -&gt; a 
+new type</i>
+    </ul>
+  <li> <b><a href="exceptions.Exception-class.html"><code>exceptions.Exception</code></a></b>: <i>
+Common base class for all exceptions.</i>
+    <ul>
+  <li> <b><a href="pygsear.Cursor.AbstractClassError-class.html"><code>pygsear.Cursor.AbstractClassError</code></a></b>
+  <li> <b><a href="pygsear.Path.EndOfPath-class.html"><code>pygsear.Path.EndOfPath</code></a></b>: <i>
+Raise at the end of a path.</i>
+  <li> <b><a href="pygsear.Util.TextRectException-class.html"><code>pygsear.Util.TextRectException</code></a></b>
+    </ul>
+  <li> <b><a href="pygsear.Cursor.Cursor-class.html"><code>pygsear.Cursor.Cursor</code></a></b>
+    <ul>
+  <li> <b><a href="pygsear.Cursor.AnimatedCursor-class.html"><code>pygsear.Cursor.AnimatedCursor</code></a></b>: <i>
+Sequence of images loaded from list of files</i>
+  <li> <b><a href="pygsear.Cursor.CircleCursor-class.html"><code>pygsear.Cursor.CircleCursor</code></a></b>: <i>
+Circle shape</i>
+  <li> <b><a href="pygsear.Cursor.CrosshairCursor-class.html"><code>pygsear.Cursor.CrosshairCursor</code></a></b>: <i>
+Like gun crosshairs</i>
+  <li> <b><a href="pygsear.Cursor.ImageCursor-class.html"><code>pygsear.Cursor.ImageCursor</code></a></b>: <i>
+Image loaded from file</i>
+  <li> <b><a href="pygsear.Cursor.MultiImageCursor-class.html"><code>pygsear.Cursor.MultiImageCursor</code></a></b>: <i>
+Image loaded from file</i>
+  <li> <b><a href="pygsear.Cursor.XCursor-class.html"><code>pygsear.Cursor.XCursor</code></a></b>: <i>
+X shape</i>
+    </ul>
+  <li> <b><a href="pygsear.Drawable.StationaryStack-class.html"><code>pygsear.Drawable.StationaryStack</code></a></b>: <i>
+A Stack of Stationary Drawables.</i>
+  <li> <b><a href="pygsear.Game.GameLooper-class.html"><code>pygsear.Game.GameLooper</code></a></b>: <i>
+Abstract game control class</i>
+    <ul>
+  <li> <b><a href="pygsear.Game.Game-class.html"><code>pygsear.Game.Game</code></a></b>: <i>
+The central game object.</i>
+    <ul>
+  <li> <b><a href="pygsear.Game.TwistedGame-class.html"><code>pygsear.Game.TwistedGame</code></a></b>: <i>
+Alternate central game object using Twisted event loop</i>
+    </ul>
+  <li> <b><a href="pygsear.Game.GameConfiguration-class.html"><code>pygsear.Game.GameConfiguration</code></a></b>: <i>
+Used to configure the game</i>
+    </ul>
+  <li> <b><a href="pygsear.Path.Path-class.html"><code>pygsear.Path.Path</code></a></b>: <i>
+A set of points.</i>
+    <ul>
+  <li> <b><a href="pygsear.Path.BrownianPath-class.html"><code>pygsear.Path.BrownianPath</code></a></b>: <i>
+Move in random directions</i>
+  <li> <b><a href="pygsear.Path.ListPath-class.html"><code>pygsear.Path.ListPath</code></a></b>: <i>
+Set of points fully created when instantiated.</i>
+    <ul>
+  <li> <b><a href="pygsear.Path.BrownianLinePath-class.html"><code>pygsear.Path.BrownianLinePath</code></a></b>: <i>
+Line, with random motion superimposed.</i>
+  <li> <b><a href="pygsear.Path.CirclePath-class.html"><code>pygsear.Path.CirclePath</code></a></b>: <i>
+Move in a circle.</i>
+    <ul>
+  <li> <b><a href="pygsear.Path.BounceCirclePath-class.html"><code>pygsear.Path.BounceCirclePath</code></a></b>: <i>
+Move in a circle, reverse direction and go back.</i>
+    </ul>
+  <li> <b><a href="pygsear.Path.ConcentricCirclePath-class.html"><code>pygsear.Path.ConcentricCirclePath</code></a></b>: <i>
+Circles one inside of the other.</i>
+  <li> <b><a href="pygsear.Path.FigureEightPath-class.html"><code>pygsear.Path.FigureEightPath</code></a></b>: <i>
+Move in 2 connected circles, one clockwise, one ccw.</i>
+  <li> <b><a href="pygsear.Path.FilePath-class.html"><code>pygsear.Path.FilePath</code></a></b>: <i>
+Set of points retrieved from a file.</i>
+  <li> <b><a href="pygsear.Path.LinePath-class.html"><code>pygsear.Path.LinePath</code></a></b>: <i>
+Starts here, goes there, and stops.</i>
+    <ul>
+  <li> <b><a href="pygsear.Path.BounceLinePath-class.html"><code>pygsear.Path.BounceLinePath</code></a></b>: <i>
+Starts here, goes there, then goes back again.</i>
+    </ul>
+  <li> <b><a href="pygsear.Path.SquareEightPath-class.html"><code>pygsear.Path.SquareEightPath</code></a></b>: <i>
+Two squares, one clockwise, one couterclockwise.</i>
+  <li> <b><a href="pygsear.Path.SquarePath-class.html"><code>pygsear.Path.SquarePath</code></a></b>: <i>
+Move in a square.</i>
+    </ul>
+  <li> <b><a href="pygsear.Path.Offset_path-class.html"><code>pygsear.Path.Offset_path</code></a></b>: <i>
+Follow another path, possibly moved over some.</i>
+  <li> <b><a href="pygsear.Path.PathNG-class.html"><code>pygsear.Path.PathNG</code></a></b>: <i>
+Next-generation Path</i>
+  <li> <b><a href="pygsear.Path.RandomOnscreen-class.html"><code>pygsear.Path.RandomOnscreen</code></a></b>: <i>
+Move to random locations on screen.</i>
+  <li> <b><a href="pygsear.Path.StationaryPath-class.html"><code>pygsear.Path.StationaryPath</code></a></b>: <i>
+For things that do not move, but need to be moved sometimes</i>
+  <li> <b><a href="pygsear.Path.SuperPath-class.html"><code>pygsear.Path.SuperPath</code></a></b>: <i>
+Used to hold a series of other paths.</i>
+  <li> <b><a href="pygsear.Path.TurtlePath-class.html"><code>pygsear.Path.TurtlePath</code></a></b>
+  <li> <b><a href="pygsear.Path.VelocityPath-class.html"><code>pygsear.Path.VelocityPath</code></a></b>: <i>
+Move according to velocity in pixels per frame.</i>
+    <ul>
+  <li> <b><a href="pygsear.Path.AccelerationPath-class.html"><code>pygsear.Path.AccelerationPath</code></a></b>: <i>
+Move according to vel and accel in pixels per second.</i>
+  <li> <b><a href="pygsear.Path.VelocityPathBounded-class.html"><code>pygsear.Path.VelocityPathBounded</code></a></b>: <i>
+VelocityPath with min/max x and y values.</i>
+    <ul>
+  <li> <b><a href="pygsear.Path.RandomAccelerationPathBounded-class.html"><code>pygsear.Path.RandomAccelerationPathBounded</code></a></b>: <i>
+Random motion, with set location limits.</i>
+  <li> <b><a href="pygsear.Path.VelocityPathTimeBounded-class.html"><code>pygsear.Path.VelocityPathTimeBounded</code></a></b>: <i>
+VelocityPathTime with min/max x and y values.</i>
+    </ul>
+  <li> <b><a href="pygsear.Path.VelocityPathTime-class.html"><code>pygsear.Path.VelocityPathTime</code></a></b>: <i>
+Move according to velocity in pixels per second.</i>
+    <ul>
+  <li> <b><a href="pygsear.Path.RandomAccelerationPath-class.html"><code>pygsear.Path.RandomAccelerationPath</code></a></b>: <i>
+Random motion.</i>
+    <ul>
+  <li> <b><a href="pygsear.Path.RandomAccelerationPathBounded-class.html"><code>pygsear.Path.RandomAccelerationPathBounded</code></a></b>: <i>
+Random motion, with set location limits.</i>
+    </ul>
+  <li> <b><a href="pygsear.Path.VelocityPathTimeBounded-class.html"><code>pygsear.Path.VelocityPathTimeBounded</code></a></b>: <i>
+VelocityPathTime with min/max x and y values.</i>
+    </ul>
+    </ul>
+    </ul>
+  <li> <b><a href="pygsear.Screen.Layer-class.html"><code>pygsear.Screen.Layer</code></a></b>: <i>
+Holds foreground and background pygame surfaces</i>
+    <ul>
+  <li> <b><a href="pygsear.Drawable.Layer-class.html"><code>pygsear.Drawable.Layer</code></a></b>: <i>
+Screen that can be used as a sprite</i>
+    <ul>
+  <li> <b><a href="pygsear.Widget.Dialog-class.html"><code>pygsear.Widget.Dialog</code></a></b>
+    <ul>
+  <li> <b><a href="pygsear.Widget.Dialog_OK-class.html"><code>pygsear.Widget.Dialog_OK</code></a></b>: <i>
+Pop up a window to get some input.</i>
+    <ul>
+  <li> <b><a href="pygsear.Widget.Dialog_ColorSelector-class.html"><code>pygsear.Widget.Dialog_ColorSelector</code></a></b>: <i>
+Used to choose a color interactively</i>
+  <li> <b><a href="pygsear.Widget.Dialog_LineInput-class.html"><code>pygsear.Widget.Dialog_LineInput</code></a></b>: <i>
+Used to get a single line of input</i>
+    </ul>
+    </ul>
+  <li> <b><a href="pygsear.Game.GameConfiguration-class.html"><code>pygsear.Game.GameConfiguration</code></a></b>: <i>
+Used to configure the game</i>
+    </ul>
+  <li> <b><a href="pygsear.Screen.Window-class.html"><code>pygsear.Screen.Window</code></a></b>: <i>
+This class interfaces with the Pygame display.</i>
+    </ul>
+  <li> <b><a href="pygsear.Sound.DummySound-class.html"><code>pygsear.Sound.DummySound</code></a></b>: <i>
+Mock sound object, for when sound is not working.</i>
+  <li> <b><a href="pygsear.Widget.TextButton-class.html"><code>pygsear.Widget.TextButton</code></a></b>: <i>
+Clickable button with text printed on it.</i>
+    <ul>
+  <li> <b><a href="pygsear.Widget.SpriteTextButton-class.html"><code>pygsear.Widget.SpriteTextButton</code></a></b>: <i>
+Clickable button which is also a sprite with text printed on it.</i>
+    <ul>
+  <li> <b><a href="pygsear.Widget.TextInput-class.html"><code>pygsear.Widget.TextInput</code></a></b>: <i>
+Used to gather text input from the user.</i>
+    </ul>
+  <li> <b><a href="pygsear.Widget.StationaryTextButton-class.html"><code>pygsear.Widget.StationaryTextButton</code></a></b>: <i>
+Clickable button which is also a sprite with text printed on it and 
+does not need to move.</i>
+    </ul>
+  <li> <b><a href="pygsear.Widget.Widget-class.html"><code>pygsear.Widget.Widget</code></a></b>
+    <ul>
+  <li> <b><a href="pygsear.Widget.Button-class.html"><code>pygsear.Widget.Button</code></a></b>
+    <ul>
+  <li> <b><a href="pygsear.Widget.SpriteButton-class.html"><code>pygsear.Widget.SpriteButton</code></a></b>: <i>
+Clickable button which is also a sprite.</i>
+    <ul>
+  <li> <b><a href="pygsear.Widget.ImageButton-class.html"><code>pygsear.Widget.ImageButton</code></a></b>
+  <li> <b><a href="pygsear.Widget.SpriteTextButton-class.html"><code>pygsear.Widget.SpriteTextButton</code></a></b>: <i>
+Clickable button which is also a sprite with text printed on it.</i>
+    <ul>
+  <li> <b><a href="pygsear.Widget.TextInput-class.html"><code>pygsear.Widget.TextInput</code></a></b>: <i>
+Used to gather text input from the user.</i>
+    </ul>
+  <li> <b><a href="pygsear.Widget.StationaryButton-class.html"><code>pygsear.Widget.StationaryButton</code></a></b>: <i>
+Clickable button which is a sprite but does not need to move.</i>
+    <ul>
+  <li> <b><a href="pygsear.Widget.CloseButton-class.html"><code>pygsear.Widget.CloseButton</code></a></b>: <i>
+White square button with a black X.</i>
+  <li> <b><a href="pygsear.Widget.StationaryTextButton-class.html"><code>pygsear.Widget.StationaryTextButton</code></a></b>: <i>
+Clickable button which is also a sprite with text printed on it and 
+does not need to move.</i>
+    </ul>
+    </ul>
+    </ul>
+  <li> <b><a href="pygsear.Widget.Console-class.html"><code>pygsear.Widget.Console</code></a></b>
+  <li> <b><a href="pygsear.Widget.Dialog-class.html"><code>pygsear.Widget.Dialog</code></a></b>
+    <ul>
+  <li> <b><a href="pygsear.Widget.Dialog_OK-class.html"><code>pygsear.Widget.Dialog_OK</code></a></b>: <i>
+Pop up a window to get some input.</i>
+    <ul>
+  <li> <b><a href="pygsear.Widget.Dialog_ColorSelector-class.html"><code>pygsear.Widget.Dialog_ColorSelector</code></a></b>: <i>
+Used to choose a color interactively</i>
+  <li> <b><a href="pygsear.Widget.Dialog_LineInput-class.html"><code>pygsear.Widget.Dialog_LineInput</code></a></b>: <i>
+Used to get a single line of input</i>
+    </ul>
+    </ul>
+  <li> <b><a href="pygsear.Widget.EscCatcher-class.html"><code>pygsear.Widget.EscCatcher</code></a></b>
+  <li> <b><a href="pygsear.Widget.ProgressBar-class.html"><code>pygsear.Widget.ProgressBar</code></a></b>: <i>
+Percentage bar graph.</i>
+    <ul>
+  <li> <b><a href="pygsear.Widget.VProgressBar-class.html"><code>pygsear.Widget.VProgressBar</code></a></b>
+    </ul>
+  <li> <b><a href="pygsear.Widget.Score-class.html"><code>pygsear.Widget.Score</code></a></b>: <i>
+Keep and display a score or value.</i>
+    </ul>
+  <li> <b><a href="twisted.spread.jelly.Jellyable-class.html"><code>twisted.spread.jelly.Jellyable</code></a></b>: <i>
+Inherit from me to Jelly yourself directly with the `getStateFor' 
+convenience method.</i>
+    <ul>
+  <li> <b><a href="twisted.spread.flavors.Serializable-class.html"><code>twisted.spread.flavors.Serializable</code></a></b>: <i>
+An object that can be passed remotely.</i>
+    <ul>
+  <li> <b><a href="twisted.spread.flavors.Referenceable-class.html"><code>twisted.spread.flavors.Referenceable</code></a></b>
+    <ul>
+  <li> <b><a href="twisted.spread.flavors.Root-class.html"><code>twisted.spread.flavors.Root</code></a></b>: <i>
+I provide a root object to <code>pb.Broker</code>s for a 
+<code>pb.BrokerFactory</code>.</i>
+    <ul>
+  <li> <b><a href="pygsear.Network.TwoPlayerConnection-class.html"><code>pygsear.Network.TwoPlayerConnection</code></a></b>: <i>
+Simple two player network connector</i>
+    </ul>
+  <li> <b><a href="pygsear.Network.TwoPlayerConnection-class.html"><code>pygsear.Network.TwoPlayerConnection</code></a></b>: <i>
+Simple two player network connector</i>
+    </ul>
+    </ul>
+    </ul>
+</ul>
+
+<!-- =========== START OF NAVBAR =========== -->
+<table class="navbar" border="0" width="100%" cellpadding="0" bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="center">
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="pygsear-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="trees.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="indices.html">Index</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td align="left"><font size="-2">Generated by Epydoc 2.0 on Sat Dec  9 14:11:21 2006</font></td>
+    <td align="right"><a href="http://epydoc.sourceforge.net"
+                      ><font size="-2">http://epydoc.sf.net</font></a></td>
+  </tr>
+</table>
+</body>
+</html>

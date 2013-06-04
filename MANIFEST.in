@@ -1,0 +1,16 @@
+include README
+include LICENSE
+include MANIFEST.in
+include setup.py
+include test.py
+include examples/test_all.sh
+recursive-include doc *
+recursive-include installers *
+recursive-include * *.png
+recursive-include * *.py
+recursive-include * *.wav
+include examples/data/paths/path
+
+global-exclude */CVS/*
+global-exclude */.xvpics/*
+global-exclude */not_used/*

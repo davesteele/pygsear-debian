@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>pygsear.Util</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css"></link>
+</head>
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+
+<!-- =========== START OF NAVBAR =========== -->
+<table class="navbar" border="0" width="100%" cellpadding="0" bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="center">
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="pygsear-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="trees.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="indices.html">Index</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <font size="-1"><b class="breadcrumbs">
+        <a href="pygsear-module.html">Package&nbsp;pygsear</a> ::
+        Module&nbsp;Util
+      </b></font></br>
+    </td>
+    <td><table cellpadding="0" cellspacing="0">
+      <tr><td align="right"><font size="-2">[<a href="../private/pygsear.Util-module.html">show&nbsp;private</a>&nbsp;|&nbsp;hide&nbsp;private]</font></td></tr>
+      <tr><td align="right"><font size="-2">[<a href="frames.html"target="_top">frames</a>&nbsp;|&nbsp;<a href="pygsear.Util-module.html" target="_top">no&nbsp;frames</a>]</font></td></tr>
+    </table></td>
+</tr></table>
+
+<!-- =========== START OF MODULE DESCRIPTION =========== -->
+<h2 class="module">Module pygsear.Util</h2>
+
+Utilities for finding and loading different resources
+<hr/>
+
+<!-- =========== START OF EXCEPTIONS =========== -->
+<table class="summary" border="1" cellpadding="3" cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="summary">
+  <th colspan="2">Exceptions</th></tr>
+<tr><td width="15%">
+  <b><a href="pygsear.Util.TextRectException-class.html"><code>TextRectException</code></a></b></td>
+  <td>&nbsp;</td></tr>
+</table><br />
+
+
+<!-- =========== START OF FUNCTION SUMMARY =========== -->
+<table class="summary" border="1" cellpadding="3" cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="summary">
+  <th colspan="2">Function Summary</th></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><a name="beep"></a><span class="summary-sig"><span class="summary-sig-name">beep</span>()</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><a name="color"></a><span class="summary-sig"><span class="summary-sig-name">color</span>(<span class=summary-sig-arg>name</span>,
+          <span class=summary-sig-arg>modifier</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><a name="color_darken"></a><span class="summary-sig"><span class="summary-sig-name">color_darken</span>(<span class=summary-sig-arg>color</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><a name="color_lighten"></a><span class="summary-sig"><span class="summary-sig-name">color_lighten</span>(<span class=summary-sig-arg>color</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><a name="does_surface_have_pixel_alpha"></a><span class="summary-sig"><span class="summary-sig-name">does_surface_have_pixel_alpha</span>(<span class=summary-sig-arg>surface</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Util-module.html#get_dirs" class="summary-sig-name"><code>get_dirs</code></a>(<span class=summary-sig-arg>type</span>)</span></code>
+<br />
+return a list of potential data directories.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Util-module.html#get_full_path" class="summary-sig-name"><code>get_full_path</code></a>(<span class=summary-sig-arg>filename</span>,
+          <span class=summary-sig-arg>dirs</span>)</span></code>
+<br />
+return the first existing file found in dirs.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Util-module.html#have_same_signs" class="summary-sig-name"><code>have_same_signs</code></a>(<span class=summary-sig-arg>a</span>,
+          <span class=summary-sig-arg>b</span>)</span></code>
+<br />
+return True if both integers have the same signs.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Util-module.html#line_seg_intersect" class="summary-sig-name"><code>line_seg_intersect</code></a>(<span class=summary-sig-arg>line1point1</span>,
+          <span class=summary-sig-arg>line1point2</span>,
+          <span class=summary-sig-arg>line2point1</span>,
+          <span class=summary-sig-arg>line2point2</span>)</span></code>
+<br />
+return True if 2 line segments intersect.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Util-module.html#load_image" class="summary-sig-name"><code>load_image</code></a>(<span class=summary-sig-arg>filename</span>,
+          <span class=summary-sig-arg>convert</span>)</span></code>
+<br />
+Return pygame surface from filename string.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Util-module.html#load_images" class="summary-sig-name"><code>load_images</code></a>(<span class=summary-sig-arg>filenames</span>,
+          <span class=summary-sig-arg>dirname</span>,
+          <span class=summary-sig-arg>convert</span>)</span></code>
+<br />
+Return list of pygame surfaces.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Util-module.html#load_images_dict" class="summary-sig-name"><code>load_images_dict</code></a>(<span class=summary-sig-arg>filenames</span>,
+          <span class=summary-sig-arg>dirname</span>,
+          <span class=summary-sig-arg>convert</span>)</span></code>
+<br />
+Return dict of <code>filename: image</code> pygame surfaces.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Util-module.html#load_points" class="summary-sig-name"><code>load_points</code></a>(<span class=summary-sig-arg>filename</span>)</span></code>
+<br />
+Return list of points <code>(x, y)</code>.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Util-module.html#load_sound" class="summary-sig-name"><code>load_sound</code></a>(<span class=summary-sig-arg>filename</span>)</span></code>
+<br />
+Return pygame sound object.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Util-module.html#render_textrect" class="summary-sig-name"><code>render_textrect</code></a>(<span class=summary-sig-arg>string</span>,
+          <span class=summary-sig-arg>rect</span>,
+          <span class=summary-sig-arg>text_color</span>,
+          <span class=summary-sig-arg>bgcolor</span>,
+          <span class=summary-sig-arg>fontSize</span>,
+          <span class=summary-sig-arg>justification</span>,
+          <span class=summary-sig-arg>trim</span>)</span></code>
+<br />
+Returns a surface containing the passed text.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Util-module.html#scale_image" class="summary-sig-name"><code>scale_image</code></a>(<span class=summary-sig-arg>img</span>,
+          <span class=summary-sig-arg>width</span>,
+          <span class=summary-sig-arg>height</span>,
+          <span class=summary-sig-arg>keepAspectRatio</span>)</span></code>
+<br />
+return a scaled copy of a <code>pygame.Surface</code></td></tr>
+</table><br />
+
+
+<!-- =========== START OF VARIABLE SUMMARY =========== -->
+<table class="summary" border="1" cellpadding="3" cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="summary">
+  <th colspan="2">Variable Summary</th></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1"><code>int</code></font></td>
+<td><b><a href="pygsear.Util-module.html#COLINEAR"><code>COLINEAR</code></a></b> = <span title="-1">-1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1"><code>dict</code></font></td>
+<td><b><a href="pygsear.Util-module.html#dirs_cache"><code>dirs_cache</code></a></b> = <span title="{}"><code>{}                                          </code>
+</span></td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1"><code>int</code></font></td>
+<td><b><a href="pygsear.Util-module.html#DONT_INTERSECT"><code>DONT_INTERSECT</code></a></b> = <span title="0">0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1"><code>dict</code></font></td>
+<td><b><a href="pygsear.Util-module.html#image_cache"><code>image_cache</code></a></b> = <span title="{}"><code>{}                                         </code>
+</span></td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1"><code>dict</code></font></td>
+<td><b><a href="pygsear.Util-module.html#point_cache"><code>point_cache</code></a></b> = <span title="{}"><code>{}                                         </code>
+</span></td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1"><code>dict</code></font></td>
+<td><b><a href="pygsear.Util-module.html#sound_cache"><code>sound_cache</code></a></b> = <span title="{}"><code>{}                                         </code>
+</span></td></tr>
+</table><br />
+
+
+<!-- =========== START OF FUNCTION DETAILS =========== -->
+<table class="details" border="1" cellpadding="3" cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="details">
+  <th colspan="2">Function Details</th></tr>
+</table>
+
+<a name="get_dirs"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">get_dirs</span>(<span class=sig-arg>type</span>=<span class=sig-default>None</span>)</span>
+  </h3>
+  <p>return a list of potential data directories.</p>
+  Looks around at possible locations, and returns possible data 
+  directories in this order:
+  <ol start="1">
+    <li>
+      The current working directory.
+    </li>
+    <li>
+      The &quot;home&quot; directory, where the main (invoked) script 
+      lives. <i><b>NOTE:</b> Not the user's home directory!</i>
+    </li>
+    <li>
+      The <code>data/<i>type</i></code> directory underneath the 
+      &quot;home&quot; directory
+    </li>
+    <li>
+      The <code>data</code> directory underneath the &quot;home&quot; 
+      directory
+    </li>
+    <li>
+      The <code>libdata/<i>type</i></code> directory underneath the 
+      pygsear lib directory.
+    </li>
+    <li>
+      The <code>libdata</code> directory underneath the pygsear lib 
+      directory.
+    </li>
+  </ol>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="get_full_path"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">get_full_path</span>(<span class=sig-arg>filename</span>,
+          <span class=sig-arg>dirs</span>)</span>
+  </h3>
+  return the first existing file found in dirs.
+  <dl><dt></dt><dd>
+    <dl><dt><b>Parameters:</b></dt>
+      <dd><code><b>filename</b></code> -
+         Name of file to find in dirs.
+      <dd><code><b>dirs</b></code> -
+         List of directories to search.
+      </dd>
+    </dl>
+  </dd></dl>
+</td></tr></table>
+
+<a name="have_same_signs"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">have_same_signs</span>(<span class=sig-arg>a</span>,
+          <span class=sig-arg>b</span>)</span>
+  </h3>
+  return True if both integers have the same signs.
+  <dl><dt></dt><dd>
+    <dl><dt><b>Parameters:</b></dt>
+      <dd><code><b>a</b></code> -
+         One number.
+        <br /><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        (type=int)</i>
+      <dd><code><b>b</b></code> -
+         Another number.
+        <br /><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        (type=int)</i>
+      </dd>
+    </dl>
+  </dd></dl>
+</td></tr></table>
+
+<a name="line_seg_intersect"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">line_seg_intersect</span>(<span class=sig-arg>line1point1</span>,
+          <span class=sig-arg>line1point2</span>,
+          <span class=sig-arg>line2point1</span>,
+          <span class=sig-arg>line2point2</span>)</span>
+  </h3>
+  return True if 2 line segments intersect.
+  <dl><dt></dt><dd>
+    <dl><dt><b>Parameters:</b></dt>
+      <dd><code><b>line1point1</b></code> -
+         (x, y) coord of one end of first line
+      <dd><code><b>line1point2</b></code> -
+         (x, y) coord of other end of first line
+      <dd><code><b>line2point1</b></code> -
+         (x, y) coord of one end of second line
+      <dd><code><b>line2point2</b></code> -
+         (x, y) coord of other end of second line
+      </dd>
+    </dl>
+  </dd></dl>
+</td></tr></table>
+
+<a name="load_image"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">load_image</span>(<span class=sig-arg>filename</span>,
+          <span class=sig-arg>convert</span>=<span class=sig-default>1</span>)</span>
+  </h3>
+  <p>Return pygame surface from filename string.</p>
+  Uses <a href="pygsear.Util-module.html#get_dirs" 
+  class="link"><code>get_dirs</code></a> to know where to look for the 
+  file.
+  <dl><dt></dt><dd>
+    <dl><dt><b>Parameters:</b></dt>
+      <dd><code><b>filename</b></code> -
+         Name of image file to load data from.
+      <dd><code><b>convert</b></code> -
+         Optimize if True. <i>Can sometimes cause colorspace 
+        problems...</i> Will not convert if the image has an alpha 
+        mask.
+      </dd>
+    </dl>
+  </dd></dl>
+</td></tr></table>
+
+<a name="load_images"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">load_images</span>(<span class=sig-arg>filenames</span>=<span class=sig-default>None</span>,
+          <span class=sig-arg>dirname</span>=<span class=sig-default>None</span>,
+          <span class=sig-arg>convert</span>=<span class=sig-default>1</span>)</span>
+  </h3>
+  <p>Return list of pygame surfaces.</p>
+  <p>Must pass either list of filenames, or name of directory from which 
+  to load all images.</p>
+  Uses <a href="pygsear.Util-module.html#get_dirs" 
+  class="link"><code>get_dirs</code></a> to know where to look for the 
+  file or directory.
+  <dl><dt></dt><dd>
+    <dl><dt><b>Parameters:</b></dt>
+      <dd><code><b>filenames</b></code> -
+         List of image file names to load data from.
+      <dd><code><b>dirname</b></code> -
+         Name of directory from which to load all images.
+      <dd><code><b>convert</b></code> -
+         Optimize if True. <i>Can sometimes cause colorspace 
+        problems...</i>
+      </dd>
+    </dl>
+  </dd></dl>
+</td></tr></table>
+
+<a name="load_images_dict"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">load_images_dict</span>(<span class=sig-arg>filenames</span>=<span class=sig-default>None</span>,
+          <span class=sig-arg>dirname</span>=<span class=sig-default>None</span>,
+          <span class=sig-arg>convert</span>=<span class=sig-default>1</span>)</span>
+  </h3>
+  <p>Return dict of <code>filename: image</code> pygame surfaces.</p>
+  <p>Must pass either a list of filenames or the name of a directory from 
+  which to load all images.</p>
+  Uses <a href="pygsear.Util-module.html#get_dirs" 
+  class="link"><code>get_dirs</code></a> to know where to look for the 
+  file or directory.
+  <dl><dt></dt><dd>
+    <dl><dt><b>Parameters:</b></dt>
+      <dd><code><b>filenames</b></code> -
+         List of image file names to load data from.
+      <dd><code><b>dirname</b></code> -
+         Name of directory from which to load all images.
+      <dd><code><b>convert</b></code> -
+         Optimize if True. <i>Can sometimes cause colorspace 
+        problems...</i>
+      </dd>
+    </dl>
+  </dd></dl>
+</td></tr></table>
+
+<a name="load_points"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">load_points</span>(<span class=sig-arg>filename</span>)</span>
+  </h3>
+  Return list of points <code>(x, y)</code>.
+  <dl><dt></dt><dd>
+    <dl><dt><b>Parameters:</b></dt>
+      <dd><code><b>filename</b></code> -
+         Name of file to load data from. Data should be formatted as 
+        <code>(x, y)</code> with one point per line.
+      </dd>
+    </dl>
+  </dd></dl>
+</td></tr></table>
+
+<a name="load_sound"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">load_sound</span>(<span class=sig-arg>filename</span>)</span>
+  </h3>
+  <p>Return pygame sound object.</p>
+  <p>Sound file shoud be a <code>.wav</code> file.</p>
+  Checks the status of the sound system first, and if there is a 
+  problem, hands out <a href="pygsear.Sound.DummySound-class.html" 
+  class="link"><code>pygsear.Sound.DummySound</code></a> objects instead 
+  of actual <code>pygame.mixer.Sound</code> objects.
+  <dl><dt></dt><dd>
+    <dl><dt><b>Parameters:</b></dt>
+      <dd><code><b>filename</b></code> -
+         Name of file to load data from.
+      </dd>
+    </dl>
+  </dd></dl>
+</td></tr></table>
+
+<a name="render_textrect"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">render_textrect</span>(<span class=sig-arg>string</span>,
+          <span class=sig-arg>rect</span>,
+          <span class=sig-arg>text_color</span>=<span class=sig-default>(255,&nbsp;255,&nbsp;255)</span>,
+          <span class=sig-arg>bgcolor</span>=<span class=sig-default>(0,&nbsp;0,&nbsp;0)</span>,
+          <span class=sig-arg>fontSize</span>=<span class=sig-default>20</span>,
+          <span class=sig-arg>justification</span>=<span class=sig-default>0</span>,
+          <span class=sig-arg>trim</span>=<span class=sig-default>0</span>)</span>
+  </h3>
+  <p>Returns a surface containing the passed text.</p>
+  <p>The text string will be reformatted to fit within the given rect, 
+  word-wrapping as necessary. The text will be anti-aliased.</p>
+  Raises a <code>TextRectException</code> if the text won't fit onto 
+  the surface.
+  <dl><dt></dt><dd>
+    <dl><dt><b>Parameters:</b></dt>
+      <dd><code><b>string</b></code> -
+         The text you wish to render. Newline character begins a new 
+        line.
+      <dd><code><b>rect</b></code> -
+         A rectstyle giving the size of the surface requested.
+      <dd><code><b>text_color</b></code> -
+         RGB color tuple (ex (0, 0, 0) = BLACK)
+      <dd><code><b>bgcolor</b></code> -
+         A three-byte tuple of the rgb value of the surface.
+      <dd><code><b>fontSize</b></code> -
+         A Font object
+      <dd><code><b>justification</b></code> -
+         Alignment of the text in the rectangle
+        <ul>
+          <li>
+            0 (default) left-justified
+          </li>
+          <li>
+            1 horizontally centered
+          </li>
+          <li>
+            2 right-justified
+          </li>
+        </ul>
+      <dd><code><b>trim</b></code> -
+         If True, return a Surface just large enough to contain the 
+        text.
+      </dd>
+    </dl>
+    <dl><dt><b>Returns:</b></dt>
+      <dd>
+        A surface object with the text rendered onto it.
+      </dd>
+    </dl>
+  </dd></dl>
+</td></tr></table>
+
+<a name="scale_image"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">scale_image</span>(<span class=sig-arg>img</span>,
+          <span class=sig-arg>width</span>,
+          <span class=sig-arg>height</span>,
+          <span class=sig-arg>keepAspectRatio</span>=<span class=sig-default>1</span>)</span>
+  </h3>
+  return a scaled copy of a <code>pygame.Surface</code>
+  <dl><dt></dt><dd>
+    <dl><dt><b>Parameters:</b></dt>
+      <dd><code><b>img</b></code> -
+         Original <code>pygame.Surface</code>.
+      <dd><code><b>width</b></code> -
+         width of returned surface.
+      <dd><code><b>height</b></code> -
+         height of returned surface.
+      <dd><code><b>keepAspectRatio</b></code> -
+         If True, the returned surface will be padded with transparent 
+        borders.
+      </dd>
+    </dl>
+  </dd></dl>
+</td></tr></table>
+<br />
+
+
+<!-- =========== START OF VARIABLE DETAILS =========== -->
+<table class="details" border="1" cellpadding="3" cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="details">
+  <th colspan="2">Variable Details</th></tr>
+</table>
+<table width="100%" class="var-details" bgcolor="#e0e0e0"><tr><td>
+<a name="COLINEAR"></a>
+<h3>COLINEAR</h3>
+<dl>
+  <dt></dt>
+  <dd>
+    <dl>
+      <dt><b>Type:</b></dt>
+      <dd>
+          <code>int</code>
+
+      </dd>
+<span title="-1">      <dt><b>Value:</b></dt>
+      <dd><table><tr><td>
+<pre class="variable">
+-1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</pre>
+        </td></tr></table></dd>
+</span>    </dl>
+  </dd>
+</dl></td></tr></table>
+<table width="100%" class="var-details" bgcolor="#e0e0e0"><tr><td>
+<a name="dirs_cache"></a>
+<h3>dirs_cache</h3>
+<dl>
+  <dt></dt>
+  <dd>
+    <dl>
+      <dt><b>Type:</b></dt>
+      <dd>
+          <code>dict</code>
+
+      </dd>
+<span title="{}">      <dt><b>Value:</b></dt>
+      <dd><table><tr><td>
+<pre class="variable">
+{}                                                                     </pre>
+        </td></tr></table></dd>
+</span>    </dl>
+  </dd>
+</dl></td></tr></table>
+<table width="100%" class="var-details" bgcolor="#e0e0e0"><tr><td>
+<a name="DONT_INTERSECT"></a>
+<h3>DONT_INTERSECT</h3>
+<dl>
+  <dt></dt>
+  <dd>
+    <dl>
+      <dt><b>Type:</b></dt>
+      <dd>
+          <code>int</code>
+
+      </dd>
+<span title="0">      <dt><b>Value:</b></dt>
+      <dd><table><tr><td>
+<pre class="variable">
+0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</pre>
+        </td></tr></table></dd>
+</span>    </dl>
+  </dd>
+</dl></td></tr></table>
+<table width="100%" class="var-details" bgcolor="#e0e0e0"><tr><td>
+<a name="image_cache"></a>
+<h3>image_cache</h3>
+<dl>
+  <dt></dt>
+  <dd>
+    <dl>
+      <dt><b>Type:</b></dt>
+      <dd>
+          <code>dict</code>
+
+      </dd>
+<span title="{}">      <dt><b>Value:</b></dt>
+      <dd><table><tr><td>
+<pre class="variable">
+{}                                                                     </pre>
+        </td></tr></table></dd>
+</span>    </dl>
+  </dd>
+</dl></td></tr></table>
+<table width="100%" class="var-details" bgcolor="#e0e0e0"><tr><td>
+<a name="point_cache"></a>
+<h3>point_cache</h3>
+<dl>
+  <dt></dt>
+  <dd>
+    <dl>
+      <dt><b>Type:</b></dt>
+      <dd>
+          <code>dict</code>
+
+      </dd>
+<span title="{}">      <dt><b>Value:</b></dt>
+      <dd><table><tr><td>
+<pre class="variable">
+{}                                                                     </pre>
+        </td></tr></table></dd>
+</span>    </dl>
+  </dd>
+</dl></td></tr></table>
+<table width="100%" class="var-details" bgcolor="#e0e0e0"><tr><td>
+<a name="sound_cache"></a>
+<h3>sound_cache</h3>
+<dl>
+  <dt></dt>
+  <dd>
+    <dl>
+      <dt><b>Type:</b></dt>
+      <dd>
+          <code>dict</code>
+
+      </dd>
+<span title="{}">      <dt><b>Value:</b></dt>
+      <dd><table><tr><td>
+<pre class="variable">
+{}                                                                     </pre>
+        </td></tr></table></dd>
+</span>    </dl>
+  </dd>
+</dl></td></tr></table>
+<br />
+
+
+<!-- =========== START OF NAVBAR =========== -->
+<table class="navbar" border="0" width="100%" cellpadding="0" bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="center">
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="pygsear-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="trees.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="indices.html">Index</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td align="left"><font size="-2">Generated by Epydoc 2.0 on Sat Dec  9 14:11:20 2006</font></td>
+    <td align="right"><a href="http://epydoc.sourceforge.net"
+                      ><font size="-2">http://epydoc.sf.net</font></a></td>
+  </tr>
+</table>
+</body>
+</html>

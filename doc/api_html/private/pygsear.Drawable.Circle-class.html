@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>pygsear.Drawable.Circle</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css"></link>
+</head>
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+
+<!-- =========== START OF NAVBAR =========== -->
+<table class="navbar" border="0" width="100%" cellpadding="0" bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="center">
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="pygsear-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="trees.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="indices.html">Index</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <font size="-1"><b class="breadcrumbs">
+        <a href="pygsear-module.html">Package&nbsp;pygsear</a> ::
+        <a href="pygsear.Drawable-module.html">Module&nbsp;Drawable</a> ::
+        Class&nbsp;Circle
+      </b></font></br>
+    </td>
+    <td><table cellpadding="0" cellspacing="0">
+      <tr><td align="right"><font size="-2">[show&nbsp;private&nbsp;|&nbsp;<a href="../public/pygsear.Drawable.Circle-class.html">hide&nbsp;private</a>]</font></td></tr>
+      <tr><td align="right"><font size="-2">[<a href="frames.html"target="_top">frames</a>&nbsp;|&nbsp;<a href="pygsear.Drawable.Circle-class.html" target="_top">no&nbsp;frames</a>]</font></td></tr>
+    </table></td>
+</tr></table>
+
+<!-- =========== START OF CLASS DESCRIPTION =========== -->
+<h2 class="class">Class Circle</h2>
+
+<pre class="base-tree">
+<a href="__builtin__.object-class.html"><code>object</code></a> --+            
+         |            
+    <a href="pygame.sprite.Sprite-class.html"><code>Sprite</code></a> --+        
+             |        
+      <a href="pygsear.Drawable.Drawable-class.html"><code>Drawable</code></a> --+    
+                 |    
+             <a href="pygsear.Drawable.Shape-class.html"><code>Shape</code></a> --+
+                     |
+                    <b>Circle</b>
+</pre><br />
+
+<dl><dt><b>Known Subclasses:</b></dt>
+<dd>
+    <a href="pygsear.Cursor.CircleCursor-class.html"><code>CircleCursor</code></a></dd></dl>
+
+<hr/>
+
+<p>Circle.</p>
+position measured from top left corner of enclosing square.
+<hr/>
+
+
+<!-- =========== START OF METHOD SUMMARY =========== -->
+<table class="summary" border="1" cellpadding="3" cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="summary">
+  <th colspan="2">Method Summary</th></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Circle-class.html#__init__" class="summary-sig-name"><code>__init__</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>w</span>)</span></code>
+<br />
+Initialize Drawable sprite.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Circle-class.html#paint" class="summary-sig-name"><code>paint</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Change the color of the shape.</td></tr>
+<tr bgcolor="#e8f0f8" class="group">
+  <th colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;Inherited from Shape</th></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Shape-class.html#set_color" class="summary-sig-name"><code>set_color</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>color</span>,
+          <span class=summary-sig-arg>r</span>,
+          <span class=summary-sig-arg>g</span>,
+          <span class=summary-sig-arg>b</span>)</span></code>
+<br />
+Set the color for drawing.</td></tr>
+<tr bgcolor="#e8f0f8" class="group">
+  <th colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;Inherited from Drawable</th></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">        bool
+</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Drawable-class.html#can_see" class="summary-sig-name"><code>can_see</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>target</span>,
+          <span class=summary-sig-arg>blocking_rects_list</span>)</span></code>
+<br />
+Performs a los (line of sight) check from the center of the source to 
+the center of the target.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Drawable-class.html#center" class="summary-sig-name"><code>center</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>x</span>,
+          <span class=summary-sig-arg>y</span>,
+          <span class=summary-sig-arg>dx</span>,
+          <span class=summary-sig-arg>dy</span>)</span></code>
+<br />
+Align the Drawable in its layer</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Drawable-class.html#clear" class="summary-sig-name"><code>clear</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>surface</span>)</span></code>
+<br />
+Erase sprite to background</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">        <code>bool</code>
+</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Drawable-class.html#collide" class="summary-sig-name"><code>collide</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>other</span>)</span></code>
+<br />
+return True if this sprite and other sprite overlap.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">        <code>Drawable</code> or <code>False</code>
+</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Drawable-class.html#collidelist" class="summary-sig-name"><code>collidelist</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>lothers</span>)</span></code>
+<br />
+return True if this sprite and any in list of others collide.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">        <code>List</code>
+</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Drawable-class.html#collidelistall" class="summary-sig-name"><code>collidelistall</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>lothers</span>)</span></code>
+<br />
+return True if this sprite and any in list of others collide.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Drawable-class.html#direction" class="summary-sig-name"><code>direction</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>point</span>)</span></code>
+<br />
+return the direction from the sprite to a point</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Drawable-class.html#distance" class="summary-sig-name"><code>distance</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>point</span>)</span></code>
+<br />
+return the distance from the sprite to a point</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Drawable-class.html#draw" class="summary-sig-name"><code>draw</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>surface</span>)</span></code>
+<br />
+Blit image to layer</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Drawable-class.html#get_position" class="summary-sig-name"><code>get_position</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+return a copy of the sprite's position</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Drawable-class.html#get_size" class="summary-sig-name"><code>get_size</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+return size of sprite's rect.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Drawable-class.html#move" class="summary-sig-name"><code>move</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+set position to next position on path</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Drawable-class.html#nudge" class="summary-sig-name"><code>nudge</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>dx</span>,
+          <span class=summary-sig-arg>dy</span>)</span></code>
+<br />
+Move sprite.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Drawable-class.html#onscreen" class="summary-sig-name"><code>onscreen</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>slack</span>,
+          <span class="summary-sig-kwarg">**kw</span>)</span></code>
+<br />
+return True if image is on the screen or layer.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Drawable-class.html#pause" class="summary-sig-name"><code>pause</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+stop moving along Path</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Drawable-class.html#runPath" class="summary-sig-name"><code>runPath</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>frames</span>)</span></code>
+<br />
+call move() continuously</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Drawable-class.html#set_crect" class="summary-sig-name"><code>set_crect</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>crect</span>)</span></code>
+<br />
+set the collision <code>pygame.Rect</code> used for collision 
+checking.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Drawable-class.html#set_path" class="summary-sig-name"><code>set_path</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>path</span>)</span></code>
+<br />
+set which path to follow</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Drawable-class.html#set_position" class="summary-sig-name"><code>set_position</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>location</span>,
+          <span class="summary-sig-vararg">*args</span>)</span></code>
+<br />
+Move sprite to location.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Drawable-class.html#set_positionRandom" class="summary-sig-name"><code>set_positionRandom</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>slack</span>)</span></code>
+<br />
+Move sprite to a random location on screen</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Drawable-class.html#set_size" class="summary-sig-name"><code>set_size</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>size</span>)</span></code>
+<br />
+Set size of sprite's rect.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Drawable-class.html#solid" class="summary-sig-name"><code>solid</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>other</span>,
+          <span class=summary-sig-arg>move_both</span>)</span></code>
+<br />
+move sprite so that it does not overlap with other sprite</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Drawable-class.html#stretch" class="summary-sig-name"><code>stretch</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>dx</span>,
+          <span class=summary-sig-arg>dy</span>,
+          <span class=summary-sig-arg>size</span>,
+          <span class=summary-sig-arg>keepAspectRatio</span>)</span></code>
+<br />
+Change the size of sprite's image, and rect.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Drawable-class.html#uclear" class="summary-sig-name"><code>uclear</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>surface</span>)</span></code>
+<br />
+clear sprite and update display</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Drawable-class.html#udraw" class="summary-sig-name"><code>udraw</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>surface</span>)</span></code>
+<br />
+Draw image and update display.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygsear.Drawable.Drawable-class.html#unpause" class="summary-sig-name"><code>unpause</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+start moving along Path</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="../private/pygsear.Drawable.Drawable-class.html#_set_position" class="summary-sig-name"><code>_set_position</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>location</span>)</span></code>
+<br />
+Move sprite to location.</td></tr>
+<tr bgcolor="#e8f0f8" class="group">
+  <th colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;Inherited from Sprite</th></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygame.sprite.Sprite-class.html#__repr__" class="summary-sig-name"><code>__repr__</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygame.sprite.Sprite-class.html#add" class="summary-sig-name"><code>add</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class="summary-sig-vararg">*groups</span>)</span></code>
+<br />
+add(group or list of of groups, ...) add a sprite to container</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygame.sprite.Sprite-class.html#add_internal" class="summary-sig-name"><code>add_internal</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>group</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygame.sprite.Sprite-class.html#alive" class="summary-sig-name"><code>alive</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+alive() -&gt; bool check to see if the sprite is in any groups</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygame.sprite.Sprite-class.html#groups" class="summary-sig-name"><code>groups</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+groups() -&gt; list of groups list used sprite containers</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygame.sprite.Sprite-class.html#kill" class="summary-sig-name"><code>kill</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+kill() remove this sprite from all groups</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygame.sprite.Sprite-class.html#remove" class="summary-sig-name"><code>remove</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class="summary-sig-vararg">*groups</span>)</span></code>
+<br />
+remove(group or list of groups, ...) remove a sprite from 
+container</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygame.sprite.Sprite-class.html#remove_internal" class="summary-sig-name"><code>remove_internal</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>group</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="pygame.sprite.Sprite-class.html#update" class="summary-sig-name"><code>update</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class="summary-sig-vararg">*args</span>)</span></code>
+</td></tr>
+<tr bgcolor="#e8f0f8" class="group">
+  <th colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;Inherited from object</th></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="__builtin__.object-class.html#__delattr__" class="summary-sig-name"><code>__delattr__</code></a>(<span class="summary-sig-vararg">...</span>)</span></code>
+<br />
+x.__delattr__('name') &lt;==&gt; del x.name</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="__builtin__.object-class.html#__getattribute__" class="summary-sig-name"><code>__getattribute__</code></a>(<span class="summary-sig-vararg">...</span>)</span></code>
+<br />
+x.__getattribute__('name') &lt;==&gt; x.name</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="__builtin__.object-class.html#__hash__" class="summary-sig-name"><code>__hash__</code></a>(<span class=summary-sig-arg>x</span>)</span></code>
+<br />
+x.__hash__() &lt;==&gt; hash(x)</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="__builtin__.object-class.html#__reduce__" class="summary-sig-name"><code>__reduce__</code></a>(<span class="summary-sig-vararg">...</span>)</span></code>
+<br />
+helper for pickle</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="__builtin__.object-class.html#__reduce_ex__" class="summary-sig-name"><code>__reduce_ex__</code></a>(<span class="summary-sig-vararg">...</span>)</span></code>
+<br />
+helper for pickle</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="__builtin__.object-class.html#__setattr__" class="summary-sig-name"><code>__setattr__</code></a>(<span class="summary-sig-vararg">...</span>)</span></code>
+<br />
+x.__setattr__('name', value) &lt;==&gt; x.name = value</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="__builtin__.object-class.html#__str__" class="summary-sig-name"><code>__str__</code></a>(<span class=summary-sig-arg>x</span>)</span></code>
+<br />
+x.__str__() &lt;==&gt; str(x)</td></tr>
+<tr bgcolor="#e8f0f8" class="group">
+  <th colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;Inherited from type</th></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="__builtin__.type-class.html#__new__" class="summary-sig-name"><code>__new__</code></a>(<span class=summary-sig-arg>T</span>,
+          <span class=summary-sig-arg>S</span>,
+          <span class="summary-sig-vararg">...</span>)</span></code>
+<br />
+T.__new__(S, ...) -&gt; a new object with type S, a subtype of T</td></tr>
+</table><br />
+
+
+<!-- =========== START OF METHOD DETAILS =========== -->
+<table class="details" border="1" cellpadding="3" cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="details">
+  <th colspan="2">Method Details</th></tr>
+</table>
+
+<a name="__init__"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">__init__</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>w</span>=<span class=sig-default>None</span>,
+          <span class=sig-arg>radius</span>=<span class=sig-default>10</span>,
+          <span class=sig-arg>color</span>=<span class=sig-default>(255,&nbsp;255,&nbsp;255)</span>,
+          <span class=sig-arg>bgcolor</span>=<span class=sig-default>(0,&nbsp;51,&nbsp;0,&nbsp;0)</span>)</span>
+    <br /><i>(Constructor)</i>
+  </h3>
+  Initialize Drawable sprite.
+  <dl><dt></dt><dd>
+    <dl><dt><b>Parameters:</b></dt>
+      <dd><code><b>w</b></code> -
+         Layer on which sprite lives.
+      </dd>
+    </dl>
+    <dl><dt><b>Overrides:</b></dt>
+      <dd><a href="pygsear.Drawable.Shape-class.html#__init__"><code>pygsear.Drawable.Shape.__init__</code></a> <i>(inherited documentation)</i>
+</dd>
+    </dl>
+  </dd></dl>
+</td></tr></table>
+
+<a name="paint"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">paint</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+  Change the color of the shape.
+  <dl><dt></dt><dd>
+    <dl><dt><b>Overrides:</b></dt>
+      <dd><a href="pygsear.Drawable.Shape-class.html#paint"><code>pygsear.Drawable.Shape.paint</code></a> <i>(inherited documentation)</i>
+</dd>
+    </dl>
+  </dd></dl>
+</td></tr></table>
+<br />
+
+
+<!-- =========== START OF NAVBAR =========== -->
+<table class="navbar" border="0" width="100%" cellpadding="0" bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="center">
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="pygsear-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="trees.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="indices.html">Index</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td align="left"><font size="-2">Generated by Epydoc 2.0 on Sat Dec  9 14:11:19 2006</font></td>
+    <td align="right"><a href="http://epydoc.sourceforge.net"
+                      ><font size="-2">http://epydoc.sf.net</font></a></td>
+  </tr>
+</table>
+</body>
+</html>

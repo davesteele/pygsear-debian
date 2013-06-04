@@ -1,0 +1,17 @@
+Source: pygsear
+Maintainer: David Steele <dsteele@gmail.com>
+Section: python
+Priority: optional
+Build-Depends: python-all (>= 2.6.6-3), debhelper (>= 7.0.50~)
+Standards-Version: 3.9.4
+
+Package: python-pygsear
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends},
+ python-pygame (>=1.9.1release+dfsg-8),
+ python-twisted-core (>=12.0.0-1),
+Description: Simple Pygame API
+ pygsear is a set of python libraries which work with pygame. pygsear takes
+ care of much of the lower level setup of sprites and events and objects so
+ that you can get right to the coding of your game.
+

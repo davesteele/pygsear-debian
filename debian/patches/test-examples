@@ -1,0 +1,15 @@
+Description: Run the pygsear test from the Debian pygsear examples directory.
+From: David Steele <dsteele@gmail.com>
+
+--- a/test.py
++++ b/test.py
+@@ -25,8 +25,7 @@
+ import test
+ 
+ 
+-d, f = os.path.split(os.path.abspath(test.__file__))
+-examples = os.path.join(d, 'examples')
++examples = "/usr/share/doc/python-pygsear/examples"
+ sys.path.insert(0, examples)
+ os.chdir(examples)
+ 

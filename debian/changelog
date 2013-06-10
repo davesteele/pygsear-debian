@@ -1,3 +1,9 @@
+pygsear (0.53.2-2) unstable; urgency=low
+
+  * Minor fix to copyright file.
+
+ -- David Steele <dsteele@gmail.com>  Sun, 09 Jun 2013 20:26:12 -0400
+
 pygsear (0.53.2-1) unstable; urgency=low
 
   * source package automatically created by stdeb 0.6.0+git

@@ -1,6 +1,7 @@
 pygsear (0.53.2-2) unstable; urgency=low
 
   * Minor fix to copyright file.
+  * Close ITP (Closes: #711814).
 
  -- David Steele <dsteele@gmail.com>  Sun, 09 Jun 2013 20:26:12 -0400
 

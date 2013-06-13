@@ -11,7 +11,7 @@ Depends: ${misc:Depends}, ${python:Depends},
  python-pygame (>=1.9.1release+dfsg-8),
  python-twisted-core (>=12.0.0-1),
 Description: Simple Pygame API
- pygsear is a set of python libraries which work with pygame. pygsear takes
+ pygsear is a set of Python libraries which work with pygame. pygsear takes
  care of much of the lower level setup of sprites and events and objects so
  that you can get right to the coding of your game.
 

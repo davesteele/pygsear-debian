@@ -1,3 +1,10 @@
+pygsear (0.53.2-3) UNRELEASED; urgency=low
+
+  * Minor Lintian fixes:
+    - Fix capitalization error in description.
+
+ -- daves <daves@debian-testing>  Wed, 12 Jun 2013 21:24:12 -0400
+
 pygsear (0.53.2-2) unstable; urgency=low
 
   * Minor fix to copyright file.

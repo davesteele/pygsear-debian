@@ -4,6 +4,9 @@ Section: python
 Priority: optional
 Build-Depends: python-all (>= 2.6.6-3), debhelper (>= 7.0.50~)
 Standards-Version: 3.9.4
+Homepage: http://davesteele.github.io/pygsear-debian/
+Vcs-Git: https://github.com/davesteele/pygsear-debian.git
+Vcs-Browser: https://github.com/davesteele/pygsear-debian
 
 Package: python-pygsear
 Architecture: all

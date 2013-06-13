@@ -2,6 +2,7 @@ pygsear (0.53.2-3) UNRELEASED; urgency=low
 
   * Minor Lintian fixes:
     - Fix capitalization error in description.
+    - Add homepage and VCS urls, and prep README.md for a home page.
 
  -- daves <daves@debian-testing>  Wed, 12 Jun 2013 21:24:12 -0400
 
